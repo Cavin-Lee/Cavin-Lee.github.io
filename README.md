@@ -9,3 +9,5 @@
 [定制简历](https://cavin-lee.github.io/cv-builder/)可勾选教育经历、项目、论文、学术服务和获奖内容，并切换中英文；每个章节从 1 开始编号。点击“生成 A4 PDF”后，在浏览器打印窗口选择“保存为 PDF”。也可直接下载[中文简历](assets/cv-zh.pdf)或[英文简历](assets/cv-en.pdf)。科研项目中的批准通知和任务书也可从项目卡片下载。
 
 网站是静态页面，可由 GitHub Pages 直接托管。论文及其他资料的展示数据位于 `data.js`，学术记录的采集快照位于 `scholar-publications.json`。
+
+后续维护请先阅读 [网站维护指南](AGENTS.md)。
