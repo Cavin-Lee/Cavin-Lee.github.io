@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="选择论文、项目、学术服务和获奖，生成李伟凯的定制 A4 学术简历 PDF。">
+  <title>定制学术简历 | 李伟凯</title>
+  <link rel="stylesheet" href="../styles.css?v=20261004">
+  <link rel="stylesheet" href="builder.css">
+</head>
+<body>
+  <header class="builder-header"><div class="shell"><a href="../">← <span id="back-label">返回主页</span></a><strong id="builder-title">定制学术简历</strong><a href="../en/">English site ↗</a></div></header>
+  <main class="builder-main shell">
+    <div class="builder-intro"><p class="eyebrow">CUSTOM CV / 定制简历</p><h1 id="page-title">选择内容，生成 A4 简历</h1><p id="page-description">勾选需要的科研项目、论文、学术服务和奖项。右侧实时预览；点击“生成 PDF”后，在打印窗口选择“保存为 PDF”。</p></div>
+    <div class="builder-layout">
+      <aside class="builder-controls" aria-label="简历内容选择">
+        <div class="controls-top"><label for="cv-language" id="language-label">简历语言</label><select id="cv-language"><option value="zh">中文</option><option value="en">English</option></select></div>
+        <div class="quick-actions"><button type="button" id="select-all">全部选择</button><button type="button" id="select-none">清空选择</button></div>
+        <div id="selection-groups"></div>
+      </aside>
+      <div class="builder-preview-wrap"><div class="preview-toolbar"><span id="preview-label">A4 预览</span><span id="selection-count"></span></div><article id="cv-preview" aria-label="简历预览"></article><div class="builder-actions"><button type="button" id="print-cv">生成 A4 PDF ↓</button><p id="print-note">浏览器打印窗口打开后，请选择“保存为 PDF”；版式已设置为 A4。</p></div></div>
+    </div>
+  </main>
+  <script src="../data.js?v=20261004"></script><script src="builder.js"></script>
+</body>
+</html>
