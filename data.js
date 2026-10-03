@@ -744,7 +744,16 @@ window.SITE_DATA = {
       "role": {
         "zh": "主持",
         "en": "Principal Investigator"
-      }
+      },
+      "files": [
+        {
+          "path": "assets/projects/nsfc-young-approval.pdf",
+          "label": {
+            "zh": "项目批准通知书 PDF",
+            "en": "Project Approval PDF"
+          }
+        }
+      ]
     },
     {
       "title": {
@@ -758,7 +767,16 @@ window.SITE_DATA = {
       "role": {
         "zh": "主持",
         "en": "Principal Investigator"
-      }
+      },
+      "files": [
+        {
+          "path": "assets/projects/nsfc-international-approval.pdf",
+          "label": {
+            "zh": "项目批准通知书 PDF",
+            "en": "Project Approval PDF"
+          }
+        }
+      ]
     },
     {
       "title": {
@@ -800,7 +818,16 @@ window.SITE_DATA = {
       "role": {
         "zh": "主持",
         "en": "Principal Investigator"
-      }
+      },
+      "files": [
+        {
+          "path": "assets/projects/molecular-imaging-approval.pdf",
+          "label": {
+            "zh": "立项通知 PDF",
+            "en": "Approval Notice PDF"
+          }
+        }
+      ]
     },
     {
       "title": {
@@ -814,7 +841,16 @@ window.SITE_DATA = {
       "role": {
         "zh": "主持",
         "en": "Principal Investigator"
-      }
+      },
+      "files": [
+        {
+          "path": "assets/projects/autism-taskbook.pdf",
+          "label": {
+            "zh": "项目任务书 PDF",
+            "en": "Project Task Book PDF"
+          }
+        }
+      ]
     },
     {
       "title": {
@@ -828,7 +864,16 @@ window.SITE_DATA = {
       "role": {
         "zh": "主持",
         "en": "Principal Investigator"
-      }
+      },
+      "files": [
+        {
+          "path": "assets/projects/brain-network-taskbook.pdf",
+          "label": {
+            "zh": "项目任务书 PDF",
+            "en": "Project Task Book PDF"
+          }
+        }
+      ]
     },
     {
       "title": {
@@ -925,6 +970,24 @@ window.SITE_DATA = {
             "en": "Outstanding Reviewer, Journal of Data Acquisition and Processing"
           },
           "file": "assets/service/data-acquisition-outstanding-reviewer.pdf"
+        },
+        {
+          "name": {
+            "zh": "《Aging & Disease》青年编委",
+            "en": "Youth Editorial Board, Aging & Disease"
+          }
+        },
+        {
+          "name": {
+            "zh": "《Brain-X》青年编委",
+            "en": "Youth Editorial Board, Brain-X"
+          }
+        },
+        {
+          "name": {
+            "zh": "《Cog》青年编委",
+            "en": "Youth Editorial Board, Cog"
+          }
         }
       ]
     },
@@ -948,6 +1011,24 @@ window.SITE_DATA = {
         },
         {
           "name": {
+            "zh": "中国自动化学会人机教育专委会委员",
+            "en": "Member, CAA Human–Machine Education Committee"
+          }
+        },
+        {
+          "name": {
+            "zh": "中国仿真学会虚拟技术及应用专委会委员",
+            "en": "Member, CSS Virtual Technology and Applications Committee"
+          }
+        },
+        {
+          "name": {
+            "zh": "医学图像青年研讨会委员",
+            "en": "Committee Member, Youth Workshop on Medical Imaging"
+          }
+        },
+        {
+          "name": {
             "zh": "重庆市数学学会理事",
             "en": "Council Member, Chongqing Mathematical Society"
           },
@@ -966,6 +1047,18 @@ window.SITE_DATA = {
       "files": [
         {
           "path": "assets/awards/2026-cpsi-best-paper.pdf"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "title": {
+        "zh": "泰山学者青年专家",
+        "en": "Taishan Scholars Young Expert"
+      },
+      "files": [
+        {
+          "path": "assets/awards/2025-taishan-young-scholar.pdf"
         }
       ]
     },
@@ -1097,14 +1190,34 @@ window.SITE_DATA = {
     {
       "year": 2025,
       "title": {
-        "zh": "互联网+ 校赛一等奖",
-        "en": "First Prize, Internet+ University Competition"
+        "zh": "中国国际大学生创新大赛校赛一等奖：帕影先知",
+        "en": "First Prize, China International College Students' Innovation Competition: Paying Xianzhi"
       },
       "files": [
         {
           "path": "assets/awards/2025-internet-plus-first.pdf"
         }
-      ]
+      ],
+      "note": {
+        "zh": "作品：基于 PET/MR 多模态脑网络的帕金森症诊断系统。",
+        "en": "Project: a Parkinson's disease diagnosis system based on PET/MR multimodal brain networks."
+      }
+    },
+    {
+      "year": 2025,
+      "title": {
+        "zh": "中国国际大学生创新大赛校赛一等奖：影络智诊",
+        "en": "First Prize, China International College Students' Innovation Competition: Yingluo Zhizhen"
+      },
+      "files": [
+        {
+          "path": "assets/awards/2025-innovation-yingluo-first.pdf"
+        }
+      ],
+      "note": {
+        "zh": "作品：影络智诊——多模态脑影像智能诊断平台。",
+        "en": "Project: Yingluo Zhizhen, a multimodal brain-imaging diagnosis platform."
+      }
     },
     {
       "year": 2025,
@@ -1117,6 +1230,22 @@ window.SITE_DATA = {
           "path": "assets/awards/2025-ican-second.pdf"
         }
       ]
+    },
+    {
+      "year": 2025,
+      "title": {
+        "zh": "中国研究生电子设计竞赛西南赛区三等奖",
+        "en": "Third Prize, China Graduate Electronics Design Competition, Southwest Region"
+      },
+      "files": [
+        {
+          "path": "assets/awards/2025-graduate-electronics-southwest-third.pdf"
+        }
+      ],
+      "note": {
+        "zh": "项目：平衡搬运机器人；宋浩、秦浩、卢雅莲。",
+        "en": "Project: Balance Transport Robot; Song Hao, Qin Hao, and Lu Yalian."
+      }
     },
     {
       "year": 2024,
@@ -1139,8 +1268,8 @@ window.SITE_DATA = {
     {
       "year": 2024,
       "title": {
-        "zh": "挑战杯校赛一等奖、三等奖",
-        "en": "Challenge Cup Campus First and Third Prizes"
+        "zh": "中国国际大学生创新大赛校赛一等奖、三等奖",
+        "en": "First and Third Prizes, China International College Students' Innovation Competition, Campus Round"
       },
       "files": [
         {
@@ -1148,8 +1277,27 @@ window.SITE_DATA = {
         },
         {
           "path": "assets/awards/2024-challenge-cup-third.pdf"
+        },
+        {
+          "path": "assets/awards/2024-innovation-campus-third-ad.pdf"
         }
       ]
+    },
+    {
+      "year": 2024,
+      "title": {
+        "zh": "中国机器人及人工智能大赛全国总决赛二等奖",
+        "en": "Second Prize, China Robot and AI Competition National Finals"
+      },
+      "files": [
+        {
+          "path": "assets/awards/2024-robot-national-second.pdf"
+        }
+      ],
+      "note": {
+        "zh": "机器人任务挑战赛；孙琦凯、阮宇迪、陈熙然；指导教师李伟凯、王其林。",
+        "en": "Aelos Robot Challenge; students Sun Qikai, Ruan Yudi, and Chen Xiran; advised by Wei-Kai Li and Qilin Wang."
+      }
     },
     {
       "year": 2024,
@@ -1162,6 +1310,54 @@ window.SITE_DATA = {
           "path": "assets/awards/2024-robot-chongqing-second.pdf"
         }
       ]
+    },
+    {
+      "year": 2024,
+      "title": {
+        "zh": "全国高校商业精英挑战赛全国总决赛一等奖",
+        "en": "First Prize, National Business Elite Challenge Finals"
+      },
+      "files": [
+        {
+          "path": "assets/awards/2024-business-elite-national-first.pdf"
+        }
+      ],
+      "note": {
+        "zh": "作品：幻视——医疗影像智能解析系统；证书列李伟凯为最佳指导教师。",
+        "en": "Project: Huanshi medical-imaging analysis system; the certificate names Wei-Kai Li as best faculty advisor."
+      }
+    },
+    {
+      "year": 2024,
+      "title": {
+        "zh": "全国高校智能交通创新与创业大赛三等奖",
+        "en": "Third Prize, National Intelligent Transportation Innovation and Entrepreneurship Competition"
+      },
+      "files": [
+        {
+          "path": "assets/awards/2024-intelligent-transport-third.pdf"
+        }
+      ],
+      "note": {
+        "zh": "作品：基于 Retinex 与深度学习的交通场景图像增强与智能解析系统。",
+        "en": "Project: Traffic-scene image enhancement and analysis using Retinex and deep learning."
+      }
+    },
+    {
+      "year": 2024,
+      "title": {
+        "zh": "中国研究生电子设计竞赛三等奖",
+        "en": "Third Prize, China Graduate Electronics Design Competition"
+      },
+      "files": [
+        {
+          "path": "assets/awards/2024-graduate-electronics-third.pdf"
+        }
+      ],
+      "note": {
+        "zh": "项目：幻视——医疗影像智能解析系统。",
+        "en": "Project: Huanshi medical-imaging analysis system."
+      }
     },
     {
       "year": 2024,
@@ -1199,8 +1395,27 @@ window.SITE_DATA = {
         },
         {
           "path": "assets/awards/2023-modeling-chongqing-second-a.pdf"
+        },
+        {
+          "path": "assets/awards/2023-modeling-chongqing-second-b.pdf"
         }
       ]
+    },
+    {
+      "year": 2023,
+      "title": {
+        "zh": "中国‘互联网+’大学生创新创业大赛校赛三等奖",
+        "en": "Third Prize, China Internet+ College Students' Innovation and Entrepreneurship Competition, Campus Round"
+      },
+      "files": [
+        {
+          "path": "assets/awards/2023-internet-plus-campus-third.pdf"
+        }
+      ],
+      "note": {
+        "zh": "项目：幻视——医疗影像智能解析系统。",
+        "en": "Project: Huanshi medical-imaging analysis system."
+      }
     },
     {
       "year": 2023,
@@ -1231,6 +1446,18 @@ window.SITE_DATA = {
         "en": "Awarded paper: Anatomy-Preserving Schrodinger Bridge for Unpaired MRI Quality Enhancement. The certificate names Jingxuan Cui, Jiabin Yin, Weikai Li, and Qilin Wang."
       },
       "file": "assets/awards/2026-cpsi-best-paper.pdf"
+    },
+    {
+      "year": 2025,
+      "title": {
+        "zh": "入选泰山学者青年专家",
+        "en": "Named a Taishan Scholars Young Expert"
+      },
+      "detail": {
+        "zh": "泰山学者青年专家证书已收录。",
+        "en": "The Taishan Scholars Young Expert certificate is available."
+      },
+      "file": "assets/awards/2025-taishan-young-scholar.pdf"
     },
     {
       "year": 2025,

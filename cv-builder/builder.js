@@ -1,7 +1,7 @@
 (() => {
   const data=window.SITE_DATA;
   const $=id=>document.getElementById(id);
-  const defaultEnglish=new URLSearchParams(location.search).get('lang')==='en';
+  const defaultEnglish=new URLSearchParams(location.search).get('lang')!=='zh';
   $('cv-language').value=defaultEnglish?'en':'zh';
   const lang=()=> $('cv-language').value;
   const tr=x=>typeof x==='string'?x:x[lang()];
@@ -20,7 +20,7 @@
   function labels(){
     const en=lang()==='en'; document.documentElement.lang=en?'en':'zh-CN';
     document.title=en?'Build an Academic CV | Wei-Kai Li':'定制学术简历 | 李伟凯';
-    $('back-label').textContent=en?'Back to homepage':'返回主页';$('builder-title').textContent=en?'Build an Academic CV':'定制学术简历';
+    $('back-label').textContent=en?'Back to homepage':'返回主页';$('back-home').href=en?'../':'../cn/';$('other-site-link').href=en?'../cn/':'../';$('other-site-link').textContent=en?'中文网站 ↗':'English site ↗';$('builder-title').textContent=en?'Build an Academic CV':'定制学术简历';
     $('page-title').textContent=en?'Choose content for an A4 CV':'选择内容，生成 A4 简历';
     $('page-description').textContent=en?'Select research projects, publications, service, and awards. Preview the result, then use the print dialog to save it as a PDF.':'勾选需要的科研项目、论文、学术服务和奖项。右侧实时预览；点击“生成 PDF”后，在打印窗口选择“保存为 PDF”。';
     $('language-label').textContent=en?'CV language':'简历语言';$('select-all').textContent=en?'Select all':'全部选择';$('select-none').textContent=en?'Clear all':'清空选择';
@@ -31,14 +31,14 @@
     const root=$('selection-groups');root.replaceChildren();
     Object.entries(items).forEach(([section,entries])=>{const details=make('details','selection-group');details.open=section==='projects'||section==='publications';const summary=make('summary','',tr(sectionLabels[section]));details.append(summary);const list=make('div','selection-items');entries.forEach(item=>{const label=make('label','selection-item');const box=make('input');box.type='checkbox';box.checked=selection.has(item.id);box.dataset.itemId=item.id;const text=make('span','',item.label());if(item.meta)text.append(make('small','',item.meta()));label.append(box,text);list.append(label);});details.append(list);root.append(details);});
   }
-  function appendSection(root,key,renderItem){const selected=items[key].filter(x=>selection.has(x.id));if(!selected.length)return;const section=make('section');section.append(make('h2','',tr(sectionLabels[key])));const list=make('ul');selected.forEach(x=>{const li=make('li');renderItem(li,x);list.append(li);});section.append(list);root.append(section);}
+  function appendSection(root,key,renderItem){const selected=items[key].filter(x=>selection.has(x.id));if(!selected.length)return;const section=make('section');section.append(make('h2','',tr(sectionLabels[key])));const list=make('ol');selected.forEach(x=>{const li=make('li');renderItem(li,x);list.append(li);});section.append(list);root.append(section);}
   function renderPreview(){
     const root=$('cv-preview');root.replaceChildren(); const en=lang()==='en';
-    root.append(make('h1','',en?'Wei-Kai Li':'李伟凯'),make('p','cv-subtitle',en?'Professor · Doctoral Supervisor':'教授 · 博士生导师'),make('p','cv-contact',`leeweikai@sdjzu.edu.cn · ${en?'Shandong Jianzhu University':'山东建筑大学'} · scholar.google.com/citations?user=XEfV8mkAAAAJ`));
+    root.append(make('h1','',en?'Wei-Kai Li':'李伟凯'),make('p','cv-subtitle',en?'Professor · Doctoral Supervisor · Taishan Scholars Young Expert':'教授 · 博士生导师 · 泰山学者青年专家'),make('p','cv-contact',`leeweikai@sdjzu.edu.cn · ${en?'School of Computer Science and Artificial Intelligence, Shandong Jianzhu University':'山东建筑大学计算机与人工智能学院'} · ${en?'School of Mathematics and Statistics, Chongqing Jiaotong University':'重庆交通大学数学与统计学院'} · ${en?'Panoramic Medical Imaging Center':'全景医学影像中心'}`));
     appendSection(root,'education',(li,x)=>{li.textContent=x.label();});
     appendSection(root,'projects',(li,x)=>{li.textContent=x.label();});
     const selectedPubs=items.publications.filter(x=>selection.has(x.id));
-    if(selectedPubs.length){const section=make('section');section.append(make('h2','',tr(sectionLabels.publications)));const grouped={};selectedPubs.forEach(x=>{const paper=data.publications[Number(x.id.split('-')[1])];(grouped[paper.area]??=[]).push(paper);});Object.entries(data.areas).forEach(([area,name])=>{if(!grouped[area])return;section.append(make('h3','',tr(name)));const ul=make('ul');grouped[area].forEach(p=>ul.append(make('li','',`${p.year||'—'} · ${p.title}. ${p.citation}`)));section.append(ul);});root.append(section);}
+    if(selectedPubs.length){const section=make('section');section.append(make('h2','',tr(sectionLabels.publications)));const grouped={};selectedPubs.forEach(x=>{const paper=data.publications[Number(x.id.split('-')[1])];(grouped[paper.area]??=[]).push(paper);});let number=1;Object.entries(data.areas).forEach(([area,name])=>{if(!grouped[area])return;section.append(make('h3','',tr(name)));const list=make('ol');list.start=number;grouped[area].forEach(p=>list.append(make('li','',`${p.year||'—'} · ${p.title}. ${p.citation}`)));number+=grouped[area].length;section.append(list);});root.append(section);}
     appendSection(root,'service',(li,x)=>{li.textContent=x.label();});
     appendSection(root,'personal',(li,x)=>{li.textContent=x.label();});
     appendSection(root,'student',(li,x)=>{li.textContent=x.label();});
