@@ -913,6 +913,12 @@ window.SITE_DATA = {
       "items": [
         {
           "name": {
+            "zh": "CPSI 2026 程序主席",
+            "en": "Program Chair, CPSI 2026"
+          }
+        },
+        {
+          "name": {
             "zh": "IEEE SMC 2026 领域主席",
             "en": "Area Chair, IEEE SMC 2026"
           }
@@ -953,14 +959,14 @@ window.SITE_DATA = {
         },
         {
           "name": {
-            "zh": "Meta-Radiology 青年编委",
+            "zh": "《Meta-Radiology》青年编委",
             "en": "Youth Editorial Board, Meta-Radiology"
           },
           "file": "assets/service/meta-radiology-editor.pdf"
         },
         {
           "name": {
-            "zh": "Frontiers in Neuroscience 等期刊客座主编",
+            "zh": "《Frontiers in Neuroscience》等期刊客座主编",
             "en": "Guest Editor, Frontiers in Neuroscience and related journals"
           }
         },
@@ -987,6 +993,12 @@ window.SITE_DATA = {
           "name": {
             "zh": "《Cog》青年编委",
             "en": "Youth Editorial Board, Cog"
+          }
+        },
+        {
+          "name": {
+            "zh": "《Artificial Intelligence Science and Engineering》青年编委",
+            "en": "Youth Editorial Board, Artificial Intelligence Science and Engineering"
           }
         }
       ]

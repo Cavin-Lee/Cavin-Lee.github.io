@@ -23,7 +23,7 @@
 
 - 英文首页是 `/`，中文首页是 `/cn/`。两个版本的链接、姓名、单位和重点经历应一致，文字分别用自然的英文和中文表达。
 - 首页职称顺序为“教授 · 博士生导师 · 泰山学者青年专家”；英文对应为 “Professor · Doctoral Supervisor · Taishan Scholars Young Expert”。单位包括山东建筑大学计算机与人工智能学院、重庆交通大学数学与统计学院、全景医学影像中心；邮箱为 `leeweikai@sdjzu.edu.cn`。
-- 《Aging & Disease》《Brain-X》《Cog》分别列为一条“青年编委”，不要合并成一条，也不要改成泛称“编委或青年编委”。
+- 《Aging & Disease》《Brain-X》《Cog》《Artificial Intelligence Science and Engineering》分别列为一条“青年编委”，不要合并成一条，也不要改成泛称“编委或青年编委”。中文期刊名称统一加《》；CPSI 2026 程序主席列在会议与论坛中。
 - 论文以[李伟凯的 Google Scholar 主页](https://scholar.google.com/citations?user=XEfV8mkAAAAJ&hl=zh-CN)为准。按研究方向归类；每个方向默认显示最新 5 篇，其余保留在展开列表中。全文只有在与 Scholar 记录核对匹配后才能加下载链接。没有全文时保留论文记录，并更新待补清单。
 - `app.js` 以运行时年份计算最近 5 年的学生获奖，按年份从新到旧排列；每年默认显示 3 项，其余展开查看。历史记录仍保留在 `data.js`，不要为实现折叠而删除数据。
 - 简历生成器允许自由勾选教育、项目、论文、学术服务和获奖；各章节的数字序号从 1 开始。浏览器打印样式使用 A4，用户可在打印窗口保存为 PDF。
