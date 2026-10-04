@@ -913,8 +913,14 @@ window.SITE_DATA = {
       "items": [
         {
           "name": {
-            "zh": "CPSI 2026 程序主席",
-            "en": "Program Chair, CPSI 2026"
+            "zh": "CPSI 2027 程序主席",
+            "en": "Program Chair, CPSI 2027"
+          }
+        },
+        {
+          "name": {
+            "zh": "CPSI 2026 联合程序主席",
+            "en": "Co-Program Chair, CPSI 2026"
           }
         },
         {
