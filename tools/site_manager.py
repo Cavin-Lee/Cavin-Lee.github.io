@@ -31,7 +31,7 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.cidfonts import UnicodeCIDFont
-from reportlab.platypus import Paragraph, SimpleDocTemplate
+from reportlab.platypus import Image, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -288,14 +288,24 @@ def write_missing_reports(data: dict, temp: Path) -> dict[str, Path]:
 pdfmetrics.registerFont(UnicodeCIDFont("STSong-Light"))
 
 
-def write_pdf(path: Path, lang: str, title: str, sections: list[tuple[str, list[str]]], numbered: bool = False, intro: list[str] | None = None) -> None:
+def write_pdf(path: Path, lang: str, title: str, sections: list[tuple[str, list[str]]], numbered: bool = False, intro: list[str] | None = None, portrait: Path | None = None) -> None:
     font = "STSong-Light" if lang == "zh" else "Helvetica"
     title_style = ParagraphStyle("title", fontName=font, fontSize=18, leading=25, textColor=colors.HexColor("#17323a"), spaceAfter=12, wordWrap="CJK")
     section_style = ParagraphStyle("section", fontName=font, fontSize=11.5, leading=17, textColor=colors.HexColor("#196a69"), spaceBefore=16, spaceAfter=7, wordWrap="CJK")
     body_style = ParagraphStyle("body", fontName=font, fontSize=8.7, leading=13.3, textColor=colors.HexColor("#263c42"), leftIndent=12, firstLineIndent=-12, spaceAfter=5, wordWrap="CJK")
-    story = [Paragraph(escape(title), title_style)]
-    for line in intro or []:
-        story.append(Paragraph(escape(line), body_style))
+    if portrait:
+        intro_style = ParagraphStyle("intro", fontName=font, fontSize=8.7, leading=13.3, textColor=colors.HexColor("#263c42"), spaceAfter=5, wordWrap="CJK")
+        header_text = [Paragraph(escape(title), title_style)] + [Paragraph(escape(line.replace("·", " / ")), intro_style) for line in intro or [] if line]
+        ratio = 1929 / 1279
+        photo = Image(str(portrait), width=72, height=72 * ratio)
+        photo.hAlign = "RIGHT"
+        header = Table([[header_text, photo]], colWidths=[419, 92])
+        header.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LEFTPADDING", (0, 0), (-1, -1), 0), ("RIGHTPADDING", (0, 0), (-1, -1), 0), ("TOPPADDING", (0, 0), (-1, -1), 0), ("BOTTOMPADDING", (0, 0), (-1, -1), 0)]))
+        story = [header, Spacer(1, 10)]
+    else:
+        story = [Paragraph(escape(title), title_style)]
+        for line in intro or []:
+            story.append(Paragraph(escape(line), body_style))
     for heading, entries in sections:
         story.append(Paragraph(escape(heading), section_style))
         for number, entry in enumerate(entries, 1):
@@ -321,7 +331,7 @@ def write_cv_reports(data: dict, temp: Path) -> dict[str, Path]:
         ]
         intro = [profile.get("role", {}).get(lang, ""), "leeweikai@sdjzu.edu.cn · Google Scholar: scholar.google.com/citations?user=XEfV8mkAAAAJ", " / ".join(profile.get("affiliations", {}).get(lang, []))]
         path = temp / f"cv-{lang}.pdf"
-        write_pdf(path, lang, title, sections, numbered=True, intro=intro)
+        write_pdf(path, lang, title, sections, numbered=True, intro=intro, portrait=ROOT / "assets/profile.jpeg")
         output[f"assets/cv-{lang}.pdf"] = path
     return output
 

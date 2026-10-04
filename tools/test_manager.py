@@ -19,7 +19,7 @@ class ManagerTests(unittest.TestCase):
         self.original_data_path = manager.DATA_PATH
         self.temp = tempfile.TemporaryDirectory()
         root = Path(self.temp.name)
-        for name in ("data.js", "index.html", "cn/index.html", "cv-builder/index.html"):
+        for name in ("data.js", "index.html", "cn/index.html", "cv-builder/index.html", "assets/profile.jpeg"):
             target = root / name
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(self.original_root / name, target)
@@ -44,7 +44,10 @@ class ManagerTests(unittest.TestCase):
         self.assertIn("测试大学", (manager.ROOT / "CONTENT_INDEX.md").read_text())
         self.assertIn("本地测试", (manager.ROOT / "CONTENT_CHANGELOG.md").read_text())
         for language in ("zh", "en"):
-            manager.validate_pdf(manager.ROOT / f"assets/cv-{language}.pdf")
+            path = manager.ROOT / f"assets/cv-{language}.pdf"
+            manager.validate_pdf(path)
+            reader = manager.PdfReader(str(path))
+            self.assertTrue(any(image.name for image in reader.pages[0].images))
 
     def test_profile_titles_follow_paper_categories(self):
         data, _ = manager.read_data()
