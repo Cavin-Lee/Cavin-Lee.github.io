@@ -290,17 +290,17 @@ pdfmetrics.registerFont(UnicodeCIDFont("STSong-Light"))
 
 def write_pdf(path: Path, lang: str, title: str, sections: list[tuple[str, list[str]]], numbered: bool = False, intro: list[str] | None = None, portrait: Path | None = None) -> None:
     font = "STSong-Light" if lang == "zh" else "Helvetica"
-    title_style = ParagraphStyle("title", fontName=font, fontSize=18, leading=25, textColor=colors.HexColor("#17323a"), spaceAfter=12, wordWrap="CJK")
-    section_style = ParagraphStyle("section", fontName=font, fontSize=11.5, leading=17, textColor=colors.HexColor("#196a69"), spaceBefore=16, spaceAfter=7, wordWrap="CJK")
-    body_style = ParagraphStyle("body", fontName=font, fontSize=8.7, leading=13.3, textColor=colors.HexColor("#263c42"), leftIndent=12, firstLineIndent=-12, spaceAfter=5, wordWrap="CJK")
+    title_style = ParagraphStyle("title", fontName=font, fontSize=18, leading=25, textColor=colors.HexColor("#202329"), spaceAfter=12, wordWrap="CJK")
+    section_style = ParagraphStyle("section", fontName=font, fontSize=11.5, leading=17, textColor=colors.HexColor("#163a78"), spaceBefore=16, spaceAfter=7, wordWrap="CJK")
+    body_style = ParagraphStyle("body", fontName=font, fontSize=8.7, leading=13.3, textColor=colors.HexColor("#202329"), leftIndent=12, firstLineIndent=-12, spaceAfter=5, wordWrap="CJK")
     if portrait:
-        intro_style = ParagraphStyle("intro", fontName=font, fontSize=8.7, leading=13.3, textColor=colors.HexColor("#263c42"), spaceAfter=5, wordWrap="CJK")
+        intro_style = ParagraphStyle("intro", fontName=font, fontSize=8.7, leading=13.3, textColor=colors.HexColor("#202329"), spaceAfter=5, wordWrap="CJK")
         header_text = [Paragraph(escape(title), title_style)] + [Paragraph(escape(line.replace("·", " / ")), intro_style) for line in intro or [] if line]
         ratio = 1929 / 1279
         photo = Image(str(portrait), width=72, height=72 * ratio)
         photo.hAlign = "RIGHT"
         header = Table([[header_text, photo]], colWidths=[419, 92])
-        header.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LEFTPADDING", (0, 0), (-1, -1), 0), ("RIGHTPADDING", (0, 0), (-1, -1), 0), ("TOPPADDING", (0, 0), (-1, -1), 0), ("BOTTOMPADDING", (0, 0), (-1, -1), 0)]))
+        header.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LEFTPADDING", (0, 0), (-1, -1), 0), ("RIGHTPADDING", (0, 0), (-1, -1), 0), ("TOPPADDING", (0, 0), (-1, -1), 0), ("BOTTOMPADDING", (0, 0), (-1, -1), 0), ("LINEBELOW", (0, 0), (-1, -1), 1, colors.HexColor("#a12f35"))]))
         story = [header, Spacer(1, 10)]
     else:
         story = [Paragraph(escape(title), title_style)]
@@ -309,7 +309,8 @@ def write_pdf(path: Path, lang: str, title: str, sections: list[tuple[str, list[
     for heading, entries in sections:
         story.append(Paragraph(escape(heading), section_style))
         for number, entry in enumerate(entries, 1):
-            story.append(Paragraph((f"{number}. " if numbered else "- ") + escape(str(entry).replace("·", " / ")), body_style))
+            marker = f'<font color="#a12f35">{number}.</font> ' if numbered else "- "
+            story.append(Paragraph(marker + escape(str(entry).replace("·", " / ")), body_style))
     doc = SimpleDocTemplate(str(path), pagesize=A4, rightMargin=42, leftMargin=42, topMargin=42, bottomMargin=55, title=title, author="Wei-Kai Li")
     doc.build(story)
     validate_pdf(path)
