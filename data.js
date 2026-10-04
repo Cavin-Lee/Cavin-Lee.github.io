@@ -972,8 +972,26 @@ window.SITE_DATA = {
         },
         {
           "name": {
-            "zh": "《Frontiers in Neuroscience》等期刊客座主编",
-            "en": "Guest Editor, Frontiers in Neuroscience and related journals"
+            "zh": "《Frontiers in Neuroscience》客座主编",
+            "en": "Guest Editor, Frontiers in Neuroscience"
+          }
+        },
+        {
+          "name": {
+            "zh": "《Frontiers in Aging Neuroscience》客座主编",
+            "en": "Guest Editor, Frontiers in Aging Neuroscience"
+          }
+        },
+        {
+          "name": {
+            "zh": "《Frontiers in Cell and Developmental Biology》客座主编",
+            "en": "Guest Editor, Frontiers in Cell and Developmental Biology"
+          }
+        },
+        {
+          "name": {
+            "zh": "《Frontiers in Pharmacology》客座主编",
+            "en": "Guest Editor, Frontiers in Pharmacology"
           }
         },
         {
