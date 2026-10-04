@@ -7,7 +7,7 @@
   const link = (path, label) => { const a = el('a', '', label); a.href = base + path; a.download = ''; return a; };
 
   const newsList = document.getElementById('news-list');
-  data.news.forEach(item => { const card=el('article','news-item'); card.append(el('span','news-year',String(item.year))); const body=el('div'); body.append(el('h3','',t(item.title)),el('p','',t(item.detail)),link(item.file,en?'Download certificate PDF ↓':'下载证书 PDF ↓')); card.append(body); newsList.append(card); });
+  data.news.forEach(item => { const card=el('article','news-item'); card.append(el('span','news-year',String(item.year))); const body=el('div'); body.append(el('h3','',t(item.title)),el('p','',t(item.detail))); if(item.file)body.append(link(item.file,en?'Download certificate PDF ↓':'下载证书 PDF ↓')); card.append(body); newsList.append(card); });
 
   const education = document.getElementById('education-list');
   data.education.forEach(item => { const row = el('div','timeline-item'); row.append(el('div','timeline-year',item.years), el('h3','',t(item.degree)), el('p','',t(item.school))); education.append(row); });

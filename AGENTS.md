@@ -16,6 +16,8 @@
 | `assets/` | 公开下载文件。`papers/` 为论文，`awards/` 为获奖材料，`projects/` 为项目证明，`service/` 为学术兼职证明。 |
 | `scholar-publications.json` | Google Scholar 论文记录的本地快照；当前快照日期为 2026-10-03。 |
 | `missing-papers.md`、`assets/missing-papers.pdf`、`assets/missing-papers.xlsx` | 尚未找到可确认匹配全文的论文清单，论文变动时应同步更新。 |
+| `start-manager.command`、`tools/` | 本机管理页面与启动脚本；只绑定 `127.0.0.1`，用于编辑、上传 A4 PDF、预览和 GitHub 发布。 |
+| `CONTENT_INDEX.md`、`CONTENT_CHANGELOG.md` | 管理页面自动维护的内容索引与修改记录，供后续智能体检索。 |
 
 本站没有前端构建步骤。GitHub Pages 从 `main` 分支根目录发布；`.nojekyll` 已存在。
 
@@ -33,13 +35,17 @@
 
 ## 更新数据的方法
 
+日常维护优先双击 `start-manager.command`，在本机管理页面修改。PDF 必须从对应条目的编辑表单上传，上传后自动填入材料字段，保存条目后才能发布；未关联到条目的新 PDF 会被发布检查拦下。页面保存会校验双语字段、论文分类与 Scholar 链接、关联 PDF 的 A4 尺寸和 5 MB 大小；自动重做相关清单、静态简历 PDF、索引和修改记录。保存只是本地修改，需要再到“提交到 GitHub”勾选文件并发布。不要把管理页面本身当成公开后台；GitHub Pages 仍是静态站点。若手工修改页面或数据，也要同步更新 `CONTENT_INDEX.md`、相关 PDF 和清单。
+
+管理页面编辑“学术经历”时，保持之前概括的结构；研究方向标题由论文的五个分类控制，页面只允许修改说明。`scholar-publications.json` 是 2026-10-03 采集快照，后续新增论文应核对 Google Scholar，并注明新的核查日期，不要把历史快照误当作实时列表。仓库内的 `data.js` 与中英文首页是发布版本；父目录旧材料整理脚本的输出不能直接覆盖它们。
+
 `data.js` 的顶层对象是 `window.SITE_DATA`。多数可翻译文字使用 `{ "zh": "…", "en": "…" }`；论文题名、引文通常直接用字符串。文件链接写成以站点根目录为基准的 `assets/...` 路径；`app.js` 会处理中文子路径，不要把 `/cn/` 拼进材料路径。
 
 - **论文**：在 `publications` 中维护 `title`、`year`、`citation`、`area`、`scholar`，确认有全文后才加 `file`。`area` 必须是 `areas` 中的键。更新 Scholar 记录时也更新 `scholar-publications.json` 和三种待补清单。不要仅凭相似文件名匹配论文。
 - **项目**：在 `projects` 中维护双语 `title`、`funder`、`role`；批准通知或任务书放进 `assets/projects/`，以 `files: [{"path":"assets/projects/…pdf","label":{"zh":"…","en":"…"}}]` 关联。
 - **学术服务**：在 `service` 对应分组的 `items` 中增加独立条目；有聘书时用 `file` 指向 `assets/service/`。期刊任职逐刊列出。
 - **个人或学生获奖**：分别修改 `personalAwards`、`studentAwards`。每项含 `year`、双语 `title`、`files` 数组，可选双语 `note`。依据证书文字核对赛事名称、级别、年份和指导教师；不要只按源文件名判断。新增学生获奖后，简历生成器会自动出现对应复选框。
-- **新闻**：在 `news` 增加 `year`、双语 `title` 和 `detail`、`file`。新闻引用的证书必须可下载。
+- **新闻**：在 `news` 增加 `year`、双语 `title` 和 `detail`；引用证书时用 `file` 关联可下载的 A4 PDF。
 - **静态简介、职称、单位、研究方向卡片**：同步修改 `index.html` 与 `cn/index.html`。简历预览的职称和单位另外写在 `cv-builder/builder.js`，静态简历 PDF 也需重做。
 
 本机支撑材料与发布仓库位于同一父目录。`../weikai-li-academic-website/assemble_content.py` 是**未纳入本仓库**的材料整理脚本：它读取父目录中的原始证明和 `李伟凯简历中文.docx`，生成其目录下的 `data.js`、PDF 材料和清单。若该脚本可用，先改脚本再运行，并把需要发布的输出同步回本仓库；直接编辑本仓库的 `data.js` 后再运行旧脚本，会覆盖手工编辑。脚本目录中的 HTML/CSS 是旧版，不要复制来覆盖本仓库页面。其他机器可能没有这些原始材料或脚本，此时可直接维护本仓库，但须同步处理关联文件。
