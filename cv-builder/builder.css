@@ -15,3 +15,6 @@ body{background:#f5f7fb}.builder-header{background:#2d3239;color:#fff}.builder-h
 #cv-preview .cv-header{border-bottom-color:#a12f35}
 #cv-preview .cv-portrait{border-color:#c7d0de}
 #cv-preview ol li::marker{color:#a12f35;font-weight:700}
+#cv-preview .cv-publications ol{list-style:none;counter-reset:publication;padding-left:0}
+#cv-preview .cv-publications li{counter-increment:publication;position:relative;padding-left:32px}
+#cv-preview .cv-publications li::before{content:'[' counter(publication) ']';position:absolute;left:0;color:#a12f35;font-weight:700}

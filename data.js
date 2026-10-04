@@ -63,7 +63,8 @@ window.SITE_DATA = {
       "citation": "H Qin, G Hong, D Ma, Z Wang, L Zhao, W Li, X Xu. CNS Neuroscience & Therapeutics 32 (9), e71158, 2026",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:pyW8ca7W8N0C"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:pyW8ca7W8N0C",
+      "gbtCitation": "QIN H, HONG G, MA D, et al. Universum Inspired Graph Contrast Learning for Major Depressive Disorder Identification: In Functional Brain Network View[J]. CNS Neuroscience & Therapeutics, 2026, 32(9): e71158."
     },
     {
       "title": "Multi-Source Multi-View Graph Domain Adaptation with Hyperbolic Residual Encoding for Cross-Site MDD Identification from rs-fMRI",
@@ -71,7 +72,8 @@ window.SITE_DATA = {
       "citation": "Z Zheng, X Chen, H Jiang, R Tian, Q Cai, J Liu, X Chen, W Li, Y Wang. arXiv preprint arXiv:2607.29531, 2026",
       "kind": "Google Scholar",
       "area": "domain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:cFHS6HbyZ2cC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:cFHS6HbyZ2cC",
+      "gbtCitation": "ZHENG Z, CHEN X, JIANG H, et al. Multi-Source Multi-View Graph Domain Adaptation with Hyperbolic Residual Encoding for Cross-Site MDD Identification from rs-fMRI[PP/OL]. arXiv (2026-07)[2026-10-05]. https://arxiv.org/abs/2607.29531."
     },
     {
       "title": "Domain generalization meets mutual bi-attention: A novel approach to drug-target prediction",
@@ -79,7 +81,8 @@ window.SITE_DATA = {
       "citation": "J Yang, W Li, K Qian, Z Cheng. Neurocomputing, 134626, 2026",
       "kind": "Google Scholar",
       "area": "medical",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:dfsIfKJdRG4C"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:dfsIfKJdRG4C",
+      "gbtCitation": "YANG J, LI W, QIAN K, et al. Domain generalization meets mutual bi-attention: A novel approach to drug-target prediction[J]. Neurocomputing, 2026: 134626."
     },
     {
       "title": "Enhancing Fatigue Detection Through Heterogeneous Multisource Data Integration and Cross-Domain Modality Imputation",
@@ -87,7 +90,8 @@ window.SITE_DATA = {
       "citation": "L Cui, Y Wu, Y Tang, W Li. IEEE Transactions on Computational Social Systems, 2026",
       "kind": "Google Scholar",
       "area": "medical",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:2P1L_qKh6hAC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:2P1L_qKh6hAC",
+      "gbtCitation": "CUI L, WU Y, TANG Y, et al. Enhancing Fatigue Detection Through Heterogeneous Multisource Data Integration and Cross-Domain Modality Imputation[J]. IEEE Transactions on Computational Social Systems, 2026."
     },
     {
       "title": "Hierarchical neighbor integration graph attention network for autism spectrum disorder diagnosis",
@@ -95,7 +99,8 @@ window.SITE_DATA = {
       "citation": "D Ma, L Peng, L Zhang, W Li, X Gao. Frontiers in Psychiatry 17, 1846996, 2026",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:D03iK_w7-QYC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:D03iK_w7-QYC",
+      "gbtCitation": "MA D, PENG L, ZHANG L, et al. Hierarchical neighbor integration graph attention network for autism spectrum disorder diagnosis[J]. Frontiers in Psychiatry, 2026, 17: 1846996."
     },
     {
       "title": "TumorAL: Evidence-aware active learning for 3D tumor segmentation",
@@ -103,7 +108,8 @@ window.SITE_DATA = {
       "citation": "H Wang, J Leng, S Li, Y Zhao, W Li, W Li, X Gao. Neurocomputing, 134239, 2026",
       "kind": "Google Scholar",
       "area": "medical",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:a0OBvERweLwC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:a0OBvERweLwC",
+      "gbtCitation": "WANG H, LENG J, LI S, et al. TumorAL: Evidence-aware active learning for 3D tumor segmentation[J]. Neurocomputing, 2026: 134239."
     },
     {
       "title": "Identification of Major Depressive Disorder Using Multiple Functional Connection Patterns",
@@ -111,7 +117,8 @@ window.SITE_DATA = {
       "citation": "Y Ruan, L Guan, L Peng, L Zhao, Y Huang, W Li, X Gao. CNS Neuroscience & Therapeutics 32 (6), e70951, 2026",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:u_35RYKgDlwC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:u_35RYKgDlwC",
+      "gbtCitation": "RUAN Y, GUAN L, PENG L, et al. Identification of Major Depressive Disorder Using Multiple Functional Connection Patterns[J]. CNS Neuroscience & Therapeutics, 2026, 32(6): e70951."
     },
     {
       "title": "Electrocardiographic Alterations Combined with Hematological, Biochemical, and Metabolic Profiles Predict Prognosis in Kawasaki Disease",
@@ -119,7 +126,8 @@ window.SITE_DATA = {
       "citation": "Q Wang, W Li, J Wan, L Wei, Y Xia, Y Hua, K Zhou, D Qie, W Li, Y Li. Journal of Cardiovascular Development and Disease 13 (6), 228, 2026",
       "kind": "Google Scholar",
       "area": "medical",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:zA6iFVUQeVQC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:zA6iFVUQeVQC",
+      "gbtCitation": "WANG Q, LI W, WAN J, et al. Electrocardiographic Alterations Combined with Hematological, Biochemical, and Metabolic Profiles Predict Prognosis in Kawasaki Disease[J]. Journal of Cardiovascular Development and Disease, 2026, 13(6): 228."
     },
     {
       "title": "Partial domain adaptation enables cross domain cell type annotation between scRNA-seq and snRNA-seq",
@@ -127,7 +135,8 @@ window.SITE_DATA = {
       "citation": "X Chen, Q Zou, Q Cai, X Chen, W Li, Y Wang. PLOS Computational Biology 22 (5), e1014223, 2026",
       "kind": "Google Scholar",
       "area": "medical",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:70eg2SAEIzsC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:70eg2SAEIzsC",
+      "gbtCitation": "CHEN X, ZOU Q, CAI Q, et al. Partial domain adaptation enables cross domain cell type annotation between scRNA-seq and snRNA-seq[J]. PLOS Computational Biology, 2026, 22(5): e1014223."
     },
     {
       "title": "Bridging the modality reliability gap in drug-target interaction prediction via a confidence-aware multimodal fusion framework",
@@ -136,7 +145,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "medical",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:rO6llkc54NcC",
-      "file": "assets/papers/scholar-10.pdf"
+      "file": "assets/papers/scholar-10.pdf",
+      "gbtCitation": "YANG J, ZHANG J, QIAN K, et al. Bridging the modality reliability gap in drug-target interaction prediction via a confidence-aware multimodal fusion framework[J]. Proceedings of the AAAI Conference on Artificial Intelligence, 2026, 40(32): 27529."
     },
     {
       "title": "Test-time few-shot object detection via dynamic prototype fusion",
@@ -145,7 +155,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "vision",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:ZHo1McVdvXMC",
-      "file": "assets/papers/scholar-11.pdf"
+      "file": "assets/papers/scholar-11.pdf",
+      "gbtCitation": "WU Y, LI Y, WEI H, et al. Test-time few-shot object detection via dynamic prototype fusion[J]. IEEE Transactions on Cybernetics, 2026."
     },
     {
       "title": "Machine learning-based assessments of perioperative features in determining long-term conduct block post-transcatheter closure of ventricular septal defect",
@@ -153,7 +164,8 @@ window.SITE_DATA = {
       "citation": "Q Wang, Y Xia, L Wei, P Yang, K Zhou, Y Hua, W Li, Y Li. Cardiology in the Young, 1-11, 2026",
       "kind": "Google Scholar",
       "area": "medical",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:f2IySw72cVMC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:f2IySw72cVMC",
+      "gbtCitation": "WANG Q, XIA Y, WEI L, et al. Machine learning-based assessments of perioperative features in determining long-term conduct block post-transcatheter closure of ventricular septal defect[J]. Cardiology in the Young, 2026: 1-11."
     },
     {
       "title": "Attention Transfer Based Hybrid Knowledge Distillation for Multimodal Brain Tumor Segmentation",
@@ -161,7 +173,8 @@ window.SITE_DATA = {
       "citation": "H Ma, HS Gan, H Mi, P Xu, Y Liu, W Li. 2025 IEEE International Conference on Big Data (BigData), 7503-7510, 2025",
       "kind": "Google Scholar",
       "area": "medical",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:fPk4N6BV_jEC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:fPk4N6BV_jEC",
+      "gbtCitation": "MA H, GAN HS, MI H, et al. Attention Transfer Based Hybrid Knowledge Distillation for Multimodal Brain Tumor Segmentation[C]//2025 IEEE International Conference on Big Data (BigData). 2025: 7503-7510."
     },
     {
       "title": "More insights into disruption and decoupling of individual metabolic connectomes in Parkinson's disease",
@@ -169,7 +182,8 @@ window.SITE_DATA = {
       "citation": "D Li, J Yao, W Li, Z Guo, X Lv, L Chen, J Shi, YC Chen, J Ye. Progress in Neuro-Psychopharmacology and Biological Psychiatry, 111578, 2025",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:35N4QoGY0k4C"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:35N4QoGY0k4C",
+      "gbtCitation": "LI D, YAO J, LI W, et al. More insights into disruption and decoupling of individual metabolic connectomes in Parkinson's disease[J]. Progress in Neuro-Psychopharmacology and Biological Psychiatry, 2025: 111578."
     },
     {
       "title": "Incorporating Negative Node Information in Graph Transformer for MDD Diagnosis",
@@ -177,7 +191,8 @@ window.SITE_DATA = {
       "citation": "H Song, H Qin, W Li. 2025 International Conference on Cyber-Physical Social Intelligence (CPSI), 1-6, 2025",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:pqnbT2bcN3wC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:pqnbT2bcN3wC",
+      "gbtCitation": "SONG H, QIN H, LI W. Incorporating Negative Node Information in Graph Transformer for MDD Diagnosis[C]//2025 International Conference on Cyber-Physical Social Intelligence (CPSI). 2025: 1-6."
     },
     {
       "title": "MVSSL-GT: A Graph Transformer Method with Multi-View Contrastive Self-Supervised Learning",
@@ -185,7 +200,8 @@ window.SITE_DATA = {
       "citation": "Y Lu, N Tian, W Li. 2025 International Conference on Cyber-Physical Social Intelligence (CPSI), 1-6, 2025",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:g5m5HwL7SMYC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:g5m5HwL7SMYC",
+      "gbtCitation": "LU Y, TIAN N, LI W. MVSSL-GT: A Graph Transformer Method with Multi-View Contrastive Self-Supervised Learning[C]//2025 International Conference on Cyber-Physical Social Intelligence (CPSI). 2025: 1-6."
     },
     {
       "title": "Low-light image enhancement using dual cross attention",
@@ -194,7 +210,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "vision",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:J_g5lzvAfSwC",
-      "file": "assets/papers/scholar-17.pdf"
+      "file": "assets/papers/scholar-17.pdf",
+      "gbtCitation": "RUAN Y, MA H, MA D, et al. Low-light image enhancement using dual cross attention[J]. Engineering Applications of Artificial Intelligence, 2025, 159: 111501."
     },
     {
       "title": "Auto-weighted projective one-step multi-view clustering",
@@ -202,7 +219,8 @@ window.SITE_DATA = {
       "citation": "X Mou, W Li, B Li, J Hu. Neurocomputing, 131960, 2025",
       "kind": "Google Scholar",
       "area": "methods",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:vV6vV6tmYwMC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:vV6vV6tmYwMC",
+      "gbtCitation": "MOU X, LI W, LI B, et al. Auto-weighted projective one-step multi-view clustering[J]. Neurocomputing, 2025: 131960."
     },
     {
       "title": "Revisiting Multi-Modal Alignment: In Distribution View",
@@ -211,7 +229,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "vision",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:SeFeTyx0c_EC",
-      "file": "assets/papers/scholar-19.pdf"
+      "file": "assets/papers/scholar-19.pdf",
+      "gbtCitation": "LI W, TIAN N, LI Y, et al. Revisiting Multi-Modal Alignment: In Distribution View[C]//2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC). 2025: 6325-6330."
     },
     {
       "title": "Quantitative susceptibility mapping shows alterations of brain iron content in children with autism spectrum disorder: a whole-brain analysis",
@@ -219,7 +238,8 @@ window.SITE_DATA = {
       "citation": "X Xu, Y Li, H Lan, N Ding, W Li, G Zheng, X Song. BMC psychiatry 25 (1), 826, 2025",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:lSLTfruPkqcC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:lSLTfruPkqcC",
+      "gbtCitation": "XU X, LI Y, LAN H, et al. Quantitative susceptibility mapping shows alterations of brain iron content in children with autism spectrum disorder: a whole-brain analysis[J]. BMC psychiatry, 2025, 25(1): 826."
     },
     {
       "title": "Cross-modal medical image generation from MRI to PET using robust generative adversarial network",
@@ -227,7 +247,8 @@ window.SITE_DATA = {
       "citation": "Y Yang, B Li, W Cao, X Chen, W Li. Expert Systems with Applications, 129287, 2025",
       "kind": "Google Scholar",
       "area": "medical",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:RYcK_YlVTxYC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:RYcK_YlVTxYC",
+      "gbtCitation": "YANG Y, LI B, CAO W, et al. Cross-modal medical image generation from MRI to PET using robust generative adversarial network[J]. Expert Systems with Applications, 2025: 129287."
     },
     {
       "title": "Leveraging multi-source and heterogeneous signals for fatigue detection",
@@ -235,7 +256,8 @@ window.SITE_DATA = {
       "citation": "L Cui, Y Wu, T Ying, W Li. arXiv e-prints, arXiv: 2507.16859, 2025",
       "kind": "Google Scholar",
       "area": "medical",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:M05iB0D1s5AC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:M05iB0D1s5AC",
+      "gbtCitation": "CUI L, WU Y, YING T, et al. Leveraging multi-source and heterogeneous signals for fatigue detection[PP/OL]. arXiv (2025-07)[2026-10-05]. https://arxiv.org/abs/2507.16859."
     },
     {
       "title": "PSMA PET/CT based multimodal deep learning model for accurate prediction of pelvic lymph-node metastases in prostate cancer patients identified as candidates for extended …",
@@ -244,7 +266,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "medical",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:O3NaXMp0MMsC",
-      "file": "assets/papers/scholar-23.pdf"
+      "file": "assets/papers/scholar-23.pdf",
+      "gbtCitation": "MA Q, CHEN B, SEIFERT R, et al. PSMA PET/CT based multimodal deep learning model for accurate prediction of pelvic lymph-node metastases in prostate cancer patients identified as candidates for extended pelvic lymph node dissection by preoperative nomograms[J]. European Journal of Nuclear Medicine and Molecular Imaging, 2025, 52(6): 2063-2075."
     },
     {
       "title": "Timestamp calibration for time-series single cell rna-seq expression data",
@@ -253,7 +276,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "medical",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:isC4tDSrTZIC",
-      "file": "assets/papers/scholar-24.pdf"
+      "file": "assets/papers/scholar-24.pdf",
+      "gbtCitation": "CHEN X, LIN S, CHEN X, et al. Timestamp calibration for time-series single cell rna-seq expression data[J]. Journal of Molecular Biology, 2025, 437(9): 169021."
     },
     {
       "title": "Iterative neural networks for improving memory capacity",
@@ -261,7 +285,8 @@ window.SITE_DATA = {
       "citation": "X Chen, D Lin, Z Li, W Li. Neural Networks 182, 106936, 2025",
       "kind": "Google Scholar",
       "area": "methods",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:bEWYMUwI8FkC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:bEWYMUwI8FkC",
+      "gbtCitation": "CHEN X, LIN D, LI Z, et al. Iterative neural networks for improving memory capacity[J]. Neural Networks, 2025, 182: 106936."
     },
     {
       "title": "The hidden Markov model reveals the changes in brain dynamics among patients with end-stage renal disease under different dialysis methods",
@@ -269,7 +294,8 @@ window.SITE_DATA = {
       "citation": "D Sun, W Li, H Yu, X Chen, C Zhang. Journal of Cyber-Physical-Social Intelligence 3 (1), 10-10, 2024",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:ldfaerwXgEUC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:ldfaerwXgEUC",
+      "gbtCitation": "SUN D, LI W, YU H, et al. The hidden Markov model reveals the changes in brain dynamics among patients with end-stage renal disease under different dialysis methods[J]. Journal of Cyber-Physical-Social Intelligence, 2024, 3(1): 10-10."
     },
     {
       "title": "An Improved Algorithm for Spiking Neural Networks with Multi-Scale Attention Coding",
@@ -277,7 +303,8 @@ window.SITE_DATA = {
       "citation": "S Chen, X Chen, W Li. 2024 International Conference on Cyber-Physical Social Intelligence (ICCSI), 1-6, 2024",
       "kind": "Google Scholar",
       "area": "methods",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:NaGl4SEjCO4C"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:NaGl4SEjCO4C",
+      "gbtCitation": "CHEN S, CHEN X, LI W. An Improved Algorithm for Spiking Neural Networks with Multi-Scale Attention Coding[C]//2024 International Conference on Cyber-Physical Social Intelligence (ICCSI). 2024: 1-6."
     },
     {
       "title": "Improved domain-adversarial neural networks with mixup and pseudo-labeling",
@@ -285,7 +312,8 @@ window.SITE_DATA = {
       "citation": "X Xiao, X Chen, W Li. 2024 International Conference on Cyber-Physical Social Intelligence (ICCSI), 1-6, 2024",
       "kind": "Google Scholar",
       "area": "domain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:BqipwSGYUEgC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:BqipwSGYUEgC",
+      "gbtCitation": "XIAO X, CHEN X, LI W. Improved domain-adversarial neural networks with mixup and pseudo-labeling[C]//2024 International Conference on Cyber-Physical Social Intelligence (ICCSI). 2024: 1-6."
     },
     {
       "title": "Dynamic Graph Contrastive Learning for Neuro Disease Identification using Resting-State fMRI",
@@ -293,7 +321,8 @@ window.SITE_DATA = {
       "citation": "Y Jiang, W Li, X Chen. 2024 International Conference on Cyber-Physical Social Intelligence (ICCSI), 1-6, 2024",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:NMxIlDl6LWMC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:NMxIlDl6LWMC",
+      "gbtCitation": "JIANG Y, LI W, CHEN X. Dynamic Graph Contrastive Learning for Neuro Disease Identification using Resting-State fMRI[C]//2024 International Conference on Cyber-Physical Social Intelligence (ICCSI). 2024: 1-6."
     },
     {
       "title": "Synthesizing Aβ-PET based on multi-modal neuroimaging fusion for pathological diagnosis of Alzheimer’s disease",
@@ -301,7 +330,8 @@ window.SITE_DATA = {
       "citation": "Y Yang, B Li, W Li, H Chen, W Cao. 2024 International Conference on Cyber-Physical Social Intelligence (ICCSI), 1-6, 2024",
       "kind": "Google Scholar",
       "area": "medical",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:hMod-77fHWUC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:hMod-77fHWUC",
+      "gbtCitation": "YANG Y, LI B, LI W, et al. Synthesizing Aβ-PET based on multi-modal neuroimaging fusion for pathological diagnosis of Alzheimer’s disease[C]//2024 International Conference on Cyber-Physical Social Intelligence (ICCSI). 2024: 1-6."
     },
     {
       "title": "Universum Inspired Graph Contrast Learning for Autism Spectrum Disorder Identification",
@@ -310,7 +340,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:blknAaTinKkC",
-      "file": "assets/papers/scholar-31.pdf"
+      "file": "assets/papers/scholar-31.pdf",
+      "gbtCitation": "QIN H, XU X, LI W. Universum Inspired Graph Contrast Learning for Autism Spectrum Disorder Identification[C]//2024 International Conference on Cyber-Physical Social Intelligence (ICCSI). 2024: 1-6."
     },
     {
       "title": "Enhancing Functional Brain Network Construction for Neurological Disorder Diagnosis through Modularity-Driven Regularization",
@@ -319,7 +350,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:JV2RwH3_ST0C",
-      "file": "assets/papers/scholar-32.pdf"
+      "file": "assets/papers/scholar-32.pdf",
+      "gbtCitation": "SUN D, CHEN X, LI W. Enhancing Functional Brain Network Construction for Neurological Disorder Diagnosis through Modularity-Driven Regularization[C]//2024 International Conference on Cyber-Physical Social Intelligence (ICCSI). 2024: 1-6."
     },
     {
       "title": "Multi-view comparative self-supervised graph learning for neuro-disease diagnosis using functional brain networks",
@@ -328,7 +360,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:M3NEmzRMIkIC",
-      "file": "assets/papers/scholar-33.pdf"
+      "file": "assets/papers/scholar-33.pdf",
+      "gbtCitation": "TIAN N, XU X, LI W. Multi-view comparative self-supervised graph learning for neuro-disease diagnosis using functional brain networks[C]//2024 International Conference on Cyber-Physical Social Intelligence (ICCSI). 2024: 1-6."
     },
     {
       "title": "Topology-Enhanced Multi-Modal Residual Graph Convolutional Network for Autism Spectrum Disorder Identification",
@@ -337,7 +370,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:maZDTaKrznsC",
-      "file": "assets/papers/scholar-34.pdf"
+      "file": "assets/papers/scholar-34.pdf",
+      "gbtCitation": "DENG J, GUAN L, LI W. Topology-Enhanced Multi-Modal Residual Graph Convolutional Network for Autism Spectrum Disorder Identification[C]//2024 International Conference on Cyber-Physical Social Intelligence (ICCSI). 2024: 1-6."
     },
     {
       "title": "Efficient and accurate capsule networks with b-spline-based activation functions",
@@ -345,7 +379,8 @@ window.SITE_DATA = {
       "citation": "L Mou, X Xiao, W Cao, W Li, X Chen. 2024 International Conference on New Trends in Computational Intelligence …, 2024",
       "kind": "Google Scholar",
       "area": "methods",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:k_IJM867U9cC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:k_IJM867U9cC",
+      "gbtCitation": "MOU L, XIAO X, CAO W, et al. Efficient and accurate capsule networks with b-spline-based activation functions[C]//2024 International Conference on New Trends in Computational Intelligence. 2024."
     },
     {
       "title": "The characteristic patterns of individual brain susceptibility networks underlie Alzheimer’s disease and white matter hyperintensity-related cognitive impairment",
@@ -353,7 +388,8 @@ window.SITE_DATA = {
       "citation": "H Chen, J Xu, W Li, Z Hu, Z Ke, R Qin, Y Xu. Translational Psychiatry 14 (1), 177, 2024",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:_Qo2XoVZTnwC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:_Qo2XoVZTnwC",
+      "gbtCitation": "CHEN H, XU J, LI W, et al. The characteristic patterns of individual brain susceptibility networks underlie Alzheimer’s disease and white matter hyperintensity-related cognitive impairment[J]. Translational Psychiatry, 2024, 14(1): 177."
     },
     {
       "title": "TIDE: Test-time few-shot object detection",
@@ -362,7 +398,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "vision",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:IWHjjKOFINEC",
-      "file": "assets/papers/scholar-37.pdf"
+      "file": "assets/papers/scholar-37.pdf",
+      "gbtCitation": "LI W, WEI H, WU Y, et al. TIDE: Test-time few-shot object detection[J]. IEEE Transactions on Systems, Man, and Cybernetics: Systems, 2024, 54(11): 6500-6509."
     },
     {
       "title": "Multipattern graph convolutional network-based autism spectrum disorder identification",
@@ -371,7 +408,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:R3hNpaxXUhUC",
-      "file": "assets/papers/scholar-38.pdf"
+      "file": "assets/papers/scholar-38.pdf",
+      "gbtCitation": "ZHOU W, SUN M, XU X, et al. Multipattern graph convolutional network-based autism spectrum disorder identification[J]. Cerebral Cortex, 2024, 34(3): bhae064."
     },
     {
       "title": "Limbic/paralimbic connection weakening in preschool autism-spectrum disorder based on diffusion basis spectrum imaging",
@@ -379,7 +417,8 @@ window.SITE_DATA = {
       "citation": "T Yi, W Li, W Wei, G Wu, G Jiang, X Gao, K Jin. The European journal of neuroscience, 2024",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:TFP_iSt0sucC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:TFP_iSt0sucC",
+      "gbtCitation": "YI T, LI W, WEI W, et al. Limbic/paralimbic connection weakening in preschool autism-spectrum disorder based on diffusion basis spectrum imaging[J]. The European journal of neuroscience, 2024."
     },
     {
       "title": "Robust support vector machine based on sample screening",
@@ -387,7 +426,8 @@ window.SITE_DATA = {
       "citation": "J Guo, W Li, J Hu. The 14th International Conference on Information Science and Technology, 2024",
       "kind": "Google Scholar",
       "area": "methods",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:r0BpntZqJG4C"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:r0BpntZqJG4C",
+      "gbtCitation": "GUO J, LI W, HU J. Robust support vector machine based on sample screening[C]//The 14th International Conference on Information Science and Technology. 2024."
     },
     {
       "title": "Altered intra-and inter-network connectivity in autism spectrum disorder",
@@ -395,7 +435,8 @@ window.SITE_DATA = {
       "citation": "R Zhou, C Sun, M Sun, Y Ruan, W Li, X Gao. Aging 16, 2024",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:4JMBOYKVnBMC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:4JMBOYKVnBMC",
+      "gbtCitation": "ZHOU R, SUN C, SUN M, et al. Altered intra-and inter-network connectivity in autism spectrum disorder[J]. Aging, 2024, 16."
     },
     {
       "title": "Machine learning models using symptoms and clinical variables to predict coronary artery disease on coronary angiography",
@@ -403,7 +444,8 @@ window.SITE_DATA = {
       "citation": "Y Yu, W Li, J Wu, X Hua, B Jin, H Shi, Q Chen, J Pan. Advances in Interventional Cardiology/Postępy w Kardiologii Interwencyjnej …, 2024",
       "kind": "Google Scholar",
       "area": "medical",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:RHpTSmoSYBkC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:RHpTSmoSYBkC",
+      "gbtCitation": "YU Y, LI W, WU J, et al. Machine learning models using symptoms and clinical variables to predict coronary artery disease on coronary angiography[J]. Advances in Interventional Cardiology/Postępy w Kardiologii Interwencyjnej, 2024."
     },
     {
       "title": "Towards an accurate autism spectrum disorder diagnosis: multiple connectome views from fMRI data",
@@ -412,7 +454,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:hC7cP41nSMkC",
-      "file": "assets/papers/scholar-43.pdf"
+      "file": "assets/papers/scholar-43.pdf",
+      "gbtCitation": "YANG J, XU X, SUN M, et al. Towards an accurate autism spectrum disorder diagnosis: multiple connectome views from fMRI data[J]. Cerebral Cortex, 2024, 34(1): bhad477."
     },
     {
       "title": "Effects of individual metabolic brain network changes co-affected by T2DM and aging on the probabilities of T2DM: protective and risk factors",
@@ -420,7 +463,8 @@ window.SITE_DATA = {
       "citation": "YL Li, JJ Wu, WK Li, X Gao, D Wei, X Xue, XY Hua, MX Zheng, JG Xu. Cerebral Cortex 34 (1), bhad439, 2024",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:qUcmZB5y_30C"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:qUcmZB5y_30C",
+      "gbtCitation": "LI YL, WU JJ, LI WK, et al. Effects of individual metabolic brain network changes co-affected by T2DM and aging on the probabilities of T2DM: protective and risk factors[J]. Cerebral Cortex, 2024, 34(1): bhad439."
     },
     {
       "title": "Topological properties analysis and identification of mild cognitive impairment based on individual morphological brain network connectome",
@@ -428,7 +472,8 @@ window.SITE_DATA = {
       "citation": "X Xu, P Chen, W Li, Y Xiang, Z Xie, Q Yu, Y Tang, P Wang. Cerebral Cortex 34 (1), bhad450, 2024",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:ZeXyd9-uunAC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:ZeXyd9-uunAC",
+      "gbtCitation": "XU X, CHEN P, LI W, et al. Topological properties analysis and identification of mild cognitive impairment based on individual morphological brain network connectome[J]. Cerebral Cortex, 2024, 34(1): bhad450."
     },
     {
       "title": "Wavelet transform-based frequency self-adaptive model for functional brain network",
@@ -436,7 +481,8 @@ window.SITE_DATA = {
       "citation": "Y Ding, X Xu, L Peng, L Zhang, W Li, W Cao, X Gao. Cerebral Cortex 33 (22), 11181-11194, 2023",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:L8Ckcad2t8MC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:L8Ckcad2t8MC",
+      "gbtCitation": "DING Y, XU X, PENG L, et al. Wavelet transform-based frequency self-adaptive model for functional brain network[J]. Cerebral Cortex, 2023, 33(22): 11181-11194."
     },
     {
       "title": "PageRank algorithm based on dynamic damping factor",
@@ -444,7 +490,8 @@ window.SITE_DATA = {
       "citation": "Z HaoLin, H Jin, L WeiKai. 2023 International Conference on Cyber-Physical Social Intelligence (ICCSI …, 2023",
       "kind": "Google Scholar",
       "area": "methods",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:mB3voiENLucC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:mB3voiENLucC",
+      "gbtCitation": "ZHENG H, HU J, LI W. PageRank algorithm based on dynamic damping factor[C]//2023 International Conference on Cyber-Physical Social Intelligence (ICCSI). 2023."
     },
     {
       "title": "An improved AdaBoost method in imbalanced data Learning",
@@ -452,7 +499,8 @@ window.SITE_DATA = {
       "citation": "T Li, X Chen, W Li. 2023 International Conference on Cyber-Physical Social Intelligence (ICCSI …, 2023",
       "kind": "Google Scholar",
       "area": "methods",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:hFOr9nPyWt4C"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:hFOr9nPyWt4C",
+      "gbtCitation": "LI T, CHEN X, LI W. An improved AdaBoost method in imbalanced data Learning[C]//2023 International Conference on Cyber-Physical Social Intelligence (ICCSI). 2023."
     },
     {
       "title": "Minimum error entropy high-order extended Kalman filter",
@@ -460,7 +508,8 @@ window.SITE_DATA = {
       "citation": "Z Cheng, X Chen, H Li, W Li, D Lin. 2023 International Conference on Cyber-Physical Social Intelligence (ICCSI …, 2023",
       "kind": "Google Scholar",
       "area": "methods",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:-f6ydRqryjwC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:-f6ydRqryjwC",
+      "gbtCitation": "CHENG Z, CHEN X, LI H, et al. Minimum error entropy high-order extended Kalman filter[C]//2023 International Conference on Cyber-Physical Social Intelligence (ICCSI). 2023."
     },
     {
       "title": "New insights into the disorder of brain connectivity in schizophrenia",
@@ -468,7 +517,8 @@ window.SITE_DATA = {
       "citation": "W Li, MM Al-Amin, A Nair. Frontiers in Neuroimaging 2, 1266695, 2023",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:7PzlFSSx8tAC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:7PzlFSSx8tAC",
+      "gbtCitation": "LI W, AL-AMIN MM, NAIR A. New insights into the disorder of brain connectivity in schizophrenia[J]. Frontiers in Neuroimaging, 2023, 2: 1266695."
     },
     {
       "title": "The reconfiguration pattern of individual brain metabolic connectome for Parkinson's disease identification",
@@ -477,7 +527,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:roLk4NBRz8UC",
-      "file": "assets/papers/scholar-51.pdf"
+      "file": "assets/papers/scholar-51.pdf",
+      "gbtCitation": "LI W, TANG Y, PENG L, et al. The reconfiguration pattern of individual brain metabolic connectome for Parkinson's disease identification[J]. MedComm, 2023, 4(4): e305."
     },
     {
       "title": "TIToK: A solution for bi-imbalanced unsupervised domain adaptation",
@@ -486,7 +537,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "domain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:QIV2ME_5wuYC",
-      "file": "assets/papers/scholar-52.pdf"
+      "file": "assets/papers/scholar-52.pdf",
+      "gbtCitation": "WANG Y, CHEN Q, LIU Y, et al. TIToK: A solution for bi-imbalanced unsupervised domain adaptation[J]. Neural Networks, 2023, 164: 81-90."
     },
     {
       "title": "Clinical application of machine learning methods in psychiatric disorders",
@@ -494,7 +546,8 @@ window.SITE_DATA = {
       "citation": "X Liu, Z Xu, W Li, Z Zhou, X Jia. Frontiers in psychiatry 14, 1209615, 2023",
       "kind": "Google Scholar",
       "area": "medical",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:dhFuZR0502QC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:dhFuZR0502QC",
+      "gbtCitation": "LIU X, XU Z, LI W, et al. Clinical application of machine learning methods in psychiatric disorders[J]. Frontiers in psychiatry, 2023, 14: 1209615."
     },
     {
       "title": "Functional and structural brain network construction, representation and application",
@@ -503,7 +556,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:9ZlFYXVOiuMC",
-      "file": "assets/papers/scholar-54.pdf"
+      "file": "assets/papers/scholar-54.pdf",
+      "gbtCitation": "LI W, WANG Z, HU S, et al. Functional and structural brain network construction, representation and application[J]. Frontiers in neuroscience, 2023, 17."
     },
     {
       "title": "Unsupervised domain adaptation with progressive adaptation of subspaces",
@@ -512,7 +566,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "domain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:W7OEmFMy1HYC",
-      "file": "assets/papers/scholar-55.pdf"
+      "file": "assets/papers/scholar-55.pdf",
+      "gbtCitation": "LI W, CHEN S. Unsupervised domain adaptation with progressive adaptation of subspaces[J]. Pattern Recognition, 2022, 132: 108918."
     },
     {
       "title": "Jacobian norm for unsupervised source-free domain adaptation",
@@ -520,7 +575,8 @@ window.SITE_DATA = {
       "citation": "W Li, M Cao, S Chen. arXiv preprint arXiv:2204.03467, 2022",
       "kind": "Google Scholar",
       "area": "domain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:Zph67rFs4hoC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:Zph67rFs4hoC",
+      "gbtCitation": "LI W, CAO M, CHEN S. Jacobian norm for unsupervised source-free domain adaptation[PP/OL]. arXiv (2022-04)[2026-10-05]. https://arxiv.org/abs/2204.03467."
     },
     {
       "title": "Machine learning-derived multimodal neuroimaging of presurgical target area to predict individual's seizure outcomes after epilepsy surgery",
@@ -528,7 +584,8 @@ window.SITE_DATA = {
       "citation": "Y Tang, W Li, L Tao, J Li, T Long, Y Li, D Chen, S Hu. Frontiers in Cell and Developmental Biology 9, 669795, 2022",
       "kind": "Google Scholar",
       "area": "medical",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:YOwf2qJgpHMC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:YOwf2qJgpHMC",
+      "gbtCitation": "TANG Y, LI W, TAO L, et al. Machine learning-derived multimodal neuroimaging of presurgical target area to predict individual's seizure outcomes after epilepsy surgery[J]. Frontiers in Cell and Developmental Biology, 2022, 9: 669795."
     },
     {
       "title": "Human-Guided Functional Connectivity Network Estimation for Chronic Tinnitus Identification: A Modularity View",
@@ -537,7 +594,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:aqlVkmm33-oC",
-      "file": "assets/papers/scholar-58.pdf"
+      "file": "assets/papers/scholar-58.pdf",
+      "gbtCitation": "LI WK, CHEN YC, XU XW, et al. Human-Guided Functional Connectivity Network Estimation for Chronic Tinnitus Identification: A Modularity View[J]. IEEE journal of biomedical and health informatics, 2022."
     },
     {
       "title": "Partial Domain Adaptation without Domain Alignment",
@@ -546,7 +604,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "domain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:8k81kl-MbHgC",
-      "file": "assets/papers/scholar-59.pdf"
+      "file": "assets/papers/scholar-59.pdf",
+      "gbtCitation": "LI W, CHEN S. Partial Domain Adaptation without Domain Alignment[J]. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022."
     },
     {
       "title": "Machine learning based on the multimodal connectome can predict the preclinical stage of Alzheimer’s disease: a preliminary study",
@@ -555,7 +614,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:Se3iqnhoufwC",
-      "file": "assets/papers/scholar-60.pdf"
+      "file": "assets/papers/scholar-60.pdf",
+      "gbtCitation": "CHEN H, LI W, SHENG X, et al. Machine learning based on the multimodal connectome can predict the preclinical stage of Alzheimer’s disease: a preliminary study[J]. European Radiology, 2022, 32(1): 448-459."
     },
     {
       "title": "Multiple connection pattern combination from single-mode data for mild cognitive impairment identification",
@@ -564,7 +624,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:M3ejUd6NZC8C",
-      "file": "assets/papers/scholar-61.pdf"
+      "file": "assets/papers/scholar-61.pdf",
+      "gbtCitation": "LI W, XU X, WANG Z, et al. Multiple connection pattern combination from single-mode data for mild cognitive impairment identification[J]. Frontiers in Cell and Developmental Biology, 2021, 9: 782727."
     },
     {
       "title": "Morphological, structural, and functional networks highlight the role of the cortical-subcortical circuit in individuals with subjective cognitive decline",
@@ -572,7 +633,8 @@ window.SITE_DATA = {
       "citation": "X Xu, T Wang, W Li, H Li, B Xu, M Zhang, L Yue, P Wang, S Xiao. Frontiers in Aging Neuroscience 13, 688113, 2021",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:5nxA0vEk-isC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:5nxA0vEk-isC",
+      "gbtCitation": "XU X, WANG T, LI W, et al. Morphological, structural, and functional networks highlight the role of the cortical-subcortical circuit in individuals with subjective cognitive decline[J]. Frontiers in Aging Neuroscience, 2021, 13: 688113."
     },
     {
       "title": "Characteristics of multimodal brain connectomics in patients with schizophrenia and the unaffected first-degree relatives",
@@ -581,7 +643,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:LkGwnXOMwfcC",
-      "file": "assets/papers/scholar-63.pdf"
+      "file": "assets/papers/scholar-63.pdf",
+      "gbtCitation": "LIN X, LI WK, DONG G, et al. Characteristics of multimodal brain connectomics in patients with schizophrenia and the unaffected first-degree relatives[J]. Frontiers in cell and developmental biology, 2021, 9: 631864."
     },
     {
       "title": "Leave zero out: Towards a no-cross-validation approach for model selection",
@@ -589,7 +652,8 @@ window.SITE_DATA = {
       "citation": "W Li, C Geng, S Chen. arXiv preprint arXiv:2012.13309, 2020",
       "kind": "Google Scholar",
       "area": "methods",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:_kc_bZDykSQC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:_kc_bZDykSQC",
+      "gbtCitation": "LI W, GENG C, CHEN S. Leave zero out: Towards a no-cross-validation approach for model selection[PP/OL]. arXiv (2020-12)[2026-10-05]. https://arxiv.org/abs/2012.13309."
     },
     {
       "title": "Effective and accurate diagnosis of subjective cognitive decline based on functional connection and graph theory view",
@@ -598,7 +662,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:eQOLeE2rZwMC",
-      "file": "assets/papers/scholar-65.pdf"
+      "file": "assets/papers/scholar-65.pdf",
+      "gbtCitation": "XU X, LI W, TAO M, et al. Effective and accurate diagnosis of subjective cognitive decline based on functional connection and graph theory view[J]. Frontiers in neuroscience, 2020, 14: 577887."
     },
     {
       "title": "Functional connectivity network estimation with an inter-similarity prior for mild cognitive impairment classification",
@@ -607,7 +672,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:YsMSGLbcyi4C",
-      "file": "assets/papers/scholar-66.pdf"
+      "file": "assets/papers/scholar-66.pdf",
+      "gbtCitation": "LI W, XU X, JIANG W, et al. Functional connectivity network estimation with an inter-similarity prior for mild cognitive impairment classification[J]. Aging (Albany NY), 2020, 12(17): 17328."
     },
     {
       "title": "The effect of jet lag on the human brain: A neuroimaging study",
@@ -616,7 +682,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:d1gkVwhDpl0C",
-      "file": "assets/papers/scholar-67.pdf"
+      "file": "assets/papers/scholar-67.pdf",
+      "gbtCitation": "ZHANG F, LI W, LI H, et al. The effect of jet lag on the human brain: A neuroimaging study[J]. Human brain mapping, 2020, 41(9): 2281-2291."
     },
     {
       "title": "Group similarity constraint functional brain network estimation for mild cognitive impairment classification",
@@ -624,7 +691,8 @@ window.SITE_DATA = {
       "citation": "X Gao, X Xu, X Hua, P Wang, W Li, R Li. Frontiers in Neuroscience 14, 165, 2020",
       "kind": "Google Scholar",
       "area": "brain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:9yKSN-GCB0IC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:9yKSN-GCB0IC",
+      "gbtCitation": "GAO X, XU X, HUA X, et al. Group similarity constraint functional brain network estimation for mild cognitive impairment classification[J]. Frontiers in Neuroscience, 2020, 14: 165."
     },
     {
       "title": "Feature selection and combination of information in the functional brain connectome for discrimination of mild cognitive impairment and analyses of altered brain patterns",
@@ -633,7 +701,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:IjCSPb-OGe4C",
-      "file": "assets/papers/scholar-69.pdf"
+      "file": "assets/papers/scholar-69.pdf",
+      "gbtCitation": "XU X, LI W, MEI J, et al. Feature selection and combination of information in the functional brain connectome for discrimination of mild cognitive impairment and analyses of altered brain patterns[J]. Frontiers in aging neuroscience, 2020, 12: 28."
     },
     {
       "title": "时滞可交换四元数神经网络稳定性分析",
@@ -642,7 +711,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "methods",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:3fE2CSJIrl8C",
-      "file": "assets/papers/scholar-70.pdf"
+      "file": "assets/papers/scholar-70.pdf",
+      "gbtCitation": "林东源，陈晓丰，孙文涛，等. 时滞可交换四元数神经网络稳定性分析[J]. 智能科学与技术学报, 2020, 2(1): 80-87."
     },
     {
       "title": "Toward a better estimation of functional brain network for mild cognitive impairment identification: a transfer learning view",
@@ -651,7 +721,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:u-x6o8ySG0sC",
-      "file": "assets/papers/scholar-71.pdf"
+      "file": "assets/papers/scholar-71.pdf",
+      "gbtCitation": "LI W, ZHANG L, QIAO L, et al. Toward a better estimation of functional brain network for mild cognitive impairment identification: a transfer learning view[J]. IEEE journal of biomedical and health informatics, 2019, 24(4): 1160-1168."
     },
     {
       "title": "The altered reconfiguration pattern of brain modular architecture regulates cognitive function in cerebral small vessel disease",
@@ -660,7 +731,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:zYLM7Y9cAGgC",
-      "file": "assets/papers/scholar-72.pdf"
+      "file": "assets/papers/scholar-72.pdf",
+      "gbtCitation": "LIU R, CHEN H, QIN R, et al. The altered reconfiguration pattern of brain modular architecture regulates cognitive function in cerebral small vessel disease[J]. Frontiers in neurology, 2019, 10: 324."
     },
     {
       "title": "Functional brain network estimation with time series self-scrubbing",
@@ -669,7 +741,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:u5HHmVD_uO8C",
-      "file": "assets/papers/scholar-73.pdf"
+      "file": "assets/papers/scholar-73.pdf",
+      "gbtCitation": "LI W, QIAO L, ZHANG L, et al. Functional brain network estimation with time series self-scrubbing[J]. IEEE journal of biomedical and health informatics, 2019, 23(6): 2494-2504."
     },
     {
       "title": "用于轻度认知障碍诊断的群体相似约束功能脑网络建模方法",
@@ -678,7 +751,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:Tyk-4Ss8FVUC",
-      "file": "assets/papers/scholar-74.pdf"
+      "file": "assets/papers/scholar-74.pdf",
+      "gbtCitation": "李伟凯，高欣，纪同俭，等. 用于轻度认知障碍诊断的群体相似约束功能脑网络建模方法[J]. 智能科学与技术学报, 2019(2)."
     },
     {
       "title": "一种自适应分数阶偏微分图像增强模型.",
@@ -686,7 +760,8 @@ window.SITE_DATA = {
       "citation": "李伟凯， 王政霞， 蒋伟. Computer Engineering & Science/Jisuanji Gongcheng yu Kexue 40 (4), 699, 2018",
       "kind": "Google Scholar",
       "area": "vision",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:Y0pCki6q_DkC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:Y0pCki6q_DkC",
+      "gbtCitation": "李伟凯，王政霞，蒋伟. 一种自适应分数阶偏微分图像增强模型[J]. Computer Engineering & Science/Jisuanji Gongcheng yu Kexue, 2018, 40(4): 699."
     },
     {
       "title": "Simultaneous estimation of low-and high-order functional connectivity for identifying mild cognitive impairment",
@@ -695,7 +770,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:WF5omc3nYNoC",
-      "file": "assets/papers/scholar-76.pdf"
+      "file": "assets/papers/scholar-76.pdf",
+      "gbtCitation": "ZHOU Y, QIAO L, LI W, et al. Simultaneous estimation of low-and high-order functional connectivity for identifying mild cognitive impairment[J]. Frontiers in neuroinformatics, 2018, 12: 337293."
     },
     {
       "title": "Remodeling Pearson's correlation for functional brain network estimation and autism spectrum disorder identification",
@@ -704,7 +780,8 @@ window.SITE_DATA = {
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:2osOgNQ5qMEC",
-      "file": "assets/papers/scholar-77.pdf"
+      "file": "assets/papers/scholar-77.pdf",
+      "gbtCitation": "LI W, WANG Z, ZHANG L, et al. Remodeling Pearson's correlation for functional brain network estimation and autism spectrum disorder identification[J]. Frontiers in neuroinformatics, 2017, 11: 55."
     },
     {
       "title": "Kola: Carefully benchmarking world knowledge of large language models, 2024",
@@ -712,7 +789,8 @@ window.SITE_DATA = {
       "citation": "J Yu, X Wang, S Tu, S Cao, D Zhang-Li, X Lv, H Peng, Z Yao, X Zhang, .... URL https://arxiv. org/abs/2306.09296",
       "kind": "Google Scholar",
       "area": "methods",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:3s1wT3WcHBgC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:3s1wT3WcHBgC",
+      "gbtCitation": "YU J, WANG X, TU S, et al. Kola: Carefully benchmarking world knowledge of large language models[PP/OL]. arXiv (2023-06)[2026-10-05]. https://arxiv.org/abs/2306.09296."
     },
     {
       "title": "An Improved Efficient Algorithm for Spiking Neural Network Through Dataset Distillation",
@@ -720,7 +798,8 @@ window.SITE_DATA = {
       "citation": "S Chen, X Chen, W Cao, W Li. Available at SSRN 4836784",
       "kind": "Google Scholar",
       "area": "methods",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:RGFaLdJalmkC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:RGFaLdJalmkC",
+      "gbtCitation": "CHEN S, CHEN X, CAO W, et al. An Improved Efficient Algorithm for Spiking Neural Network Through Dataset Distillation[PP/OL]. SSRN[2026-10-05]. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4836784."
     },
     {
       "title": "Graph Adversarial Discriminative Domain Adaptation with Category-Level Alignment",
@@ -728,7 +807,8 @@ window.SITE_DATA = {
       "citation": "X Xiao, X Chen, W Li, Z Li, W Cao, S Zhang. Available at SSRN 4898772",
       "kind": "Google Scholar",
       "area": "domain",
-      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:YFjsv_pBGBYC"
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:YFjsv_pBGBYC",
+      "gbtCitation": "XIAO X, CHEN X, LI W, et al. Graph Adversarial Discriminative Domain Adaptation with Category-Level Alignment[PP/OL]. SSRN[2026-10-05]. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4898772."
     }
   ],
   "projects": [

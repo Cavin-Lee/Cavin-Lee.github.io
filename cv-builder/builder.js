@@ -41,7 +41,7 @@
     appendSection(root,'education',(li,x)=>{li.textContent=x.label();});
     appendSection(root,'projects',(li,x)=>{li.textContent=x.label();});
     const selectedPubs=items.publications.filter(x=>selection.has(x.id)).map(x=>data.publications[Number(x.id.split('-')[1])]).sort((a,b)=>(b.year||0)-(a.year||0));
-    if(selectedPubs.length){const section=make('section');section.append(make('h2','',tr(sectionLabels.publications)));const list=make('ol');selectedPubs.forEach(p=>list.append(make('li','',`${p.year||'—'} · ${p.title}. ${p.citation}`)));section.append(list);root.append(section);}
+    if(selectedPubs.length){const section=make('section','cv-publications');section.append(make('h2','',tr(sectionLabels.publications)));const list=make('ol');selectedPubs.forEach(p=>list.append(make('li','',p.gbtCitation||`${p.title}. ${p.citation}`)));section.append(list);root.append(section);}
     appendSection(root,'service',(li,x)=>{li.textContent=x.label();});
     appendSection(root,'personal',(li,x)=>{li.textContent=x.label();});
     appendSection(root,'student',(li,x)=>{li.textContent=x.label();});

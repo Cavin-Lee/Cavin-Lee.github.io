@@ -32,6 +32,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.cidfonts import UnicodeCIDFont
 from reportlab.platypus import Image, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+from gbt_citations import format_gbt
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -164,6 +165,7 @@ def validate_record(category: str, record: dict, data: dict) -> dict:
         if not title or not citation or area not in data["areas"] or parsed.scheme != "https" or parsed.hostname != "scholar.google.com" or parsed.path != "/citations" or params.get("user") != ["XEfV8mkAAAAJ"] or not params.get("citation_for_view"):
             raise ManagerError("论文需填写标题、引文、研究方向和本人的 Google Scholar 记录链接")
         result = {"title": title, "year": year(record.get("year")), "citation": citation, "kind": "Google Scholar", "area": area, "scholar": scholar}
+        result["gbtCitation"] = str(record.get("gbtCitation") or "").strip() or format_gbt(result)
         if record.get("file"):
             result["file"] = pdf_path(record["file"])
         return result
@@ -232,6 +234,7 @@ def content_index(data: dict) -> str:
                 lines.append(f"   - English: {md_text(name['en'])}")
             if category == "publications":
                 lines.append(f"   - {md_text(item['citation'])} · 方向：{md_text(data['areas'][item['area']]['zh'])}")
+                lines.append(f"   - 简历引文（GB/T 7714—2025）：{md_text(item.get('gbtCitation') or format_gbt(item))}")
             elif category == "projects":
                 lines.append(f"   - {md_text(item['funder']['zh'])} · {md_text(item['role']['zh'])}")
             elif category == "news":
@@ -309,7 +312,8 @@ def write_pdf(path: Path, lang: str, title: str, sections: list[tuple[str, list[
     for heading, entries in sections:
         story.append(Paragraph(escape(heading), section_style))
         for number, entry in enumerate(entries, 1):
-            marker = f'<font color="#a12f35">{number}.</font> ' if numbered else "- "
+            label = f"[{number}]" if heading in ("论文成果", "Publications") else f"{number}."
+            marker = f'<font color="#a12f35">{label}</font> ' if numbered else "- "
             story.append(Paragraph(marker + escape(str(entry).replace("·", " / ")), body_style))
     doc = SimpleDocTemplate(str(path), pagesize=A4, rightMargin=42, leftMargin=42, topMargin=42, bottomMargin=55, title=title, author="Wei-Kai Li")
     doc.build(story)
@@ -325,7 +329,7 @@ def write_cv_reports(data: dict, temp: Path) -> dict[str, Path]:
         sections = [
             (("教育经历" if zh else "Education"), [f"{x['years']} · {x['degree'][lang]} · {x['school'][lang]}" for x in data["education"]]),
             (("科研项目" if zh else "Research Projects"), [f"{x['title'][lang]} · {x['funder'][lang]} · {x['role'][lang]}" for x in data["projects"]]),
-            (("论文成果" if zh else "Publications"), [f"{x.get('year') or '—'} · {x['title']}. {x['citation']}" for x in sorted(data["publications"], key=lambda p: -(p.get("year") or 0))]),
+            (("论文成果" if zh else "Publications"), [x.get("gbtCitation") or format_gbt(x) for x in sorted(data["publications"], key=lambda p: -(p.get("year") or 0))]),
             (("学术服务" if zh else "Academic Service"), [item["name"][lang] for group in data["service"] for item in group["items"]]),
             (("个人荣誉" if zh else "Personal Recognition"), [f"{x['year']} · {x['title'][lang]}" for x in data["personalAwards"]]),
             (("指导学生获奖" if zh else "Student Awards"), [f"{x['year']} · {x['title'][lang]}" for x in data["studentAwards"]]),
@@ -462,7 +466,12 @@ def mutate_record(payload: dict) -> dict:
             raise ManagerError("这条 Google Scholar 论文记录已存在")
         items.insert(0, record)
     elif action == "update":
-        record = validate_record(category, payload.get("record"), data)
+        submitted = payload.get("record")
+        if category == "publications" and isinstance(submitted, dict):
+            source_changed = any(str(submitted.get(key) or "") != str(before.get(key) or "") for key in ("title", "year", "citation"))
+            if source_changed and submitted.get("gbtCitation") == before.get("gbtCitation"):
+                submitted = dict(submitted, gbtCitation="")
+        record = validate_record(category, submitted, data)
         if category == "publications" and any(i != index and x["scholar"] == record["scholar"] for i, x in enumerate(items)):
             raise ManagerError("这条 Google Scholar 论文记录已存在")
         items[index] = record

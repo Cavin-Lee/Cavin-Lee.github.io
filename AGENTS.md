@@ -32,6 +32,7 @@
 - 首页五张研究方向卡片使用 `data-area` 和 `#papers-分类键` 链接论文列表对应分组；点击时清空其他筛选并选中该方向。修改卡片时保持 `tools/site_manager.py` 的主页文案生成结构一致。主页头像为 `assets/profile.jpeg`，中英文页使用同一照片。
 - `app.js` 以运行时年份计算最近 5 年的学生获奖，按年份从新到旧排列；每年默认显示 3 项，其余展开查看。历史记录仍保留在 `data.js`，不要为实现折叠而删除数据。
 - 简历生成器允许自由勾选教育、项目、论文、学术服务和获奖；论文在简历中按年份列成一个列表，不按网页研究方向再分组。各章节的数字序号从 1 开始。网页简历预览、A4 打印版以及 `assets/cv-zh.pdf`、`assets/cv-en.pdf` 都使用 `assets/profile.jpeg` 头像。
+- 简历论文采用 GB/T 7714—2025 顺序编码制，条目显示 `[1]` 等编号；`data.js` 的 `citation` 是原始 Google Scholar 引文，`gbtCitation` 是简历专用引文。期刊用 `[J]`、会议论文用 `[C]//`、预印本用 `[PP/OL]`。缺失卷期页码时不要编造。管理页面可修订 `gbtCitation`，留空则由 `tools/gbt_citations.py` 从原始记录生成；更改原始论文信息后应核对简历引文。
 - 中英文首页的定制简历入口只保留页脚一处，不要在首屏按钮或头像侧栏重复加入。
 - 首页与简历使用同一套黑、红、蓝配色：深灰黑 `#202329`／`#2d3239` 为文字与导航，红 `#a12f35` 为重点标识，蓝 `#163a78` 为链接和章节标题。网页预览、打印版、静态中英文 PDF 应保持一致。参考配色来自 <https://yunzhuli.github.io/>，不复制其版式。
 - 截至 2026-10-04，主页收录 Google Scholar 论文 80 篇，其中 33 篇有本地全文、47 篇待补；指导学生获奖 21 项。这些数字是当时快照，更新时重新核对。
@@ -44,7 +45,7 @@
 
 `data.js` 的顶层对象是 `window.SITE_DATA`。多数可翻译文字使用 `{ "zh": "…", "en": "…" }`；论文题名、引文通常直接用字符串。文件链接写成以站点根目录为基准的 `assets/...` 路径；`app.js` 会处理中文子路径，不要把 `/cn/` 拼进材料路径。
 
-- **论文**：在 `publications` 中维护 `title`、`year`、`citation`、`area`、`scholar`，确认有全文后才加 `file`。`area` 必须是 `areas` 中的键。更新 Scholar 记录时也更新 `scholar-publications.json` 和三种待补清单。不要仅凭相似文件名匹配论文。
+- **论文**：在 `publications` 中维护 `title`、`year`、`citation`、`gbtCitation`、`area`、`scholar`，确认有全文后才加 `file`。`area` 必须是 `areas` 中的键。更新 Scholar 记录时也更新 `scholar-publications.json` 和三种待补清单。不要仅凭相似文件名匹配论文。
 - **项目**：在 `projects` 中维护双语 `title`、`funder`、`role`；批准通知或任务书放进 `assets/projects/`，以 `files: [{"path":"assets/projects/…pdf","label":{"zh":"…","en":"…"}}]` 关联。
 - **学术服务**：在 `service` 对应分组的 `items` 中增加独立条目；有聘书时用 `file` 指向 `assets/service/`。期刊任职逐刊列出。
 - **个人或学生获奖**：分别修改 `personalAwards`、`studentAwards`。每项含 `year`、双语 `title`、`files` 数组，可选双语 `note`。依据证书文字核对赛事名称、级别、年份和指导教师；不要只按源文件名判断。新增学生获奖后，简历生成器会自动出现对应复选框。
