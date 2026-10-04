@@ -50,6 +50,9 @@ class ManagerTests(unittest.TestCase):
         data, _ = manager.read_data()
         profile = manager.profile_from_pages()
         manager.validate_profile(profile, data)
+        rendered = manager.render_profile_html((manager.ROOT / "cn/index.html").read_text(), profile, "zh", list(data["areas"]))
+        self.assertEqual(rendered.count('class="topic-card"'), 5)
+        self.assertIn('href="#papers-brain"', rendered)
         wrong = copy.deepcopy(profile)
         wrong["topics"][0]["title"]["zh"] = "不匹配的方向"
         with self.assertRaises(manager.ManagerError):

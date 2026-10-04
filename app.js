@@ -54,7 +54,7 @@
     pubList.replaceChildren();
     Object.entries(data.areas).forEach(([key,name])=>{
       const papers=shown.filter(p=>p.area===key); if(!papers.length)return;
-      const group=el('section','publication-group');group.append(el('h3','',t(name)),el('p','',en?`${papers.length} papers`:`${papers.length} 篇`));
+      const group=el('section','publication-group');group.id=`papers-${key}`;group.append(el('h3','',t(name)),el('p','',en?`${papers.length} papers`:`${papers.length} 篇`));
       const filtered=Boolean(term)||selected!=='all';
       const visible=filtered||expandedAreas.has(key)?papers:papers.slice(0,5);
       visible.forEach(p=>{ const row=el('article','publication'); row.append(el('div','publication-year',p.year?String(p.year):(en?'Year n/a':'年份待核'))); const middle=el('div');middle.append(el('h4','',p.title),el('p','',p.citation)); if(p.scholar){const source=el('a','publication-source',en?'Scholar record ↗':'学术记录 ↗');source.href=p.scholar;source.target='_blank';source.rel='noopener noreferrer';middle.append(source);} row.append(middle); if(p.file)row.append(link(p.file,en?'Full text ↓':'下载全文 ↓')); else row.append(el('span','download-link disabled',en?'Full text pending':'待补全文')); group.append(row); });
@@ -64,4 +64,15 @@
     count.textContent=en?`${shown.length} papers`:`${shown.length} 篇`;
   }
   search.addEventListener('input',renderPublications);year.addEventListener('change',renderPublications);area.addEventListener('change',renderPublications);renderPublications();
+  function showArea(key, updateHash=false) {
+    if (!data.areas[key]) return;
+    search.value=''; year.value='all'; area.value=key; renderPublications();
+    if (updateHash) history.pushState(null, '', `#papers-${key}`);
+    document.getElementById(`papers-${key}`)?.scrollIntoView();
+  }
+  document.querySelectorAll('.topic-card[data-area]').forEach(card=>card.addEventListener('click',event=>{
+    event.preventDefault(); showArea(card.dataset.area,true);
+  }));
+  const linkedArea=location.hash.match(/^#papers-([a-z]+)$/)?.[1];
+  if(linkedArea) requestAnimationFrame(()=>showArea(linkedArea));
 })();

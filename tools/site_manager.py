@@ -209,7 +209,7 @@ def content_index(data: dict) -> str:
     profile = data.get("profile") or profile_from_pages()
     lines += ["## 主页文案", "", f"- 职称：{md_text(profile['role']['zh'])} / {md_text(profile['role']['en'])}", "- 学术经历："]
     lines += [f"  - {md_text(paragraph)}" for paragraph in profile["about"]["zh"]]
-    lines += ["- 研究方向："] + [f"  - {md_text(topic['title']['zh'])} / {md_text(topic['title']['en'])}" for topic in profile["topics"]] + [""]
+    lines += ["- 研究方向："] + [f"  - [{md_text(topic['title']['zh'])}](cn/#papers-{key}) / [{md_text(topic['title']['en'])}](index.html#papers-{key})" for key, topic in zip(data["areas"], profile["topics"])] + [""]
     for category in ("news", "education", "projects", "service", "personalAwards", "studentAwards", "publications"):
         entries = [(g, x) for g, group in enumerate(data["service"]) for x in group["items"]] if category == "service" else [(None, x) for x in data[category]]
         lines += [f"## {LABELS[category]}（{len(entries)}）", ""]
@@ -380,7 +380,7 @@ def validate_profile(value: dict, data: dict) -> dict:
     return result
 
 
-def render_profile_html(source: str, profile: dict, lang: str) -> str:
+def render_profile_html(source: str, profile: dict, lang: str, areas: list[str]) -> str:
     def substitute(pattern: str, replacement: str, text: str) -> str:
         result, count = re.subn(pattern, lambda match: match.group(1) + replacement + match.group(3), text, count=1, flags=re.S)
         if count != 1:
@@ -391,7 +391,8 @@ def render_profile_html(source: str, profile: dict, lang: str) -> str:
     source = substitute(r'(<p class="hero-affiliation">)(.*?)(</p>)', "<br>".join(esc(x) for x in profile["affiliations"][lang]), source)
     source = substitute(r'(<p class="hero-summary">)(.*?)(</p>)', esc(profile["summary"][lang]), source)
     source = substitute(r'(<div class="body-copy">)(.*?)(</div>)', "".join(f"<p>{esc(x)}</p>" for x in profile["about"][lang]), source)
-    cards = "".join(f'<article><span>{i:02d}</span><h3>{esc(x["title"][lang])}</h3><p>{esc(x["description"][lang])}</p></article>' for i, x in enumerate(profile["topics"], 1))
+    link_label = "查看论文 ↗" if lang == "zh" else "View papers ↗"
+    cards = "".join(f'<a class="topic-card" href="#papers-{key}" data-area="{key}"><span>{i:02d}</span><h3>{esc(x["title"][lang])}</h3><p>{esc(x["description"][lang])}</p><span class="topic-link">{link_label}</span></a>' for i, (key, x) in enumerate(zip(areas, profile["topics"]), 1))
     source = substitute(r'(<div class="topic-grid">)(.*?)(</div>)', cards, source)
     return source
 
@@ -419,7 +420,7 @@ def save_changes(data: dict, action: str, category: str, label: str, note: str =
         for relative in ("index.html", "cn/index.html", "cv-builder/index.html"):
             source = (ROOT / relative).read_text(encoding="utf-8")
             if profile_changed and relative in ("index.html", "cn/index.html"):
-                source = render_profile_html(source, data["profile"], "zh" if relative.startswith("cn/") else "en")
+                source = render_profile_html(source, data["profile"], "zh" if relative.startswith("cn/") else "en", list(data["areas"]))
             staged[relative] = bump_data_version(source).encode("utf-8")
         for relative, content in staged.items():
             atomic_bytes(ROOT / relative, content)

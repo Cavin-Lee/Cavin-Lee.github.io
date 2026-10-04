@@ -2,7 +2,7 @@
 
 此文件由本地管理工具根据 `data.js` 自动生成，供后续智能体检索。请在管理页面修改内容，不要直接改此文件。
 
-生成时间：2026-10-04T11:13:54+08:00
+生成时间：2026-10-04T11:44:59+08:00
 
 ## 主页文案
 
@@ -12,11 +12,11 @@
   - 研究方向包括具身智能、多视图聚类、脑网络、迁移学习、计算机视觉、小样本学习和药物靶点预测。相关工作发表在 TPAMI、TCYB、TSMC、PR、JBHI、CNSNT、AAAI 等期刊及会议，论文 80 余篇。
   - 主持国家自然科学基金项目 2 项、山东省重大基础研究项目 1 项、省部级面上项目 2 项；获 CPSI 2025 最佳论文奖、ICCSI 2023 最佳论文入围奖。
 - 研究方向：
-  - 脑网络与神经疾病 / Brain Networks & Neurological Disorders
-  - 迁移学习与域适应 / Transfer Learning & Domain Adaptation
-  - 医学影像与计算生物学 / Medical Imaging & Computational Biology
-  - 视觉与多模态智能 / Computer Vision & Multimodal AI
-  - 智能算法与模型 / Intelligent Algorithms & Models
+  - [脑网络与神经疾病](cn/#papers-brain) / [Brain Networks & Neurological Disorders](index.html#papers-brain)
+  - [迁移学习与域适应](cn/#papers-domain) / [Transfer Learning & Domain Adaptation](index.html#papers-domain)
+  - [医学影像与计算生物学](cn/#papers-medical) / [Medical Imaging & Computational Biology](index.html#papers-medical)
+  - [视觉与多模态智能](cn/#papers-vision) / [Computer Vision & Multimodal AI](index.html#papers-vision)
+  - [智能算法与模型](cn/#papers-methods) / [Intelligent Algorithms & Models](index.html#papers-methods)
 
 ## 学术动态（4）
 
