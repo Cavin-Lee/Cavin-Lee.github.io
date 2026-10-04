@@ -1519,5 +1519,91 @@ window.SITE_DATA = {
       },
       "file": "assets/awards/2025-cpsi-best-paper.pdf"
     }
-  ]
+  ],
+  "profile": {
+    "role": {
+      "zh": "教授 · 博士生导师 · 泰山学者青年专家",
+      "en": "Professor · Doctoral Supervisor · Taishan Scholars Young Expert"
+    },
+    "summary": {
+      "zh": "研究方向涵盖具身智能、多视图聚类、脑网络、迁移学习、计算机视觉、小样本学习及药物靶点预测。",
+      "en": "My research spans embodied intelligence, multi-view clustering, brain networks, transfer learning, computer vision, few-shot learning, and drug-target prediction."
+    },
+    "affiliations": {
+      "zh": [
+        "山东建筑大学 计算机与人工智能学院",
+        "重庆交通大学 数学与统计学院",
+        "全景医学影像中心"
+      ],
+      "en": [
+        "School of Computer Science and Artificial Intelligence, Shandong Jianzhu University",
+        "School of Mathematics and Statistics, Chongqing Jiaotong University",
+        "Panoramic Medical Imaging Center"
+      ]
+    },
+    "about": {
+      "zh": [
+        "李伟凯，泰山学者青年专家，山东建筑大学计算机与人工智能学院教授、博士生导师；同时在重庆交通大学数学与统计学院、全景医学影像中心开展研究工作。博士毕业于南京航空航天大学，师从陈松灿教授。",
+        "研究方向包括具身智能、多视图聚类、脑网络、迁移学习、计算机视觉、小样本学习和药物靶点预测。相关工作发表在 TPAMI、TCYB、TSMC、PR、JBHI、CNSNT、AAAI 等期刊及会议，论文 80 余篇。",
+        "主持国家自然科学基金项目 2 项、山东省重大基础研究项目 1 项、省部级面上项目 2 项；获 CPSI 2025 最佳论文奖、ICCSI 2023 最佳论文入围奖。"
+      ],
+      "en": [
+        "Wei-Kai Li is a Taishan Scholars Young Expert, professor and doctoral supervisor at the School of Computer Science and Artificial Intelligence, Shandong Jianzhu University. His affiliations also include the School of Mathematics and Statistics at Chongqing Jiaotong University and the Panoramic Medical Imaging Center. He received his PhD from Nanjing University of Aeronautics and Astronautics under Professor Songcan Chen.",
+        "His research covers embodied intelligence, multi-view clustering, brain networks, transfer learning, computer vision, few-shot learning, and drug-target prediction. He has published more than 80 papers in venues including TPAMI, TCYB, TSMC, PR, JBHI, CNSNT, and AAAI.",
+        "He has led two National Natural Science Foundation of China projects, one Shandong major basic research project, and two provincial or ministerial general projects. His recognitions include the CPSI 2025 Best Paper Award and ICCSI 2023 Best Paper Finalist Award."
+      ]
+    },
+    "topics": [
+      {
+        "title": {
+          "zh": "脑网络与神经疾病",
+          "en": "Brain Networks & Neurological Disorders"
+        },
+        "description": {
+          "zh": "脑连接建模与神经疾病智能分析。",
+          "en": "Brain connectivity modeling and neurological disorder analysis."
+        }
+      },
+      {
+        "title": {
+          "zh": "迁移学习与域适应",
+          "en": "Transfer Learning & Domain Adaptation"
+        },
+        "description": {
+          "zh": "跨领域、跨数据源的知识迁移与模型泛化。",
+          "en": "Methods that transfer knowledge across domains and data sources."
+        }
+      },
+      {
+        "title": {
+          "zh": "医学影像与计算生物学",
+          "en": "Medical Imaging & Computational Biology"
+        },
+        "description": {
+          "zh": "医学影像分析与药物靶点相互作用预测。",
+          "en": "Medical image analysis and drug-target interaction prediction."
+        }
+      },
+      {
+        "title": {
+          "zh": "视觉与多模态智能",
+          "en": "Computer Vision & Multimodal AI"
+        },
+        "description": {
+          "zh": "视觉识别、小样本检测与多模态对齐。",
+          "en": "Visual recognition, few-shot detection, and multimodal alignment."
+        }
+      },
+      {
+        "title": {
+          "zh": "智能算法与模型",
+          "en": "Intelligent Algorithms & Models"
+        },
+        "description": {
+          "zh": "多视图聚类、神经网络与智能学习方法。",
+          "en": "Multi-view clustering, neural networks, and intelligent learning methods."
+        }
+      }
+    ]
+  }
 };
