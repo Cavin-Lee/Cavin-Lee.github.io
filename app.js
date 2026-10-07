@@ -21,23 +21,33 @@
   function awardCard(item) {
     const card=el('article','award'); const top=el('div','award-top'); top.append(el('h4','',t(item.title)),el('span','award-year',String(item.year))); card.append(top); if(item.note)card.append(el('p','',t(item.note))); const files=el('div','award-files'); item.files.forEach((file,i)=>files.append(link(file.path,t(file.label || {zh:`下载材料 ${i+1} ↓`,en:`Evidence ${i+1} ↓`})))); card.append(files); return card;
   }
-  const personalAwards=document.getElementById('personal-awards');
-  [...data.personalAwards].sort((a,b)=>b.year-a.year).forEach(item=>personalAwards.append(awardCard(item)));
-  const studentAwards=document.getElementById('student-awards');
-  const recentYear=new Date().getFullYear()-4;
-  const studentsByYear={};
-  [...data.studentAwards].filter(item=>item.year>=recentYear).sort((a,b)=>b.year-a.year).forEach(item=>{(studentsByYear[item.year]??=[]).push(item);});
-  Object.keys(studentsByYear).sort((a,b)=>b-a).forEach(year=>{
-    const items=studentsByYear[year]; const group=el('section','student-award-group');
-    group.append(el('h4','student-award-year',year));
-    const cards=el('div','award-list');items.slice(0,3).forEach(item=>cards.append(awardCard(item)));group.append(cards);
-    if(items.length>3){
-      const toggle=el('button','student-award-toggle',en?`Show all ${items.length} awards ↓`:`查看 ${items.length} 项获奖 ↓`);toggle.type='button';toggle.setAttribute('aria-expanded','false');
-      toggle.addEventListener('click',()=>{const expanded=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!expanded));cards.replaceChildren();(expanded?items.slice(0,3):items).forEach(item=>cards.append(awardCard(item)));toggle.textContent=expanded?(en?`Show first 3 awards ↓`:'收起至前三项 ↓'):(en?'Show first 3 awards ↑':'收起至前三项 ↑');});
-      group.append(toggle);
+  function renderAwardGroups(root, awards, recentOnly=false) {
+    const recentYear=new Date().getFullYear()-4;
+    const byYear=new Map();
+    [...awards].filter(item=>!recentOnly||item.year>=recentYear).sort((a,b)=>b.year-a.year).forEach(item=>{
+      if(!byYear.has(item.year))byYear.set(item.year,[]);
+      byYear.get(item.year).push(item);
+    });
+    for(const [year,items] of byYear){
+      const group=el('section','award-group');
+      group.append(el('h4','award-group-year',String(year)));
+      const cards=el('div','award-list');items.slice(0,3).forEach(item=>cards.append(awardCard(item)));group.append(cards);
+      if(items.length>3){
+        const toggle=el('button','award-group-toggle',en?`Show all ${items.length} awards ↓`:`查看全部 ${items.length} 项获奖 ↓`);
+        toggle.type='button';toggle.setAttribute('aria-expanded','false');
+        toggle.addEventListener('click',()=>{
+          const expanded=toggle.getAttribute('aria-expanded')==='true';
+          cards.replaceChildren();(expanded?items.slice(0,3):items).forEach(item=>cards.append(awardCard(item)));
+          toggle.setAttribute('aria-expanded',String(!expanded));
+          toggle.textContent=expanded?(en?`Show all ${items.length} awards ↓`:`查看全部 ${items.length} 项获奖 ↓`):(en?'Show first 3 awards ↑':'收起至前三项 ↑');
+        });
+        group.append(toggle);
+      }
+      root.append(group);
     }
-    studentAwards.append(group);
-  });
+  }
+  renderAwardGroups(document.getElementById('personal-awards'),data.personalAwards);
+  renderAwardGroups(document.getElementById('student-awards'),data.studentAwards,true);
 
   const pubList=document.getElementById('publication-list');
   const search=document.getElementById('pub-search');

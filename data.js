@@ -1157,6 +1157,26 @@ window.SITE_DATA = {
     {
       "year": 2026,
       "title": {
+        "zh": "IEEE SMC 2026 最佳会议论文奖入围",
+        "en": "IEEE SMC 2026 Best Conference Paper Award Finalist"
+      },
+      "files": [
+        {
+          "path": "assets/awards/2026-ieee-smc-best-paper-finalist.pdf",
+          "label": {
+            "zh": "下载入围证书 PDF ↓",
+            "en": "Finalist certificate PDF ↓"
+          }
+        }
+      ],
+      "note": {
+        "zh": "入围论文：Dual Adapter: Enhancing Adaptation Via Dual-Path Adapters with Dual-Constraint for Parameter-Efficient Fine-Tuning；证书列名李伟凯、王泽亿等作者。",
+        "en": "Finalist paper: Dual Adapter: Enhancing Adaptation Via Dual-Path Adapters with Dual-Constraint for Parameter-Efficient Fine-Tuning; the certificate names Weikai Li, Zeyi Wang, and coauthors."
+      }
+    },
+    {
+      "year": 2026,
+      "title": {
         "zh": "CPSI 最佳论文奖",
         "en": "CPSI Best Paper Award"
       },
@@ -1551,6 +1571,18 @@ window.SITE_DATA = {
     }
   ],
   "news": [
+    {
+      "year": 2026,
+      "title": {
+        "zh": "祝贺王泽亿同学论文入围 IEEE SMC 2026 最佳会议论文奖",
+        "en": "Congratulations to Zeyi Wang on an IEEE SMC 2026 Best Conference Paper Award finalist paper"
+      },
+      "detail": {
+        "zh": "入围论文：Dual Adapter: Enhancing Adaptation Via Dual-Path Adapters with Dual-Constraint for Parameter-Efficient Fine-Tuning。证书列名李伟凯、王泽亿等作者，落款为 2026 年 10 月。",
+        "en": "Finalist paper: Dual Adapter: Enhancing Adaptation Via Dual-Path Adapters with Dual-Constraint for Parameter-Efficient Fine-Tuning. The certificate names Weikai Li, Zeyi Wang, and coauthors, and is dated October 2026."
+      },
+      "file": "assets/awards/2026-ieee-smc-best-paper-finalist.pdf"
+    },
     {
       "year": 2026,
       "title": {

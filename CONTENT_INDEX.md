@@ -2,7 +2,7 @@
 
 此文件由本地管理工具根据 `data.js` 自动生成，供后续智能体检索。请在管理页面修改内容，不要直接改此文件。
 
-生成时间：2026-10-07T13:43:21+08:00
+生成时间：2026-10-07T13:47:11+08:00
 
 ## 主页文案
 
@@ -18,24 +18,27 @@
   - [视觉与多模态智能](cn/#papers-vision) / [Computer Vision & Multimodal AI](index.html#papers-vision)
   - [智能算法与模型](cn/#papers-methods) / [Intelligent Algorithms & Models](index.html#papers-methods)
 
-## 学术动态（6）
+## 学术动态（7）
 
-1. 2026 · 祝贺崔靖轩等获得 CPSI 2026 最佳论文奖 · [PDF](assets/awards/2026-cpsi-best-paper.pdf)
+1. 2026 · 祝贺王泽亿同学论文入围 IEEE SMC 2026 最佳会议论文奖 · [PDF](assets/awards/2026-ieee-smc-best-paper-finalist.pdf)
+   - English: Congratulations to Zeyi Wang on an IEEE SMC 2026 Best Conference Paper Award finalist paper
+   - 入围论文：Dual Adapter: Enhancing Adaptation Via Dual-Path Adapters with Dual-Constraint for Parameter-Efficient Fine-Tuning。证书列名李伟凯、王泽亿等作者，落款为 2026 年 10 月。
+2. 2026 · 祝贺崔靖轩等获得 CPSI 2026 最佳论文奖 · [PDF](assets/awards/2026-cpsi-best-paper.pdf)
    - English: Congratulations to Jingxuan Cui and coauthors on the CPSI 2026 Best Paper Award
    - 获奖论文：Anatomy-Preserving Schrodinger Bridge for Unpaired MRI Quality Enhancement。证书列名崔靖轩、殷家斌、李伟凯、王其林。
-2. 2025 · 祝贺秦浩、宋浩、王泽亿同学论文被 IEEE SMC 2026 录用
+3. 2025 · 祝贺秦浩、宋浩、王泽亿同学论文被 IEEE SMC 2026 录用
    - English: Congratulations to Hao Qin, Hao Song, and Zeyi Wang on their paper's acceptance at IEEE SMC 2026
    - 秦浩、宋浩、王泽亿同学的论文被 IEEE SMC 2026 录用。
-3. 2025 · 祝贺杨杰同学论文被 AAAI 2026 录用
+4. 2025 · 祝贺杨杰同学论文被 AAAI 2026 录用
    - English: Congratulations to Jie Yang on a paper accepted at AAAI 2026
    - 杨杰同学的论文被 AAAI 2026 录用。
-4. 2025 · 入选泰山学者青年专家 · [PDF](assets/awards/2025-taishan-young-scholar.pdf)
+5. 2025 · 入选泰山学者青年专家 · [PDF](assets/awards/2025-taishan-young-scholar.pdf)
    - English: Named a Taishan Scholars Young Expert
    - 泰山学者青年专家证书已收录。
-5. 2025 · 指导学生获中国机器人及人工智能大赛全国总决赛一等奖 · [PDF](assets/awards/2025-robot-national-first.pdf)
+6. 2025 · 指导学生获中国机器人及人工智能大赛全国总决赛一等奖 · [PDF](assets/awards/2025-robot-national-first.pdf)
    - English: Students won First Prize at the China Robot and AI Competition National Finals
    - Aelos 机器人挑战赛，证书列名韩行钱、翟俊杰、夏蝶，指导教师李伟凯、王其林。
-6. 2025 · 研究成果获 CPSI 2025 最佳论文奖 · [PDF](assets/awards/2025-cpsi-best-paper.pdf)
+7. 2025 · 研究成果获 CPSI 2025 最佳论文奖 · [PDF](assets/awards/2025-cpsi-best-paper.pdf)
    - English: Research received the CPSI 2025 Best Paper Award
    - 获奖证书可下载查看。
 
@@ -130,19 +133,22 @@
 23. [学术组织] 重庆市数学学会理事 · [PDF](assets/service/chongqing-math-society.pdf)
    - English: Council Member, Chongqing Mathematical Society
 
-## 个人荣誉（6）
+## 个人荣誉（7）
 
-1. 2026 · CPSI 最佳论文奖 · [PDF](assets/awards/2026-cpsi-best-paper.pdf)
+1. 2026 · IEEE SMC 2026 最佳会议论文奖入围 · [PDF](assets/awards/2026-ieee-smc-best-paper-finalist.pdf)
+   - English: IEEE SMC 2026 Best Conference Paper Award Finalist
+   - 说明：入围论文：Dual Adapter: Enhancing Adaptation Via Dual-Path Adapters with Dual-Constraint for Parameter-Efficient Fine-Tuning；证书列名李伟凯、王泽亿等作者。
+2. 2026 · CPSI 最佳论文奖 · [PDF](assets/awards/2026-cpsi-best-paper.pdf)
    - English: CPSI Best Paper Award
-2. 2025 · 泰山学者青年专家 · [PDF](assets/awards/2025-taishan-young-scholar.pdf)
+3. 2025 · 泰山学者青年专家 · [PDF](assets/awards/2025-taishan-young-scholar.pdf)
    - English: Taishan Scholars Young Expert
-3. 2025 · CPSI 最佳论文奖 · [PDF](assets/awards/2025-cpsi-best-paper.pdf)
+4. 2025 · CPSI 最佳论文奖 · [PDF](assets/awards/2025-cpsi-best-paper.pdf)
    - English: CPSI Best Paper Award
-4. 2025 · 中国机器人及人工智能大赛优秀指导教师 · [PDF](assets/awards/2025-craic-advisor.pdf)
+5. 2025 · 中国机器人及人工智能大赛优秀指导教师 · [PDF](assets/awards/2025-craic-advisor.pdf)
    - English: Outstanding Faculty Advisor, China Robot and AI Competition
-5. 2023 · ICCSI 最佳论文入围奖 · [PDF](assets/awards/2023-iccsi-best-paper.pdf)
+6. 2023 · ICCSI 最佳论文入围奖 · [PDF](assets/awards/2023-iccsi-best-paper.pdf)
    - English: ICCSI Best Paper Finalist Award
-6. 2022 · 博士研究生国家奖学金 · [PDF](assets/awards/doctoral-national-scholarship.pdf)
+7. 2022 · 博士研究生国家奖学金 · [PDF](assets/awards/doctoral-national-scholarship.pdf)
    - English: National Scholarship for Doctoral Students
 
 ## 学生获奖（21）
