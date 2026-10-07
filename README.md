@@ -12,7 +12,7 @@
 
 网站是静态页面，可由 GitHub Pages 直接托管。论文及其他资料的展示数据位于 `data.js`，学术记录的采集快照位于 `scholar-publications.json`。
 
-后续维护请先阅读 [网站维护指南](AGENTS.md)。
+后续维护请先阅读 [网站维护指南](AGENTS.md) 和 [Agent 接手说明](WEBSITE_HANDOFF.md)。后者集中记录材料位置、当前状态、修改对应文件、验证及发布方法，并附有可直接交给下一个 Agent 的任务模板。具体条目查 [内容索引](CONTENT_INDEX.md)，近期改动查 [修改记录](CONTENT_CHANGELOG.md)。
 
 ## 在本机自主编辑与发布
 

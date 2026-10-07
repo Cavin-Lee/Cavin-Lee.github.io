@@ -1,6 +1,6 @@
 # 网站维护指南（供后续智能体使用）
 
-本仓库是李伟凯的 GitHub Pages 学术主页：<https://cavin-lee.github.io/>。请先阅读本文件和 `README.md`，再修改内容。用户在当前任务中的明确要求优先于本文件。
+本仓库是李伟凯的 GitHub Pages 学术主页：<https://cavin-lee.github.io/>。请先阅读本文件、[Agent 接手说明](WEBSITE_HANDOFF.md) 和 `README.md`，再修改内容。用户在当前任务中的明确要求优先于本文件。
 
 ## 页面与文件
 
@@ -18,6 +18,7 @@
 | `missing-papers.md`、`assets/missing-papers.pdf`、`assets/missing-papers.xlsx` | 尚未找到可确认匹配全文的论文清单，论文变动时应同步更新。 |
 | `start-manager.command`、`tools/` | 本机管理页面与启动脚本；只绑定 `127.0.0.1`，用于编辑、上传 A4 PDF、预览和 GitHub 发布。 |
 | `CONTENT_INDEX.md`、`CONTENT_CHANGELOG.md` | 管理页面自动维护的内容索引与修改记录，供后续智能体检索。 |
+| `WEBSITE_HANDOFF.md` | Agent 接手入口：材料位置、当前快照、任务对应文件、核查与发布流程。 |
 
 本站没有前端构建步骤。GitHub Pages 从 `main` 分支根目录发布；`.nojekyll` 已存在。
 
@@ -53,7 +54,7 @@
 - **新闻**：在 `news` 增加 `year`、双语 `title` 和 `detail`；引用证书时用 `file` 关联可下载的 A4 PDF。
 - **静态简介、职称、单位、研究方向卡片**：同步修改 `index.html` 与 `cn/index.html`。简历预览的职称和单位另外写在 `cv-builder/builder.js`，静态简历 PDF 也需重做。
 
-本机支撑材料与发布仓库位于同一父目录。`../weikai-li-academic-website/assemble_content.py` 是**未纳入本仓库**的材料整理脚本：它读取父目录中的原始证明和 `李伟凯简历中文.docx`，生成其目录下的 `data.js`、PDF 材料和清单。若该脚本可用，先改脚本再运行，并把需要发布的输出同步回本仓库；直接编辑本仓库的 `data.js` 后再运行旧脚本，会覆盖手工编辑。脚本目录中的 HTML/CSS 是旧版，不要复制来覆盖本仓库页面。其他机器可能没有这些原始材料或脚本，此时可直接维护本仓库，但须同步处理关联文件。
+本机支撑材料与发布仓库位于同一父目录。`../weikai-li-academic-website/assemble_content.py` 是**未纳入本仓库**的材料整理脚本：它读取父目录中的原始证明和 `李伟凯简历中文.docx`，生成其目录下的 `data.js`、PDF 材料和清单。该脚本仅供追溯早期材料整理过程；需要复用时先核对输出范围，只同步本次确认的材料，不能用其旧数据整体覆盖本仓库。直接编辑本仓库的 `data.js` 后再运行旧脚本并复制输出，会覆盖手工编辑。脚本目录中的 HTML/CSS 是旧版，不要复制来覆盖本仓库页面。其他机器可能没有这些原始材料或脚本，此时可直接维护本仓库，但须同步处理关联文件。
 
 ## 下载材料
 
