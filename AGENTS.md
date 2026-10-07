@@ -10,7 +10,7 @@
 | `cn/index.html` | 中文首页，路径 `/cn/`；与英文页保持内容对应。 |
 | `en/index.html` | 旧 `/en/` 地址的跳转页，指向英文根路径。 |
 | `data.js` | 两种语言共用的结构化内容：论文、教育、项目、学术服务、个人荣誉、学生获奖和新闻。 |
-| `app.js` | 首页内容渲染、论文筛选及展开、个人荣誉和学生获奖按年分组。 |
+| `app.js` | 首页内容渲染、学术动态与论文展开、个人荣誉和学生获奖按年分组。 |
 | `styles.css` | 两个首页的视觉样式。延续现有版式，使用黑、红、蓝三色体系。 |
 | `cv-builder/` | 可勾选条目的简历生成器；`builder.js` 使用 `data.js`，`builder.css` 规定打印 A4 页面。 |
 | `assets/` | 公开下载文件。`papers/` 为论文，`awards/` 为获奖材料，`projects/` 为项目证明，`service/` 为学术兼职证明。 |
@@ -29,8 +29,10 @@
 - 《Aging & Disease》《Brain-X》《Cog》《Artificial Intelligence Science and Engineering》分别列为一条“青年编委”，不要合并成一条，也不要改成泛称“编委或青年编委”。中文期刊名称统一加《》；CPSI 2026 联合程序主席和 CPSI 2027 程序主席分别列在会议与论坛中。
 - 《Frontiers in Neuroscience》《Frontiers in Aging Neuroscience》《Frontiers in Cell and Developmental Biology》《Frontiers in Pharmacology》客座主编按期刊分别列出，不合并为“等期刊”。
 - 论文以[李伟凯的 Google Scholar 主页](https://scholar.google.com/citations?user=XEfV8mkAAAAJ&hl=zh-CN)为准。按研究方向归类；每个方向默认显示最新 5 篇，其余保留在展开列表中。全文只有在与 Scholar 记录核对匹配后才能加下载链接。没有全文时保留论文记录，并更新待补清单。
+- 论文区页尾只显示待补论文清单的 PDF 下载入口；Excel 清单继续维护，但不在中英文首页提供下载按钮。
 - 首页“研究方向”的五个标题必须与 `data.js` 中 `areas` 的中英文分类名称一致；“学术经历”保留既有概括，不要因为调整方向卡片而重写履历。
 - 首页五张研究方向卡片使用 `data-area` 和 `#papers-分类键` 链接论文列表对应分组；点击时清空其他筛选并选中该方向。修改卡片时保持 `tools/site_manager.py` 的主页文案生成结构一致。主页头像为 `assets/profile.jpeg`，中英文页使用同一照片。
+- 学术动态按 `data.js` 中的顺序默认展示前 5 条，其余保留并可展开、收起；不要为缩短首页删除旧消息。
 - `app.js` 将个人荣誉和指导学生获奖均按年份从新到旧分组，每年默认显示 3 项，其余展开查看。个人荣誉展示全部年份；指导学生获奖以运行时年份计算最近 5 年。历史记录仍保留在 `data.js`，不要为实现折叠而删除数据。
 - 简历生成器允许自由勾选教育、项目、论文、学术服务和获奖；论文在简历中按年份列成一个列表，不按网页研究方向再分组。各章节的数字序号从 1 开始。网页简历预览、A4 打印版以及 `assets/cv-zh.pdf`、`assets/cv-en.pdf` 都使用 `assets/profile.jpeg` 头像。
 - 简历论文采用 GB/T 7714—2025 顺序编码制，条目显示 `[1]` 等编号；`data.js` 的 `citation` 是原始 Google Scholar 引文，`gbtCitation` 是简历专用引文。期刊用 `[J]`、会议论文用 `[C]//`、预印本用 `[PP/OL]`。缺失卷期页码时不要编造。管理页面可修订 `gbtCitation`，留空则由 `tools/gbt_citations.py` 从原始记录生成；更改原始论文信息后应核对简历引文。

@@ -7,7 +7,19 @@
   const link = (path, label) => { const a = el('a', '', label); a.href = base + path; a.download = ''; return a; };
 
   const newsList = document.getElementById('news-list');
-  data.news.forEach(item => { const card=el('article','news-item'); card.append(el('span','news-year',String(item.year))); const body=el('div'); body.append(el('h3','',t(item.title)),el('p','',t(item.detail))); if(item.file)body.append(link(item.file,en?'Download certificate PDF ↓':'下载证书 PDF ↓')); card.append(body); newsList.append(card); });
+  const olderNews=[];
+  data.news.forEach((item,index) => { const card=el('article','news-item'); card.append(el('span','news-year',String(item.year))); const body=el('div'); body.append(el('h3','',t(item.title)),el('p','',t(item.detail))); if(item.file)body.append(link(item.file,en?'Download certificate PDF ↓':'下载证书 PDF ↓')); card.append(body); if(index>=5){card.hidden=true;olderNews.push(card);} newsList.append(card); });
+  if(olderNews.length){
+    const toggle=el('button','news-toggle',en?`View all ${data.news.length} news items ↓`:`查看全部 ${data.news.length} 条动态 ↓`);
+    toggle.type='button';toggle.setAttribute('aria-expanded','false');
+    toggle.addEventListener('click',()=>{
+      const expanded=toggle.getAttribute('aria-expanded')==='true';
+      olderNews.forEach(card=>{card.hidden=expanded;});
+      toggle.setAttribute('aria-expanded',String(!expanded));
+      toggle.textContent=expanded?(en?`View all ${data.news.length} news items ↓`:`查看全部 ${data.news.length} 条动态 ↓`):(en?'Show latest 5 ↑':'收起至最新 5 条 ↑');
+    });
+    newsList.append(toggle);
+  }
 
   const education = document.getElementById('education-list');
   data.education.forEach(item => { const row = el('div','timeline-item'); row.append(el('div','timeline-year',item.years), el('h3','',t(item.degree)), el('p','',t(item.school))); education.append(row); });
