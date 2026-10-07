@@ -40,7 +40,7 @@
 | 个人荣誉 | 6 |
 | 指导学生获奖条目 | 21 |
 | 教育经历 | 3 |
-| 新闻 | 4 |
+| 新闻 | 6 |
 
 以上数量从 `data.js` 核对；“获奖条目数”不等于证书数，一项可以有多个 PDF。论文来源是 [Google Scholar 个人主页](https://scholar.google.com/citations?user=XEfV8mkAAAAJ&hl=zh-CN)，`scholar-publications.json` 保存 2026-10-03 的采集快照。
 

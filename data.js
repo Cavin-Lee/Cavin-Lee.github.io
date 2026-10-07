@@ -1566,6 +1566,28 @@ window.SITE_DATA = {
     {
       "year": 2025,
       "title": {
+        "zh": "祝贺秦浩、宋浩、王泽亿同学论文被 IEEE SMC 2026 录用",
+        "en": "Congratulations to Hao Qin, Hao Song, and Zeyi Wang on their paper's acceptance at IEEE SMC 2026"
+      },
+      "detail": {
+        "zh": "秦浩、宋浩、王泽亿同学的论文被 IEEE SMC 2026 录用。",
+        "en": "The paper by Hao Qin, Hao Song, and Zeyi Wang was accepted by IEEE SMC 2026."
+      }
+    },
+    {
+      "year": 2025,
+      "title": {
+        "zh": "祝贺杨杰同学论文被 AAAI 2026 录用",
+        "en": "Congratulations to Jie Yang on a paper accepted at AAAI 2026"
+      },
+      "detail": {
+        "zh": "杨杰同学的论文被 AAAI 2026 录用。",
+        "en": "Jie Yang’s paper was accepted by AAAI 2026."
+      }
+    },
+    {
+      "year": 2025,
+      "title": {
         "zh": "入选泰山学者青年专家",
         "en": "Named a Taishan Scholars Young Expert"
       },
