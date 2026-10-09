@@ -2,7 +2,7 @@
 
 此文件由本地管理工具根据 `data.js` 自动生成，供后续智能体检索。请在管理页面修改内容，不要直接改此文件。
 
-生成时间：2026-10-07T13:47:11+08:00
+生成时间：2026-10-09T23:33:30+08:00
 
 ## 主页文案
 
@@ -18,27 +18,30 @@
   - [视觉与多模态智能](cn/#papers-vision) / [Computer Vision & Multimodal AI](index.html#papers-vision)
   - [智能算法与模型](cn/#papers-methods) / [Intelligent Algorithms & Models](index.html#papers-methods)
 
-## 学术动态（7）
+## 学术动态（8）
 
-1. 2026 · 祝贺王泽亿同学论文入围 IEEE SMC 2026 最佳会议论文奖 · [PDF](assets/awards/2026-ieee-smc-best-paper-finalist.pdf)
+1. 2026 · 获聘《指挥控制与仿真》青年编委 · [PDF](assets/service/command-control-simulation-editor.pdf)
+   - English: Appointed to the Youth Editorial Board of Command, Control and Simulation
+   - 李伟凯教授受聘为《指挥控制与仿真》第二届青年编委，任期三年。
+2. 2026 · 祝贺王泽亿同学论文入围 IEEE SMC 2026 最佳会议论文奖 · [PDF](assets/awards/2026-ieee-smc-best-paper-finalist.pdf)
    - English: Congratulations to Zeyi Wang on an IEEE SMC 2026 Best Conference Paper Award finalist paper
    - 入围论文：Dual Adapter: Enhancing Adaptation Via Dual-Path Adapters with Dual-Constraint for Parameter-Efficient Fine-Tuning。证书列名李伟凯、王泽亿等作者，落款为 2026 年 10 月。
-2. 2026 · 祝贺崔靖轩等获得 CPSI 2026 最佳论文奖 · [PDF](assets/awards/2026-cpsi-best-paper.pdf)
+3. 2026 · 祝贺崔靖轩等获得 CPSI 2026 最佳论文奖 · [PDF](assets/awards/2026-cpsi-best-paper.pdf)
    - English: Congratulations to Jingxuan Cui and coauthors on the CPSI 2026 Best Paper Award
    - 获奖论文：Anatomy-Preserving Schrodinger Bridge for Unpaired MRI Quality Enhancement。证书列名崔靖轩、殷家斌、李伟凯、王其林。
-3. 2025 · 祝贺秦浩、宋浩、王泽亿同学论文被 IEEE SMC 2026 录用
+4. 2025 · 祝贺秦浩、宋浩、王泽亿同学论文被 IEEE SMC 2026 录用
    - English: Congratulations to Hao Qin, Hao Song, and Zeyi Wang on their paper's acceptance at IEEE SMC 2026
    - 秦浩、宋浩、王泽亿同学的论文被 IEEE SMC 2026 录用。
-4. 2025 · 祝贺杨杰同学论文被 AAAI 2026 录用
+5. 2025 · 祝贺杨杰同学论文被 AAAI 2026 录用
    - English: Congratulations to Jie Yang on a paper accepted at AAAI 2026
    - 杨杰同学的论文被 AAAI 2026 录用。
-5. 2025 · 入选泰山学者青年专家 · [PDF](assets/awards/2025-taishan-young-scholar.pdf)
+6. 2025 · 入选泰山学者青年专家 · [PDF](assets/awards/2025-taishan-young-scholar.pdf)
    - English: Named a Taishan Scholars Young Expert
    - 泰山学者青年专家证书已收录。
-6. 2025 · 指导学生获中国机器人及人工智能大赛全国总决赛一等奖 · [PDF](assets/awards/2025-robot-national-first.pdf)
+7. 2025 · 指导学生获中国机器人及人工智能大赛全国总决赛一等奖 · [PDF](assets/awards/2025-robot-national-first.pdf)
    - English: Students won First Prize at the China Robot and AI Competition National Finals
    - Aelos 机器人挑战赛，证书列名韩行钱、翟俊杰、夏蝶，指导教师李伟凯、王其林。
-7. 2025 · 研究成果获 CPSI 2025 最佳论文奖 · [PDF](assets/awards/2025-cpsi-best-paper.pdf)
+8. 2025 · 研究成果获 CPSI 2025 最佳论文奖 · [PDF](assets/awards/2025-cpsi-best-paper.pdf)
    - English: Research received the CPSI 2025 Best Paper Award
    - 获奖证书可下载查看。
 
@@ -84,7 +87,7 @@
    - English: Investigating and Extending the Effectiveness of Self-Supervised Learning
    - 国家自然科学基金面上项目 · 主研
 
-## 学术服务（23）
+## 学术服务（24）
 
 1. [会议与论坛] CPSI 2027 程序主席
    - English: Program Chair, CPSI 2027
@@ -102,35 +105,37 @@
    - English: Youth Editorial Board, Journal of Data Acquisition and Processing
 8. [期刊编辑与审稿] 《Meta-Radiology》青年编委 · [PDF](assets/service/meta-radiology-editor.pdf)
    - English: Youth Editorial Board, Meta-Radiology
-9. [期刊编辑与审稿] 《Frontiers in Neuroscience》客座主编
+9. [期刊编辑与审稿] 《指挥控制与仿真》青年编委 · [PDF](assets/service/command-control-simulation-editor.pdf)
+   - English: Youth Editorial Board, Command, Control and Simulation
+10. [期刊编辑与审稿] 《Frontiers in Neuroscience》客座主编
    - English: Guest Editor, Frontiers in Neuroscience
-10. [期刊编辑与审稿] 《Frontiers in Aging Neuroscience》客座主编
+11. [期刊编辑与审稿] 《Frontiers in Aging Neuroscience》客座主编
    - English: Guest Editor, Frontiers in Aging Neuroscience
-11. [期刊编辑与审稿] 《Frontiers in Cell and Developmental Biology》客座主编
+12. [期刊编辑与审稿] 《Frontiers in Cell and Developmental Biology》客座主编
    - English: Guest Editor, Frontiers in Cell and Developmental Biology
-12. [期刊编辑与审稿] 《Frontiers in Pharmacology》客座主编
+13. [期刊编辑与审稿] 《Frontiers in Pharmacology》客座主编
    - English: Guest Editor, Frontiers in Pharmacology
-13. [期刊编辑与审稿] 《数据采集与处理》优秀审稿人 · [PDF](assets/service/data-acquisition-outstanding-reviewer.pdf)
+14. [期刊编辑与审稿] 《数据采集与处理》优秀审稿人 · [PDF](assets/service/data-acquisition-outstanding-reviewer.pdf)
    - English: Outstanding Reviewer, Journal of Data Acquisition and Processing
-14. [期刊编辑与审稿] 《Aging & Disease》青年编委
+15. [期刊编辑与审稿] 《Aging & Disease》青年编委
    - English: Youth Editorial Board, Aging & Disease
-15. [期刊编辑与审稿] 《Brain-X》青年编委
+16. [期刊编辑与审稿] 《Brain-X》青年编委
    - English: Youth Editorial Board, Brain-X
-16. [期刊编辑与审稿] 《Cog》青年编委
+17. [期刊编辑与审稿] 《Cog》青年编委
    - English: Youth Editorial Board, Cog
-17. [期刊编辑与审稿] 《Artificial Intelligence Science and Engineering》青年编委
+18. [期刊编辑与审稿] 《Artificial Intelligence Science and Engineering》青年编委
    - English: Youth Editorial Board, Artificial Intelligence Science and Engineering
-18. [学术组织] 中国人工智能学会机器学习专委会通讯委员
+19. [学术组织] 中国人工智能学会机器学习专委会通讯委员
    - English: Corresponding Member, CAAI Machine Learning Committee
-19. [学术组织] 中国指挥与控制学会具身智能专委会副秘书长
+20. [学术组织] 中国指挥与控制学会具身智能专委会副秘书长
    - English: Deputy Secretary-General, CICC Embodied Intelligence Committee
-20. [学术组织] 中国自动化学会人机教育专委会委员
+21. [学术组织] 中国自动化学会人机教育专委会委员
    - English: Member, CAA Human–Machine Education Committee
-21. [学术组织] 中国仿真学会虚拟技术及应用专委会委员
+22. [学术组织] 中国仿真学会虚拟技术及应用专委会委员
    - English: Member, CSS Virtual Technology and Applications Committee
-22. [学术组织] 医学图像青年研讨会委员
+23. [学术组织] 医学图像青年研讨会委员
    - English: Committee Member, Youth Workshop on Medical Imaging
-23. [学术组织] 重庆市数学学会理事 · [PDF](assets/service/chongqing-math-society.pdf)
+24. [学术组织] 重庆市数学学会理事 · [PDF](assets/service/chongqing-math-society.pdf)
    - English: Council Member, Chongqing Mathematical Society
 
 ## 个人荣誉（7）

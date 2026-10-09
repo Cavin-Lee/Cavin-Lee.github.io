@@ -1052,6 +1052,13 @@ window.SITE_DATA = {
         },
         {
           "name": {
+            "zh": "《指挥控制与仿真》青年编委",
+            "en": "Youth Editorial Board, Command, Control and Simulation"
+          },
+          "file": "assets/service/command-control-simulation-editor.pdf"
+        },
+        {
+          "name": {
             "zh": "《Frontiers in Neuroscience》客座主编",
             "en": "Guest Editor, Frontiers in Neuroscience"
           }
@@ -1571,6 +1578,18 @@ window.SITE_DATA = {
     }
   ],
   "news": [
+    {
+      "year": 2026,
+      "title": {
+        "zh": "获聘《指挥控制与仿真》青年编委",
+        "en": "Appointed to the Youth Editorial Board of Command, Control and Simulation"
+      },
+      "detail": {
+        "zh": "李伟凯教授受聘为《指挥控制与仿真》第二届青年编委，任期三年。",
+        "en": "Professor Wei-Kai Li was appointed to the second Youth Editorial Board of Command, Control and Simulation for a three-year term."
+      },
+      "file": "assets/service/command-control-simulation-editor.pdf"
+    },
     {
       "year": 2026,
       "title": {
