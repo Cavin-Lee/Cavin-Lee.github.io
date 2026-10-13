@@ -309,10 +309,19 @@ def write_pdf(path: Path, lang: str, title: str, sections: list[tuple[str, list[
         story = [Paragraph(escape(title), title_style)]
         for line in intro or []:
             story.append(Paragraph(escape(line), body_style))
+    publication_headings = {"论文成果", "期刊论文", "会议论文", "预印本及其他", "Publications", "Journal Articles", "Conference Papers", "Preprints and Other Works"}
+    bullet_headings = {"研究领域", "Research Interests"}
+    publication_number = 1
     for heading, entries in sections:
         story.append(Paragraph(escape(heading), section_style))
         for number, entry in enumerate(entries, 1):
-            label = f"[{number}]" if heading in ("论文成果", "Publications") else f"{number}."
+            if heading in bullet_headings:
+                label = "-"
+            elif heading in publication_headings:
+                label = f"[{publication_number}]"
+                publication_number += 1
+            else:
+                label = f"{number}."
             marker = f'<font color="#a12f35">{label}</font> ' if numbered else "- "
             story.append(Paragraph(marker + escape(str(entry).replace("·", " / ")), body_style))
     doc = SimpleDocTemplate(str(path), pagesize=A4, rightMargin=42, leftMargin=42, topMargin=42, bottomMargin=55, title=title, author="Wei-Kai Li")
@@ -323,13 +332,31 @@ def write_pdf(path: Path, lang: str, title: str, sections: list[tuple[str, list[
 def write_cv_reports(data: dict, temp: Path) -> dict[str, Path]:
     output = {}
     profile = data.get("profile") or profile_from_pages()
+
+    def publication_kind(publication: dict) -> str:
+        citation = str(publication.get("citation", ""))
+        gbt = str(publication.get("gbtCitation", ""))
+        if "[PP/OL]" in gbt:
+            return "preprint"
+        if "[C]" in gbt or "Proceedings of the AAAI Conference" in citation:
+            return "conference"
+        return "journal"
+
     for lang in ("zh", "en"):
         zh = lang == "zh"
         title = "李伟凯 学术简历" if zh else "Wei-Kai Li Academic CV"
+        topics = profile.get("topics", [])
+        research_entries = [
+            f"{topic['title'][lang]}：{topic['description'][lang]}" if zh else f"{topic['title'][lang]}: {topic['description'][lang]}"
+            for topic in topics
+        ]
+        publication_labels = {"journal": "期刊论文" if zh else "Journal Articles", "conference": "会议论文" if zh else "Conference Papers", "preprint": "预印本及其他" if zh else "Preprints and Other Works"}
+        publications = sorted(data["publications"], key=lambda p: -(p.get("year") or 0))
         sections = [
+            (("研究领域" if zh else "Research Interests"), research_entries),
             (("教育经历" if zh else "Education"), [f"{x['years']} · {x['degree'][lang]} · {x['school'][lang]}" for x in data["education"]]),
             (("科研项目" if zh else "Research Projects"), [f"{x['title'][lang]} · {x['funder'][lang]} · {x['role'][lang]}" for x in data["projects"]]),
-            (("论文成果" if zh else "Publications"), [x.get("gbtCitation") or format_gbt(x) for x in sorted(data["publications"], key=lambda p: -(p.get("year") or 0))]),
+            *[(publication_labels[kind], [x.get("gbtCitation") or format_gbt(x) for x in publications if publication_kind(x) == kind]) for kind in ("journal", "conference", "preprint") if any(publication_kind(x) == kind for x in publications)],
             (("学术服务" if zh else "Academic Service"), [item["name"][lang] for group in data["service"] for item in group["items"]]),
             (("个人荣誉" if zh else "Personal Recognition"), [f"{x['year']} · {x['title'][lang]}" for x in data["personalAwards"]]),
             (("指导学生获奖" if zh else "Student Awards"), [f"{x['year']} · {x['title'][lang]}" for x in data["studentAwards"]]),

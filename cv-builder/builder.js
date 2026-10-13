@@ -6,6 +6,14 @@
   const lang=()=> $('cv-language').value;
   const tr=x=>typeof x==='string'?x:x[lang()];
   const sectionLabels={education:{zh:'教育经历',en:'Education'},projects:{zh:'科研项目',en:'Research Projects'},publications:{zh:'论文成果',en:'Publications'},service:{zh:'学术服务',en:'Academic Service'},personal:{zh:'个人荣誉',en:'Personal Recognition'},student:{zh:'指导学生获奖',en:'Student Awards'}};
+  const researchLabel={zh:'研究领域',en:'Research Interests'};
+  const publicationLabels={journal:{zh:'期刊论文',en:'Journal Articles'},conference:{zh:'会议论文',en:'Conference Papers'},preprint:{zh:'预印本及其他',en:'Preprints and Other Works'}};
+  const publicationKind=p=>{
+    const citation=p.gbtCitation||'';
+    if((p.citation||'').includes('Proceedings of the AAAI Conference')||citation.includes('[C]'))return 'conference';
+    if(citation.includes('[PP/OL]'))return 'preprint';
+    return 'journal';
+  };
   const items={
     education:data.education.map((x,i)=>({id:`education-${i}`,section:'education',label:()=>`${x.years} · ${tr(x.degree)} · ${tr(x.school)}`,selected:true})),
     projects:data.projects.map((x,i)=>({id:`projects-${i}`,section:'projects',label:()=>`${tr(x.title)} · ${tr(x.funder)}`,selected:i<6})),
@@ -38,10 +46,23 @@
     identity.append(make('h1','',en?'Wei-Kai Li':'李伟凯'),make('p','cv-subtitle',en?'Professor · Doctoral Supervisor · Taishan Scholars Young Expert':'教授 · 博士生导师 · 泰山学者青年专家'),make('p','cv-contact',`leeweikai@sdjzu.edu.cn · ${en?'School of Computer Science and Artificial Intelligence, Shandong Jianzhu University':'山东建筑大学计算机与人工智能学院'} · ${en?'School of Mathematics and Statistics, Chongqing Jiaotong University':'重庆交通大学数学与统计学院'} · ${en?'Panoramic Medical Imaging Center':'全景医学影像中心'}`));
     const portrait=make('img','cv-portrait');portrait.src='../assets/profile.jpeg?v=20261004m';portrait.alt=en?'Portrait of Wei-Kai Li':'李伟凯照片';portrait.width=1279;portrait.height=1929;
     header.append(identity,portrait);root.append(header);
+    const research=make('section','cv-research');research.append(make('h2','',tr(researchLabel)));
+    const researchList=make('ul');data.profile.topics.forEach(topic=>researchList.append(make('li','',`${tr(topic.title)}${en?': ':'：'}${tr(topic.description)}`)));research.append(researchList);root.append(research);
     appendSection(root,'education',(li,x)=>{li.textContent=x.label();});
     appendSection(root,'projects',(li,x)=>{li.textContent=x.label();});
     const selectedPubs=items.publications.filter(x=>selection.has(x.id)).map(x=>data.publications[Number(x.id.split('-')[1])]).sort((a,b)=>(b.year||0)-(a.year||0));
-    if(selectedPubs.length){const section=make('section','cv-publications');section.append(make('h2','',tr(sectionLabels.publications)));const list=make('ol');selectedPubs.forEach(p=>list.append(make('li','',p.gbtCitation||`${p.title}. ${p.citation}`)));section.append(list);root.append(section);}
+    if(selectedPubs.length){
+      const section=make('section','cv-publications');section.append(make('h2','',tr(sectionLabels.publications)));
+      let number=1;
+      Object.keys(publicationLabels).forEach(kind=>{
+        const group=selectedPubs.filter(p=>publicationKind(p)===kind);if(!group.length)return;
+        const block=make('div','cv-publication-group');block.append(make('h3','',tr(publicationLabels[kind])));
+        const list=make('ol');list.start=number;
+        group.forEach(p=>{const li=make('li','',p.gbtCitation||`${p.title}. ${p.citation}`);li.dataset.number=number++;list.append(li);});
+        block.append(list);section.append(block);
+      });
+      root.append(section);
+    }
     appendSection(root,'service',(li,x)=>{li.textContent=x.label();});
     appendSection(root,'personal',(li,x)=>{li.textContent=x.label();});
     appendSection(root,'student',(li,x)=>{li.textContent=x.label();});

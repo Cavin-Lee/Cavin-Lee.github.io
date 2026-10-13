@@ -16,5 +16,11 @@ body{background:#f5f7fb}.builder-header{background:#2d3239;color:#fff}.builder-h
 #cv-preview .cv-portrait{border-color:#c7d0de}
 #cv-preview ol li::marker{color:#a12f35;font-weight:700}
 #cv-preview .cv-publications ol{list-style:none;counter-reset:publication;padding-left:0}
-#cv-preview .cv-publications li{counter-increment:publication;position:relative;padding-left:32px}
-#cv-preview .cv-publications li::before{content:'[' counter(publication) ']';position:absolute;left:0;color:#a12f35;font-weight:700}
+#cv-preview .cv-publications li{position:relative;padding-left:32px}
+#cv-preview .cv-publications li::before{content:'[' attr(data-number) ']';position:absolute;left:0;color:#a12f35;font-weight:700}
+#cv-preview .cv-research ul{margin:0;padding-left:18px;columns:1}
+#cv-preview .cv-research li{margin:0 0 4px;break-inside:avoid-page}
+#cv-preview .cv-research li::marker{color:#a12f35}
+#cv-preview .cv-publications h3{margin:12px 0 6px;color:#2d3239;font-size:11px;break-after:avoid-page}
+#cv-preview .cv-publication-group{break-inside:auto}
+#cv-preview .cv-publication-group ol{margin:0}
