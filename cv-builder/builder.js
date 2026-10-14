@@ -14,10 +14,12 @@
     if(citation.includes('[PP/OL]'))return 'preprint';
     return 'journal';
   };
+  const publicationTitle=p=>lang()==='en'?(p.titleEn||p.title):p.title;
+  const publicationCitation=p=>lang()==='en'?(p.gbtCitationEn||p.gbtCitation||`${p.title}. ${p.citation}`):(p.gbtCitation||`${p.title}. ${p.citation}`);
   const items={
     education:data.education.map((x,i)=>({id:`education-${i}`,section:'education',label:()=>`${x.years} · ${tr(x.degree)} · ${tr(x.school)}`,selected:true})),
     projects:data.projects.map((x,i)=>({id:`projects-${i}`,section:'projects',label:()=>`${tr(x.title)} · ${tr(x.funder)}`,selected:i<6})),
-    publications:data.publications.map((x,i)=>({id:`publications-${i}`,section:'publications',label:()=>`${x.year||'—'} · ${x.title}`,selected:i<8})),
+    publications:data.publications.map((x,i)=>({id:`publications-${i}`,section:'publications',label:()=>`${x.year||'—'} · ${publicationTitle(x)}`,selected:i<8})),
     service:data.service.flatMap((group,g)=>group.items.map((x,i)=>({id:`service-${g}-${i}`,section:'service',label:()=>tr(x.name),selected:false}))),
     personal:data.personalAwards.map((x,i)=>({id:`personal-${i}`,section:'personal',label:()=>`${x.year} · ${tr(x.title)}`,selected:i<4})),
     student:data.studentAwards.map((x,i)=>({id:`student-${i}`,section:'student',label:()=>`${x.year} · ${tr(x.title)}`,selected:i<4})),
@@ -58,7 +60,7 @@
         const group=selectedPubs.filter(p=>publicationKind(p)===kind);if(!group.length)return;
         const block=make('div','cv-publication-group');block.append(make('h3','',tr(publicationLabels[kind])));
         const list=make('ol');list.start=number;
-        group.forEach(p=>{const li=make('li','',p.gbtCitation||`${p.title}. ${p.citation}`);li.dataset.number=number++;list.append(li);});
+        group.forEach(p=>{const li=make('li','',publicationCitation(p));li.dataset.number=number++;list.append(li);});
         block.append(list);section.append(block);
       });
       root.append(section);

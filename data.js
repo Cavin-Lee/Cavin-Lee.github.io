@@ -706,13 +706,15 @@ window.SITE_DATA = {
     },
     {
       "title": "时滞可交换四元数神经网络稳定性分析",
+      "titleEn": "Analysis of Stability of Time-Delay Exchangeable Quaternion Neural Networks",
       "year": 2020,
       "citation": "林东源， 陈晓丰， 孙文涛， 李伟凯， 夏砚楠. 智能科学与技术学报 2 (1), 80-87, 2020",
       "kind": "Google Scholar",
       "area": "methods",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:3fE2CSJIrl8C",
       "file": "assets/papers/scholar-70.pdf",
-      "gbtCitation": "林东源，陈晓丰，孙文涛，等. 时滞可交换四元数神经网络稳定性分析[J]. 智能科学与技术学报, 2020, 2(1): 80-87."
+      "gbtCitation": "林东源，陈晓丰，孙文涛，等. 时滞可交换四元数神经网络稳定性分析[J]. 智能科学与技术学报, 2020, 2(1): 80-87.",
+      "gbtCitationEn": "LIN DONGYUAN, CHEN XIAOFENG, SUN WENTAO, et al. Analysis of stability of time-delay exchangeable quaternion neural networks[J]. Journal of Smart Science and Technology, 2020, 2(1): 80-87."
     },
     {
       "title": "Toward a better estimation of functional brain network for mild cognitive impairment identification: a transfer learning view",
@@ -746,22 +748,26 @@ window.SITE_DATA = {
     },
     {
       "title": "用于轻度认知障碍诊断的群体相似约束功能脑网络建模方法",
+      "titleEn": "A Group-Similarity-Constrained Functional Brain Network Modeling Method for Mild Cognitive Impairment Diagnosis",
       "year": 2019,
       "citation": "李伟凯， 高欣， 纪同俭， 王政霞. 收藏 2, 2019",
       "kind": "Google Scholar",
       "area": "brain",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:Tyk-4Ss8FVUC",
       "file": "assets/papers/scholar-74.pdf",
-      "gbtCitation": "李伟凯，高欣，纪同俭，等. 用于轻度认知障碍诊断的群体相似约束功能脑网络建模方法[J]. 智能科学与技术学报, 2019(2)."
+      "gbtCitation": "李伟凯，高欣，纪同俭，等. 用于轻度认知障碍诊断的群体相似约束功能脑网络建模方法[J]. 智能科学与技术学报, 2019(2).",
+      "gbtCitationEn": "LI W, GAO X, JI TONGJIAN, et al. A group-similarity-constrained functional brain network modeling method for mild cognitive impairment diagnosis[J]. Journal of Smart Science and Technology, 2019(2)."
     },
     {
       "title": "一种自适应分数阶偏微分图像增强模型.",
+      "titleEn": "An Adaptive Fractional-Order Partial Differential Image Enhancement Model",
       "year": 2018,
       "citation": "李伟凯， 王政霞， 蒋伟. Computer Engineering & Science/Jisuanji Gongcheng yu Kexue 40 (4), 699, 2018",
       "kind": "Google Scholar",
       "area": "vision",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=XEfV8mkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=XEfV8mkAAAAJ:Y0pCki6q_DkC",
-      "gbtCitation": "李伟凯，王政霞，蒋伟. 一种自适应分数阶偏微分图像增强模型[J]. Computer Engineering & Science/Jisuanji Gongcheng yu Kexue, 2018, 40(4): 699."
+      "gbtCitation": "李伟凯，王政霞，蒋伟. 一种自适应分数阶偏微分图像增强模型[J]. Computer Engineering & Science/Jisuanji Gongcheng yu Kexue, 2018, 40(4): 699.",
+      "gbtCitationEn": "LI W, WANG Z, JIANG W. An adaptive fractional-order partial differential image enhancement model[J]. Computer Engineering and Science, 2018, 40(4): 699."
     },
     {
       "title": "Simultaneous estimation of low-and high-order functional connectivity for identifying mild cognitive impairment",
