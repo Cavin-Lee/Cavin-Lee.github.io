@@ -31,6 +31,7 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.cidfonts import UnicodeCIDFont
+from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import Image, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 from gbt_citations import format_gbt
 
@@ -288,11 +289,35 @@ def write_missing_reports(data: dict, temp: Path) -> dict[str, Path]:
     return {"missing-papers.md": markdown, "assets/missing-papers.xlsx": xlsx, "assets/missing-papers.pdf": pdf}
 
 
-pdfmetrics.registerFont(UnicodeCIDFont("STSong-Light"))
+def register_chinese_font() -> str:
+    """Register an embedded CJK font for Chinese PDFs when available.
+
+    The CID fallback is useful on machines without the macOS font files, but
+    some PDF viewers render a few Chinese glyphs as black squares when the CID
+    font is not embedded consistently.  Songti's regular SC face is a real
+    TrueType font, so ReportLab embeds the glyphs used by the document.
+    """
+    candidates = (
+        ("/System/Library/Fonts/Supplemental/Songti.ttc", 6),  # STSongti-SC-Regular
+        ("/System/Library/Fonts/STHeiti Light.ttc", 0),
+    )
+    for path, subfont_index in candidates:
+        try:
+            if not Path(path).exists():
+                continue
+            pdfmetrics.registerFont(TTFont("ChineseEmbedded", path, subfontIndex=subfont_index))
+            return "ChineseEmbedded"
+        except Exception:
+            continue
+    pdfmetrics.registerFont(UnicodeCIDFont("STSong-Light"))
+    return "STSong-Light"
+
+
+CHINESE_FONT = register_chinese_font()
 
 
 def write_pdf(path: Path, lang: str, title: str, sections: list[tuple[str, list[str]]], numbered: bool = False, intro: list[str] | None = None, portrait: Path | None = None) -> None:
-    font = "STSong-Light" if lang == "zh" else "Helvetica"
+    font = CHINESE_FONT if lang == "zh" else "Helvetica"
     title_style = ParagraphStyle("title", fontName=font, fontSize=18, leading=25, textColor=colors.HexColor("#202329"), spaceAfter=12, wordWrap="CJK")
     section_style = ParagraphStyle("section", fontName=font, fontSize=11.5, leading=17, textColor=colors.HexColor("#163a78"), spaceBefore=16, spaceAfter=7, wordWrap="CJK")
     body_style = ParagraphStyle("body", fontName=font, fontSize=8.7, leading=13.3, textColor=colors.HexColor("#202329"), leftIndent=12, firstLineIndent=-12, spaceAfter=5, wordWrap="CJK")
