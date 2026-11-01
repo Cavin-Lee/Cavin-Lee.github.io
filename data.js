@@ -994,6 +994,21 @@ window.SITE_DATA = {
     {
       "year": 2026,
       "event": {
+        "zh": "中国国际数智医疗产业人才高质量发展大会",
+        "en": "China International Conference on High-Quality Talent Development in the Digital and Intelligent Healthcare Industry"
+      },
+      "type": {
+        "zh": "学术报告",
+        "en": "Academic Presentation"
+      },
+      "title": {
+        "zh": "多模态脑网络组学的构建与应用",
+        "en": "Construction and Applications of Multimodal Brain Connectomics"
+      }
+    },
+    {
+      "year": 2026,
+      "event": {
         "zh": "中国自动化大会 2026（CAC 2026）",
         "en": "2026 Chinese Automation Congress (CAC 2026)"
       },
