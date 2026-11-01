@@ -2,7 +2,7 @@
 
 此文件由本地管理工具根据 `data.js` 自动生成，供后续智能体检索。请在管理页面修改内容，不要直接改此文件。
 
-生成时间：2026-11-01T12:01:57+08:00
+生成时间：2026-11-01T12:02:37+08:00
 
 ## 主页文案
 
@@ -89,16 +89,16 @@
 
 ## 学术报告（3）
 
-1. 2026 · 多模态脑网络组学的构建与应用
-   - English: Construction and Applications of Multimodal Brain Connectomics
-   - 学术报告 · 中国国际数智医疗产业人才高质量发展大会
-2. 2026 · 实时数字人生成方法 · [PDF](assets/presentations/2026-cac-digital-human-generation.pdf)
+1. 2026 · 实时数字人生成方法 · [PDF](assets/presentations/2026-cac-digital-human-generation.pdf)
    - English: Real-Time Digital Human Generation Methods
    - 平行会议报告 · 中国自动化大会 2026（CAC 2026）
    - 平行会议：智体控制与智体自动化：迈向智体流程、智体组织与智体社会
-3. 2026 · 面向药物虚拟筛选的人工智能：从分子相互作用表征到泛化可信预测
+2. 2026 · 面向药物虚拟筛选的人工智能：从分子相互作用表征到泛化可信预测
    - English: Artificial Intelligence for Virtual Drug Screening: From Molecular Interaction Representation to Generalizable and Trustworthy Prediction
    - 分组报告 · 中国工业与应用数学学会第24届年会
+3. 2025 · 多模态脑网络组学的构建与应用
+   - English: Construction and Applications of Multimodal Brain Connectomics
+   - 学术报告 · 中国国际数智医疗产业人才高质量发展大会
 
 ## 学术服务（26）
 
