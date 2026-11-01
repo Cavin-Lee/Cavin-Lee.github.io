@@ -1096,6 +1096,13 @@ window.SITE_DATA = {
       "items": [
         {
           "name": {
+            "zh": "《International Journal of Intelligent Control and Systems》编委",
+            "en": "Editorial Board Member, International Journal of Intelligent Control and Systems"
+          },
+          "file": "assets/service/ijics-editorial-board.pdf"
+        },
+        {
+          "name": {
             "zh": "《数据采集与处理》青年编委",
             "en": "Youth Editorial Board, Journal of Data Acquisition and Processing"
           },

@@ -37,7 +37,7 @@
 | 待补全文 | 47 |
 | 科研项目 | 9 |
 | 学术报告 | 3 |
-| 学术服务条目 | 26 |
+| 学术服务条目 | 27 |
 | 个人荣誉 | 7 |
 | 指导学生获奖条目 | 21 |
 | 教育经历 | 3 |
@@ -110,6 +110,7 @@
 
 ## 最近完成的改动
 
+- `2026-11-01`：新增《International Journal of Intelligent Control and Systems》编委任职，独立列于“期刊编辑与审稿”；聘书已转正为纵向 A4 PDF，位于 `assets/service/ijics-editorial-board.pdf`，小于 5 MB。中英文主页、两份静态简历与内容索引同步；学术服务共 27 项。
 - `2026-11-01`：新增中国国际数智医疗产业人才高质量发展大会报告“多模态脑网络组学的构建与应用”，中英文同步；用户明确该大会年份为 2025 年，按年份倒序排在 2026 年报告之后。学术报告共 3 条。
 - `2026-11-01`：完成中英文 Presentations 区域发布，新增中国自动化大会 2026（CAC 2026）平行会议报告“实时数字人生成方法”。报告证书位于 `assets/presentations/2026-cac-digital-human-generation.pdf`，纵向 A4、约 2 MB；报告共 2 条。
 - `2026-11-01`：新增山东省人工智能学会青年科学家专业委员会委员、具身智能专业委员会委员，两项独立列于学术组织。聘书分别位于 `assets/service/shandong-ai-young-scientists-committee.pdf` 和 `assets/service/shandong-ai-embodied-intelligence-committee.pdf`，均为正向横向 A4、5 MB 以内；两份静态简历及内容索引已同步。聘书落款为 2026 年 10 月。
