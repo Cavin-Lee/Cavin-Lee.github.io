@@ -1,6 +1,6 @@
 # 个人网站 Agent 接手说明
 
-更新日期：2026-11-01。本文根据当前仓库和已确认需求整理；数量是本地快照，未在本次重新抓取 Google Scholar。后续接手先检查实际文件与 Git 状态。
+更新日期：2026-11-01。本文根据当前仓库和已确认需求整理；本次已重新核对 Google Scholar 的完整 83 条记录。后续接手先检查实际文件与 Git 状态。
 
 ## 从哪里开始
 
@@ -32,20 +32,20 @@
 
 | 内容 | 数量 |
 | --- | ---: |
-| Google Scholar 论文条目 | 80 |
-| 已关联本地全文 | 33 |
-| 待补全文 | 47 |
+| Google Scholar 论文条目 | 83 |
+| 已关联本地全文 | 54 |
+| 待补全文 | 29 |
 | 科研项目 | 9 |
 | 学术报告 | 3 |
-| 学术服务条目 | 27 |
+| 学术服务条目 | 28 |
 | 个人荣誉 | 7 |
 | 指导学生获奖条目 | 21 |
 | 教育经历 | 3 |
 | 新闻 | 8 |
 
-以上数量从 `data.js` 核对；“获奖条目数”不等于证书数，一项可以有多个 PDF。论文来源是 [Google Scholar 个人主页](https://scholar.google.com/citations?user=XEfV8mkAAAAJ&hl=zh-CN)，`scholar-publications.json` 保存 2026-10-03 的采集快照。
+以上数量从 `data.js` 核对；“获奖条目数”不等于证书数，一项可以有多个 PDF。论文来源是 [Google Scholar 个人主页](https://scholar.google.com/citations?user=XEfV8mkAAAAJ&hl=zh-CN)，`scholar-publications.json` 保存 2026-11-01 的采集快照。
 
-当前明确待补的是 47 篇论文全文，见 [missing-papers.md](missing-papers.md) 和 [Excel 清单](assets/missing-papers.xlsx)。部分 Scholar 引文缺卷、期、完整页码；应核对原文或出版方后补充，不能为凑齐格式猜测。查不到全文时保留条目。
+当前明确待补的是 29 篇论文全文，见 [missing-papers.md](missing-papers.md) 和 [Excel 清单](assets/missing-papers.xlsx)。本次新增 21 份全文，原始下载来源和版本见 [PUBLICATION_SOURCES.md](PUBLICATION_SOURCES.md)，包含已核对的出版社版本和作者预印本。部分论文仅能访问摘要或网页，下载受限时保留待补状态。部分 Scholar 引文缺卷、期、完整页码；应核对原文或出版方后补充，不能为凑齐格式猜测。
 
 ## 原始材料在哪里
 
@@ -110,6 +110,10 @@
 
 ## 最近完成的改动
 
+- `2026-11-01`：按实时 Scholar 完整列表从 80 条更新为 83 条，新增 3 篇 CPSI 2026 论文；MRI→PET RobustGAN 论文修正为 2026 年、Expert Systems with Applications 第 297 卷、129287。保留原有中英文定制引文，快照日期更新为 2026-11-01。
+- `2026-11-01`：从出版社、arXiv 和 NLM PMC 官方开放仓库补充 21 份全文，均保留可检索文字、转为 A4、每份小于 5 MB；全文共 54 份、待补 29 篇。旧题名疲劳检测预印本使用 arXiv v1，TCSS 记录使用核对后的新题名 v5，版本记录见 `PUBLICATION_SOURCES.md`。同步三种待补清单、静态简历、内容索引和资源版本号。
+- `2026-11-01`：静态简历条目段后间距微调为 3 pt，保留原字号、行距、分章与嵌入字体；更新后的完整中英文 PDF 各为 6 页，避免英文末页只剩少数学生奖项。
+- `2026-11-01`：新增“山东省人工智能学会理事 / Council Member, Shandong Association for Artificial Intelligence”，列于学术组织，中英文主页及简历同步；用户未提供聘书或起止年月，未补写这些信息。学术服务共 28 项。
 - `2026-11-01`：新增《International Journal of Intelligent Control and Systems》编委任职，独立列于“期刊编辑与审稿”；聘书已转正为纵向 A4 PDF，位于 `assets/service/ijics-editorial-board.pdf`，小于 5 MB。中英文主页、两份静态简历与内容索引同步；学术服务共 27 项。
 - `2026-11-01`：新增中国国际数智医疗产业人才高质量发展大会报告“多模态脑网络组学的构建与应用”，中英文同步；用户明确该大会年份为 2025 年，按年份倒序排在 2026 年报告之后。学术报告共 3 条。
 - `2026-11-01`：完成中英文 Presentations 区域发布，新增中国自动化大会 2026（CAC 2026）平行会议报告“实时数字人生成方法”。报告证书位于 `assets/presentations/2026-cac-digital-human-generation.pdf`，纵向 A4、约 2 MB；报告共 2 条。
