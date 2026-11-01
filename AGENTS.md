@@ -52,6 +52,7 @@
 - **论文**：在 `publications` 中维护 `title`、`year`、`citation`、`gbtCitation`、`area`、`scholar`，确认有全文后才加 `file`。`area` 必须是 `areas` 中的键。更新 Scholar 记录时也更新 `scholar-publications.json` 和三种待补清单。不要仅凭相似文件名匹配论文。
 - **项目**：在 `projects` 中维护双语 `title`、`funder`、`role`；批准通知或任务书放进 `assets/projects/`，以 `files: [{"path":"assets/projects/…pdf","label":{"zh":"…","en":"…"}}]` 关联。
 - **学术服务**：在 `service` 对应分组的 `items` 中增加独立条目；有聘书时用 `file` 指向 `assets/service/`。期刊任职逐刊列出。
+- **学术报告**：在 `presentations` 中维护 `year`、双语 `title`、`event`、`type`，可选双语 `session` 记录平行会议名称；证书用 `file` 关联 `assets/presentations/` 下的 A4、5 MB 以内 PDF。中英文主页单独设 Presentations / 学术报告栏。当前通过 `data.js` 手工维护，并同步内容索引、交接记录及资源版本号。
 - **个人或学生获奖**：分别修改 `personalAwards`、`studentAwards`。每项含 `year`、双语 `title`、`files` 数组，可选双语 `note`。依据证书文字核对赛事名称、级别、年份和指导教师；不要只按源文件名判断。新增学生获奖后，简历生成器会自动出现对应复选框。
 - **新闻**：在 `news` 增加 `year`、双语 `title` 和 `detail`；引用证书时用 `file` 关联可下载的 A4 PDF。
 - **静态简介、职称、单位、研究方向卡片**：同步修改 `index.html` 与 `cn/index.html`。简历预览的职称和单位另外写在 `cv-builder/builder.js`，静态简历 PDF 也需重做。

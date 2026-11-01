@@ -45,7 +45,7 @@ MAX_PDF_BYTES = 5_000_000
 UPLOAD_KINDS = {"papers", "awards", "projects", "service"}
 UPLOAD_CATEGORY_KIND = {"publications": "papers", "projects": "projects", "news": "awards", "personalAwards": "awards", "studentAwards": "awards", "service": "service"}
 RECORD_CATEGORIES = {"education", "publications", "projects", "news", "personalAwards", "studentAwards", "service"}
-LABELS = {"education": "教育经历", "publications": "论文", "projects": "科研项目", "news": "学术动态", "personalAwards": "个人荣誉", "studentAwards": "学生获奖", "service": "学术服务"}
+LABELS = {"education": "教育经历", "publications": "论文", "projects": "科研项目", "presentations": "学术报告", "news": "学术动态", "personalAwards": "个人荣誉", "studentAwards": "学生获奖", "service": "学术服务"}
 
 
 class ManagerError(Exception):
@@ -213,8 +213,8 @@ def content_index(data: dict) -> str:
     lines += ["## 主页文案", "", f"- 职称：{md_text(profile['role']['zh'])} / {md_text(profile['role']['en'])}", "- 学术经历："]
     lines += [f"  - {md_text(paragraph)}" for paragraph in profile["about"]["zh"]]
     lines += ["- 研究方向："] + [f"  - [{md_text(topic['title']['zh'])}](cn/#papers-{key}) / [{md_text(topic['title']['en'])}](index.html#papers-{key})" for key, topic in zip(data["areas"], profile["topics"])] + [""]
-    for category in ("news", "education", "projects", "service", "personalAwards", "studentAwards", "publications"):
-        entries = [(g, x) for g, group in enumerate(data["service"]) for x in group["items"]] if category == "service" else [(None, x) for x in data[category]]
+    for category in ("news", "education", "projects", "presentations", "service", "personalAwards", "studentAwards", "publications"):
+        entries = [(g, x) for g, group in enumerate(data["service"]) for x in group["items"]] if category == "service" else [(None, x) for x in data.get(category, [])]
         lines += [f"## {LABELS[category]}（{len(entries)}）", ""]
         for number, (group, item) in enumerate(entries, 1):
             name = item.get("title") or item.get("name") or item.get("degree") or item.get("years") or "条目"
@@ -238,6 +238,10 @@ def content_index(data: dict) -> str:
                 lines.append(f"   - 简历引文（GB/T 7714—2025）：{md_text(item.get('gbtCitation') or format_gbt(item))}")
             elif category == "projects":
                 lines.append(f"   - {md_text(item['funder']['zh'])} · {md_text(item['role']['zh'])}")
+            elif category == "presentations":
+                lines.append(f"   - {md_text(item['type']['zh'])} · {md_text(item['event']['zh'])}")
+                if item.get("session"):
+                    lines.append(f"   - 平行会议：{md_text(item['session']['zh'])}")
             elif category == "news":
                 lines.append(f"   - {md_text(item['detail']['zh'])}")
             elif category == "education":
@@ -595,8 +599,8 @@ def status() -> dict:
 
 def referenced_pdfs(data: dict) -> set[str]:
     paths = set()
-    for category in ("publications", "projects", "news", "personalAwards", "studentAwards"):
-        for item in data[category]:
+    for category in ("publications", "projects", "presentations", "news", "personalAwards", "studentAwards"):
+        for item in data.get(category, []):
             if item.get("file"):
                 paths.add(item["file"])
             paths.update(file["path"] for file in item.get("files", []))

@@ -990,6 +990,43 @@ window.SITE_DATA = {
       }
     }
   ],
+  "presentations": [
+    {
+      "year": 2026,
+      "event": {
+        "zh": "中国自动化大会 2026（CAC 2026）",
+        "en": "2026 Chinese Automation Congress (CAC 2026)"
+      },
+      "type": {
+        "zh": "平行会议报告",
+        "en": "Parallel Session Presentation"
+      },
+      "title": {
+        "zh": "实时数字人生成方法",
+        "en": "Real-Time Digital Human Generation Methods"
+      },
+      "session": {
+        "zh": "智体控制与智体自动化：迈向智体流程、智体组织与智体社会",
+        "en": "Agentic Control and Agentic Automation: Toward Agentic Processes, Agentic Organizations, and Agentic Societies"
+      },
+      "file": "assets/presentations/2026-cac-digital-human-generation.pdf"
+    },
+    {
+      "year": 2026,
+      "event": {
+        "zh": "中国工业与应用数学学会第24届年会",
+        "en": "24th Annual Conference of the Chinese Society for Industrial and Applied Mathematics (CSIAM)"
+      },
+      "type": {
+        "zh": "分组报告",
+        "en": "Group Presentation"
+      },
+      "title": {
+        "zh": "面向药物虚拟筛选的人工智能：从分子相互作用表征到泛化可信预测",
+        "en": "Artificial Intelligence for Virtual Drug Screening: From Molecular Interaction Representation to Generalizable and Trustworthy Prediction"
+      }
+    }
+  ],
   "service": [
     {
       "title": {

@@ -27,6 +27,15 @@
   const projectList = document.getElementById('project-list');
   data.projects.forEach(item => { const card=el('article','project'); const head=el('div','project-header'); head.append(el('span','',t(item.funder)),el('span','',t(item.role))); card.append(head,el('h3','',t(item.title))); if(item.note)card.append(el('p','',t(item.note))); if(item.files?.length){const files=el('div','project-files');item.files.forEach(file=>files.append(link(file.path,t(file.label))));card.append(files);} projectList.append(card); });
 
+  const presentationList = document.getElementById('presentation-list');
+  (data.presentations || []).forEach(item => {
+    const card=el('article','presentation');
+    card.append(el('div','presentation-top',`${item.year} · ${t(item.type)}`),el('h3','',t(item.title)),el('p','',t(item.event)));
+    if(item.session)card.append(el('p','presentation-session',`${en?'Parallel session: ':'平行会议：'}${t(item.session)}`));
+    if(item.file)card.append(link(item.file,en?'Presentation certificate PDF ↓':'报告证书 PDF ↓'));
+    presentationList.append(card);
+  });
+
   const serviceList = document.getElementById('service-list');
   data.service.forEach(group => { const card=el('article','service-card'); card.append(el('h3','',t(group.title))); const ul=el('ul'); group.items.forEach(item => { const li=el('li'); li.append(document.createTextNode(t(item.name))); if(item.file){li.append(document.createTextNode(' · '),link(item.file,en?'Certificate ↓':'聘书／证明 ↓'));} ul.append(li); }); card.append(ul); serviceList.append(card); });
 

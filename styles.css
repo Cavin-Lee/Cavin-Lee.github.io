@@ -42,6 +42,7 @@
 .publication-group{scroll-margin-top:90px}
 
 /* Black, red and blue palette inspired by the referenced academic homepage. */
+.presentation-list{display:grid;gap:14px}.presentation{min-width:0;padding:24px;background:#fff;border:1px solid var(--line);border-radius:6px}.presentation-top{color:var(--blue);font-size:12px;font-weight:700;letter-spacing:.06em}.presentation h3{margin:9px 0 7px;font-size:18px;line-height:1.5;overflow-wrap:anywhere}.presentation p{margin:0;color:var(--muted);font-size:13px;overflow-wrap:anywhere}.presentation .presentation-session{margin-top:6px}.presentation>a{display:inline-block;margin-top:12px;padding:5px 0;color:var(--blue);font-size:12px;font-weight:700;text-decoration:underline;text-underline-offset:3px}
 .site-header{background:rgba(45,50,57,.98);border-bottom-color:rgba(255,255,255,.12)}
 .site-header .brand,.site-header .main-nav,.site-header .language-switch{color:#f5f7fb}
 .site-header .brand small{color:#c8d1df}
@@ -49,6 +50,13 @@
 .site-header .main-nav a:hover,.site-header .language-switch:hover{color:#f0b6ba}
 .site-header .language-switch{border-left-color:rgba(255,255,255,.22)}
 .site-footer{background:#2d3239}
+
+@media screen and (min-width:761px) and (max-width:1100px){
+  .header-inner{gap:16px}
+  .main-nav{min-width:0;overflow-x:auto;scrollbar-width:none}
+  .main-nav a{flex:none}
+  .language-switch{padding-left:12px}
+}
 
 /* Compact mobile layout; fixed row gaps keep tall award lists above the footer. */
 @media screen and (max-width:760px){
