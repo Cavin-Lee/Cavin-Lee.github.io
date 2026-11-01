@@ -342,6 +342,8 @@ def write_pdf(path: Path, lang: str, title: str, sections: list[tuple[str, list[
     section_style = ParagraphStyle("section", fontName=font, fontSize=11.5, leading=17, textColor=colors.HexColor("#163a78"), spaceBefore=16, spaceAfter=7, wordWrap="CJK")
     body_style = ParagraphStyle("body", fontName=font, fontSize=8.7, leading=13.3, textColor=colors.HexColor("#202329"), leftIndent=12, firstLineIndent=-12, spaceAfter=5, wordWrap="CJK")
     if portrait:
+        section_style.keepWithNext = True
+        body_style.spaceAfter = 4.5
         intro_style = ParagraphStyle("intro", fontName=font, fontSize=8.7, leading=13.3, textColor=colors.HexColor("#202329"), spaceAfter=5, wordWrap="CJK")
         header_text = [Paragraph(escape(title), title_style)] + [Paragraph(escape(line.replace("·", " / ")), intro_style) for line in intro or [] if line]
         ratio = 1929 / 1279
