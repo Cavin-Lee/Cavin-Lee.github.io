@@ -1128,6 +1128,20 @@ window.SITE_DATA = {
       "items": [
         {
           "name": {
+            "zh": "山东省人工智能学会青年科学家专业委员会委员",
+            "en": "Member, Young Scientists Professional Committee, Shandong Association for Artificial Intelligence"
+          },
+          "file": "assets/service/shandong-ai-young-scientists-committee.pdf"
+        },
+        {
+          "name": {
+            "zh": "山东省人工智能学会具身智能专业委员会委员",
+            "en": "Member, Embodied Intelligence Professional Committee, Shandong Association for Artificial Intelligence"
+          },
+          "file": "assets/service/shandong-ai-embodied-intelligence-committee.pdf"
+        },
+        {
+          "name": {
             "zh": "中国人工智能学会机器学习专委会通讯委员",
             "en": "Corresponding Member, CAAI Machine Learning Committee"
           }

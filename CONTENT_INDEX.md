@@ -2,7 +2,7 @@
 
 此文件由本地管理工具根据 `data.js` 自动生成，供后续智能体检索。请在管理页面修改内容，不要直接改此文件。
 
-生成时间：2026-10-09T23:33:30+08:00
+生成时间：2026-11-01T11:48:41+08:00
 
 ## 主页文案
 
@@ -87,7 +87,7 @@
    - English: Investigating and Extending the Effectiveness of Self-Supervised Learning
    - 国家自然科学基金面上项目 · 主研
 
-## 学术服务（24）
+## 学术服务（26）
 
 1. [会议与论坛] CPSI 2027 程序主席
    - English: Program Chair, CPSI 2027
@@ -125,17 +125,21 @@
    - English: Youth Editorial Board, Cog
 18. [期刊编辑与审稿] 《Artificial Intelligence Science and Engineering》青年编委
    - English: Youth Editorial Board, Artificial Intelligence Science and Engineering
-19. [学术组织] 中国人工智能学会机器学习专委会通讯委员
+19. [学术组织] 山东省人工智能学会青年科学家专业委员会委员 · [PDF](assets/service/shandong-ai-young-scientists-committee.pdf)
+   - English: Member, Young Scientists Professional Committee, Shandong Association for Artificial Intelligence
+20. [学术组织] 山东省人工智能学会具身智能专业委员会委员 · [PDF](assets/service/shandong-ai-embodied-intelligence-committee.pdf)
+   - English: Member, Embodied Intelligence Professional Committee, Shandong Association for Artificial Intelligence
+21. [学术组织] 中国人工智能学会机器学习专委会通讯委员
    - English: Corresponding Member, CAAI Machine Learning Committee
-20. [学术组织] 中国指挥与控制学会具身智能专委会副秘书长
+22. [学术组织] 中国指挥与控制学会具身智能专委会副秘书长
    - English: Deputy Secretary-General, CICC Embodied Intelligence Committee
-21. [学术组织] 中国自动化学会人机教育专委会委员
+23. [学术组织] 中国自动化学会人机教育专委会委员
    - English: Member, CAA Human–Machine Education Committee
-22. [学术组织] 中国仿真学会虚拟技术及应用专委会委员
+24. [学术组织] 中国仿真学会虚拟技术及应用专委会委员
    - English: Member, CSS Virtual Technology and Applications Committee
-23. [学术组织] 医学图像青年研讨会委员
+25. [学术组织] 医学图像青年研讨会委员
    - English: Committee Member, Youth Workshop on Medical Imaging
-24. [学术组织] 重庆市数学学会理事 · [PDF](assets/service/chongqing-math-society.pdf)
+26. [学术组织] 重庆市数学学会理事 · [PDF](assets/service/chongqing-math-society.pdf)
    - English: Council Member, Chongqing Mathematical Society
 
 ## 个人荣誉（7）
