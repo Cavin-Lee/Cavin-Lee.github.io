@@ -2,7 +2,7 @@
 
 此文件由本地管理工具根据 `data.js` 自动生成，供后续智能体检索。请在管理页面修改内容，不要直接改此文件。
 
-生成时间：2026-11-01T12:35:33+08:00
+生成时间：2026-11-04T16:49:24+08:00
 
 ## 主页文案
 
@@ -159,7 +159,7 @@
 28. [学术组织] 重庆市数学学会理事 · [PDF](assets/service/chongqing-math-society.pdf)
    - English: Council Member, Chongqing Mathematical Society
 
-## 个人荣誉（7）
+## 个人荣誉（8）
 
 1. 2026 · IEEE SMC 2026 最佳会议论文奖入围 · [PDF](assets/awards/2026-ieee-smc-best-paper-finalist.pdf)
    - English: IEEE SMC 2026 Best Conference Paper Award Finalist
@@ -172,9 +172,12 @@
    - English: CPSI Best Paper Award
 5. 2025 · 中国机器人及人工智能大赛优秀指导教师 · [PDF](assets/awards/2025-craic-advisor.pdf)
    - English: Outstanding Faculty Advisor, China Robot and AI Competition
-6. 2023 · ICCSI 最佳论文入围奖 · [PDF](assets/awards/2023-iccsi-best-paper.pdf)
+6. 2025 · 第五届重庆市高校教师教学创新大赛三等奖（中级及以下组） · [PDF](assets/awards/2025-chongqing-teaching-innovation-third-prize.pdf)
+   - English: Third Prize, 5th Chongqing University Teachers' Teaching Innovation Competition (Intermediate and Below Rank Group)
+   - 说明：获奖人：李伟凯；团队成员：陈晓丰、李华、曾文明。颁发单位：重庆市教育委员会；证书日期：2025 年 6 月。
+7. 2023 · ICCSI 最佳论文入围奖 · [PDF](assets/awards/2023-iccsi-best-paper.pdf)
    - English: ICCSI Best Paper Finalist Award
-7. 2022 · 博士研究生国家奖学金 · [PDF](assets/awards/doctoral-national-scholarship.pdf)
+8. 2022 · 博士研究生国家奖学金 · [PDF](assets/awards/doctoral-national-scholarship.pdf)
    - English: National Scholarship for Doctoral Students
 
 ## 学生获奖（21）

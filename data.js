@@ -1363,6 +1363,26 @@ window.SITE_DATA = {
       ]
     },
     {
+      "year": 2025,
+      "title": {
+        "zh": "第五届重庆市高校教师教学创新大赛三等奖（中级及以下组）",
+        "en": "Third Prize, 5th Chongqing University Teachers' Teaching Innovation Competition (Intermediate and Below Rank Group)"
+      },
+      "files": [
+        {
+          "path": "assets/awards/2025-chongqing-teaching-innovation-third-prize.pdf",
+          "label": {
+            "zh": "下载获奖证书 PDF ↓",
+            "en": "Award certificate PDF ↓"
+          }
+        }
+      ],
+      "note": {
+        "zh": "获奖人：李伟凯；团队成员：陈晓丰、李华、曾文明。颁发单位：重庆市教育委员会；证书日期：2025 年 6 月。",
+        "en": "Recipient: Weikai Li. Team members: Xiaofeng Chen, Hua Li, and Wenming Zeng. Awarded by the Chongqing Municipal Education Commission in June 2025."
+      }
+    },
+    {
       "year": 2023,
       "title": {
         "zh": "ICCSI 最佳论文入围奖",
