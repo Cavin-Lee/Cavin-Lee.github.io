@@ -19,7 +19,7 @@
 .hero-grid>div:first-child{grid-column:2;grid-row:1}
 .hero-card{grid-column:1;grid-row:1;min-height:0;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}
 .hero-card-top{display:none}
-.profile-photo{display:block;width:100%;height:auto;aspect-ratio:1279/1929;object-fit:contain;border-radius:8px;border:1px solid var(--line)}
+.profile-photo{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;border-radius:8px;border:1px solid var(--line)}
 .hero h1{font-size:clamp(38px,4.2vw,55px);letter-spacing:-.04em}
 .hero h1 span{display:inline;margin-left:12px;color:var(--muted);font-size:clamp(24px,2.4vw,32px)}
 .hero .eyebrow{color:#a12f35}

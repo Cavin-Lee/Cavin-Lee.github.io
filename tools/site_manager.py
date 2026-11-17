@@ -350,8 +350,9 @@ def write_pdf(path: Path, lang: str, title: str, sections: list[tuple[str, list[
         body_style.spaceAfter = 3
         intro_style = ParagraphStyle("intro", fontName=font, fontSize=8.7, leading=13.3, textColor=colors.HexColor("#202329"), spaceAfter=5, wordWrap="CJK")
         header_text = [Paragraph(escape(title), title_style)] + [Paragraph(escape(line.replace("·", " / ")), intro_style) for line in intro or [] if line]
-        ratio = 1929 / 1279
-        photo = Image(str(portrait), width=72, height=72 * ratio)
+        photo = Image(str(portrait))
+        photo.drawWidth = 72
+        photo.drawHeight = 72 * photo.imageHeight / photo.imageWidth
         photo.hAlign = "RIGHT"
         header = Table([[header_text, photo]], colWidths=[419, 92])
         header.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LEFTPADDING", (0, 0), (-1, -1), 0), ("RIGHTPADDING", (0, 0), (-1, -1), 0), ("TOPPADDING", (0, 0), (-1, -1), 0), ("BOTTOMPADDING", (0, 0), (-1, -1), 0), ("LINEBELOW", (0, 0), (-1, -1), 1, colors.HexColor("#a12f35"))]))

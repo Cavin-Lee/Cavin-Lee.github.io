@@ -46,7 +46,7 @@
     const root=$('cv-preview');root.replaceChildren(); const en=lang()==='en';
     const header=make('div','cv-header');const identity=make('div','cv-identity');
     identity.append(make('h1','',en?'Wei-Kai Li':'李伟凯'),make('p','cv-subtitle',en?'Professor · Doctoral Supervisor · Taishan Scholars Young Expert':'教授 · 博士生导师 · 泰山学者青年专家'),make('p','cv-contact',`leeweikai@sdjzu.edu.cn · ${en?'School of Computer Science and Artificial Intelligence, Shandong Jianzhu University':'山东建筑大学计算机与人工智能学院'} · ${en?'School of Mathematics and Statistics, Chongqing Jiaotong University':'重庆交通大学数学与统计学院'} · ${en?'Panoramic Medical Imaging Center':'全景医学影像中心'}`));
-    const portrait=make('img','cv-portrait');portrait.src='../assets/profile.jpeg?v=20261004m';portrait.alt=en?'Portrait of Wei-Kai Li':'李伟凯照片';portrait.width=1279;portrait.height=1929;
+    const portrait=make('img','cv-portrait');portrait.src='../assets/profile.jpeg?v=20261117a';portrait.alt=en?'Portrait of Wei-Kai Li':'李伟凯照片';portrait.width=306;portrait.height=306;
     header.append(identity,portrait);root.append(header);
     const research=make('section','cv-research');research.append(make('h2','',tr(researchLabel)));
     const researchList=make('ul');data.profile.topics.forEach(topic=>researchList.append(make('li','',`${tr(topic.title)}${en?': ':'：'}${tr(topic.description)}`)));research.append(researchList);root.append(research);
