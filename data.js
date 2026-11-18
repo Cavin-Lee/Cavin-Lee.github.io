@@ -1734,6 +1734,19 @@ window.SITE_DATA = {
     {
       "year": 2026,
       "title": {
+        "zh": "祝贺李伟凯教授获聘《International Journal of Intelligent Control and Systems》编委",
+        "en": "Congratulations to Professor Wei-Kai Li on his appointment to the Editorial Board of International Journal of Intelligent Control and Systems"
+      },
+      "detail": {
+        "zh": "李伟凯教授受聘为《International Journal of Intelligent Control and Systems》编委（Editorial Board Member）。",
+        "en": "Professor Wei-Kai Li has been appointed as an Editorial Board Member of International Journal of Intelligent Control and Systems."
+      },
+      "file": "assets/service/ijics-editorial-board.pdf",
+      "image": "assets/news/ijics-editorial-board.jpg"
+    },
+    {
+      "year": 2026,
+      "title": {
         "zh": "获聘《指挥控制与仿真》青年编委",
         "en": "Appointed to the Youth Editorial Board of Command, Control and Simulation"
       },

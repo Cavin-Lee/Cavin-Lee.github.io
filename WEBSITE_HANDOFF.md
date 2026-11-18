@@ -41,7 +41,7 @@
 | 个人荣誉 | 8 |
 | 指导学生获奖条目 | 21 |
 | 教育经历 | 3 |
-| 新闻 | 8 |
+| 新闻 | 9 |
 
 以上数量从 `data.js` 核对；“获奖条目数”不等于证书数，一项可以有多个 PDF。论文来源是 [Google Scholar 个人主页](https://scholar.google.com/citations?user=XEfV8mkAAAAJ&hl=zh-CN)，`scholar-publications.json` 保存 2026-11-01 的采集快照。
 
@@ -109,6 +109,8 @@
 发布前执行 `git diff --check`，检查并提交本次相关文件。修改网页资源后更新 HTML 的 `?v=` 参数。推送 `origin/main` 后，等待 `pages-build-deployment` 成功，并核对线上实际内容；不能只把“推送成功”当作“网站已生效”。
 
 ## 最近完成的改动
+
+- `2026-11-18`：新增获聘《International Journal of Intelligent Control and Systems》编委的中英文新闻，列于首条，使用已有任职聘书及新生成的 `assets/news/ijics-editorial-board.jpg` 缩略图；新闻共 9 条。任职和静态简历此前已收录，无需重复添加。
 
 - `2026-11-18`：新闻支持通用 `image` 配图（证书、毕业生合照等），为已有 6 条关联证书的新闻生成 `assets/news/` 下的 JPG 预览。桌面右侧显示，手机正文下显示；点击打开关联 PDF 或原图，无图不占位，仍默认显示 5 条。管理页面支持填写配图路径并校验、保留该字段；更新内容索引与资源版本。证书替换时用 `pdftoppm -f 1 -singlefile -scale-to 640 -jpeg -jpegopt quality=85 输入.pdf assets/news/对应文件名` 重做 JPG。
 

@@ -4,6 +4,13 @@
 
 ## 2026-11-18
 
+- 操作：新增
+- 类别：新闻
+- 条目：祝贺李伟凯教授获聘《International Journal of Intelligent Control and Systems》编委。
+- 备注：作为 2026 年新闻置于首条，中英文同步；复用既有聘书 `assets/service/ijics-editorial-board.pdf` 并生成配图 `assets/news/ijics-editorial-board.jpg`。新闻共 9 条，默认显示最新 5 条；既有任职和简历已收录该信息。
+
+## 2026-11-18
+
 - 操作：更新
 - 类别：新闻配图
 - 条目：新闻支持证书缩略图、毕业生合照等通用图片；为 6 条已有证书的动态添加配图。
