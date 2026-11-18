@@ -135,6 +135,22 @@ def validate_pdf(path: Path) -> None:
         raise ManagerError(f"无法读取 PDF：{error}") from error
 
 
+def image_path(value: str) -> str:
+    value = str(value or "").strip()
+    path = Path(value)
+    if not value.startswith("assets/") or path.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp"} or ".." in path.parts or path.is_absolute():
+        raise ManagerError("新闻配图必须是 assets/ 下的 JPG、PNG 或 WebP 图片")
+    target = (ROOT / path).resolve()
+    if not target.is_relative_to((ROOT / "assets").resolve()) or not target.is_file():
+        raise ManagerError(f"找不到新闻配图：{value}")
+    from reportlab.lib.utils import ImageReader
+    try:
+        ImageReader(str(target)).getSize()
+    except Exception as error:
+        raise ManagerError(f"无法读取新闻配图：{value}") from error
+    return value
+
+
 def clean_files(value, project=False, required=False) -> list[dict]:
     if not isinstance(value, list):
         raise ManagerError("材料列表格式不正确")
@@ -187,6 +203,8 @@ def validate_record(category: str, record: dict, data: dict) -> dict:
         result = {"year": year(record.get("year")), "title": bilingual(record.get("title"), "新闻标题"), "detail": bilingual(record.get("detail"), "新闻正文")}
         if record.get("file"):
             result["file"] = pdf_path(record["file"])
+        if record.get("image"):
+            result["image"] = image_path(record["image"])
         return result
     if category == "service":
         result = {"name": bilingual(record.get("name"), "任职名称")}
@@ -244,6 +262,8 @@ def content_index(data: dict) -> str:
                     lines.append(f"   - 平行会议：{md_text(item['session']['zh'])}")
             elif category == "news":
                 lines.append(f"   - {md_text(item['detail']['zh'])}")
+                if item.get("image"):
+                    lines.append(f"   - [新闻配图]({item['image']})")
             elif category == "education":
                 lines.append(f"   - {md_text(item['degree']['en'])} · {md_text(item['school']['en'])}")
             if item.get("note"):

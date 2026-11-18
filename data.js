@@ -1741,7 +1741,8 @@ window.SITE_DATA = {
         "zh": "李伟凯教授受聘为《指挥控制与仿真》第二届青年编委，任期三年。",
         "en": "Professor Wei-Kai Li was appointed to the second Youth Editorial Board of Command, Control and Simulation for a three-year term."
       },
-      "file": "assets/service/command-control-simulation-editor.pdf"
+      "file": "assets/service/command-control-simulation-editor.pdf",
+      "image": "assets/news/command-control-simulation-editor.jpg"
     },
     {
       "year": 2026,
@@ -1753,7 +1754,8 @@ window.SITE_DATA = {
         "zh": "入围论文：Dual Adapter: Enhancing Adaptation Via Dual-Path Adapters with Dual-Constraint for Parameter-Efficient Fine-Tuning。证书列名李伟凯、王泽亿等作者，落款为 2026 年 10 月。",
         "en": "Finalist paper: Dual Adapter: Enhancing Adaptation Via Dual-Path Adapters with Dual-Constraint for Parameter-Efficient Fine-Tuning. The certificate names Weikai Li, Zeyi Wang, and coauthors, and is dated October 2026."
       },
-      "file": "assets/awards/2026-ieee-smc-best-paper-finalist.pdf"
+      "file": "assets/awards/2026-ieee-smc-best-paper-finalist.pdf",
+      "image": "assets/news/2026-ieee-smc-best-paper-finalist.jpg"
     },
     {
       "year": 2026,
@@ -1765,7 +1767,8 @@ window.SITE_DATA = {
         "zh": "获奖论文：Anatomy-Preserving Schrodinger Bridge for Unpaired MRI Quality Enhancement。证书列名崔靖轩、殷家斌、李伟凯、王其林。",
         "en": "Awarded paper: Anatomy-Preserving Schrodinger Bridge for Unpaired MRI Quality Enhancement. The certificate names Jingxuan Cui, Jiabin Yin, Weikai Li, and Qilin Wang."
       },
-      "file": "assets/awards/2026-cpsi-best-paper.pdf"
+      "file": "assets/awards/2026-cpsi-best-paper.pdf",
+      "image": "assets/news/2026-cpsi-best-paper.jpg"
     },
     {
       "year": 2025,
@@ -1799,7 +1802,8 @@ window.SITE_DATA = {
         "zh": "泰山学者青年专家证书已收录。",
         "en": "The Taishan Scholars Young Expert certificate is available."
       },
-      "file": "assets/awards/2025-taishan-young-scholar.pdf"
+      "file": "assets/awards/2025-taishan-young-scholar.pdf",
+      "image": "assets/news/2025-taishan-young-scholar.jpg"
     },
     {
       "year": 2025,
@@ -1811,7 +1815,8 @@ window.SITE_DATA = {
         "zh": "Aelos 机器人挑战赛，证书列名韩行钱、翟俊杰、夏蝶，指导教师李伟凯、王其林。",
         "en": "Aelos Robot Challenge; the certificate names Han Xingqian, Zhai Junjie, and Xia Die, with faculty advisors Wei-Kai Li and Qilin Wang."
       },
-      "file": "assets/awards/2025-robot-national-first.pdf"
+      "file": "assets/awards/2025-robot-national-first.pdf",
+      "image": "assets/news/2025-robot-national-first.jpg"
     },
     {
       "year": 2025,
@@ -1823,7 +1828,8 @@ window.SITE_DATA = {
         "zh": "获奖证书可下载查看。",
         "en": "Download the award certificate for details."
       },
-      "file": "assets/awards/2025-cpsi-best-paper.pdf"
+      "file": "assets/awards/2025-cpsi-best-paper.pdf",
+      "image": "assets/news/2025-cpsi-best-paper.jpg"
     }
   ],
   "profile": {

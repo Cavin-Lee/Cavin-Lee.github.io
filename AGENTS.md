@@ -55,7 +55,9 @@
 - **学术服务**：在 `service` 对应分组的 `items` 中增加独立条目；有聘书时用 `file` 指向 `assets/service/`。期刊任职逐刊列出。
 - **学术报告**：在 `presentations` 中维护 `year`、双语 `title`、`event`、`type`，可选双语 `session` 记录平行会议名称；证书用 `file` 关联 `assets/presentations/` 下的 A4、5 MB 以内 PDF。中英文主页单独设 Presentations / 学术报告栏。当前通过 `data.js` 手工维护，并同步内容索引、交接记录及资源版本号。
 - **个人或学生获奖**：分别修改 `personalAwards`、`studentAwards`。每项含 `year`、双语 `title`、`files` 数组，可选双语 `note`。依据证书文字核对赛事名称、级别、年份和指导教师；不要只按源文件名判断。新增学生获奖后，简历生成器会自动出现对应复选框。
-- **新闻**：在 `news` 增加 `year`、双语 `title` 和 `detail`；引用证书时用 `file` 关联可下载的 A4 PDF。
+- **新闻**：可选 `image` 指向 `assets/` 下的 JPG、PNG 或 WebP 新闻配图，支持证书缩略图、毕业生合照等。桌面配图在右侧，手机在正文下方；点击有 `file` 的配图打开证书 PDF，否则打开图片。证书预览位于 `assets/news/`，由关联 PDF 第一页生成，替换 PDF 时同步重做；没有配图则保留纯文字布局。新增图片可先放进 `assets/news/`，再在管理页面填写新闻配图路径。
+
+- **新闻内容**：在 `news` 增加 `year`、双语 `title` 和 `detail`；引用证书时用 `file` 关联可下载的 A4 PDF。
 - **静态简介、职称、单位、研究方向卡片**：同步修改 `index.html` 与 `cn/index.html`。简历预览的职称和单位另外写在 `cv-builder/builder.js`，静态简历 PDF 也需重做。
 
 本机支撑材料与发布仓库位于同一父目录。`../weikai-li-academic-website/assemble_content.py` 是**未纳入本仓库**的材料整理脚本：它读取父目录中的原始证明和 `李伟凯简历中文.docx`，生成其目录下的 `data.js`、PDF 材料和清单。该脚本仅供追溯早期材料整理过程；需要复用时先核对输出范围，只同步本次确认的材料，不能用其旧数据整体覆盖本仓库。直接编辑本仓库的 `data.js` 后再运行旧脚本并复制输出，会覆盖手工编辑。脚本目录中的 HTML/CSS 是旧版，不要复制来覆盖本仓库页面。其他机器可能没有这些原始材料或脚本，此时可直接维护本仓库，但须同步处理关联文件。

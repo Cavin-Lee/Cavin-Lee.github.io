@@ -23,7 +23,7 @@
     if(category==='education') out=field('years','学习年份',item.years)+pair('degree','学位',item.degree)+pair('school','学校',item.school);
     if(category==='publications') out=field('title','论文标题',item.title)+field('year','发表年份',item.year||'','number')+field('citation','Google Scholar 原始引文',item.citation,'textarea')+field('gbtCitation','简历用 GB/T 7714—2025 引文',item.gbtCitation||'','textarea','留空会按原始引文自动生成；核对出版信息后可在此修订。编号由简历自动添加。')+field('scholar','本人 Google Scholar 中的该论文链接',item.scholar||'','url')+field('area','论文分类',Object.entries(snapshot.data.areas).map(([key,value])=>`<option value="${key}" ${item.area===key?'selected':''}>${esc(value.zh)} / ${esc(value.en)}</option>`).join(''),'select')+field('file','全文 PDF 路径（可留空）',item.file||'');
     if(category==='projects') out=pair('title','项目名称',item.title)+pair('funder','资助来源',item.funder)+pair('role','承担角色',item.role)+lineField('note','项目说明（可留空）',item.note)+field('files','项目材料',filesText(item.files,true),'textarea','每行：PDF 路径 | 中文材料名 | English name');
-    if(category==='news') out=field('year','年份',item.year||'','number')+pair('title','动态标题',item.title)+lineField('detail','正文',item.detail)+field('file','证明 PDF 路径（可留空）',item.file||'');
+    if(category==='news') out=field('year','年份',item.year||'','number')+pair('title','动态标题',item.title)+lineField('detail','正文',item.detail)+field('image','新闻配图路径（可留空）',item.image||'','text','证书缩略图、毕业生合照等，填写 assets/ 下已有 JPG、PNG 或 WebP 图片路径。')+field('file','证明 PDF 路径（可留空）',item.file||'');
     if(category==='personalAwards'||category==='studentAwards') out=field('year','获奖年份',item.year||'','number')+pair('title','奖项名称',item.title)+lineField('note','说明（可留空）',item.note)+field('files','证明 PDF 路径',filesText(item.files),'textarea','每行一个 assets/ 路径；至少填写一份。');
     if(category==='service') out=field('groupIndex','所属分组',snapshot.data.service.map((g,i)=>`<option value="${i}" ${i===editing?.groupIndex?'selected':''}>${esc(tr(g.title))}</option>`).join(''),'select')+pair('name','任职名称',item.name)+field('file','证明 PDF 路径（可留空）',item.file||'');
     return out+uploadWidget(category);
@@ -35,7 +35,7 @@
     if(category==='education') return {years:formValue(form,'years'),degree:getPair(form,'degree'),school:getPair(form,'school')};
     if(category==='publications') return {title:formValue(form,'title'),year:formValue(form,'year'),citation:formValue(form,'citation'),gbtCitation:formValue(form,'gbtCitation'),scholar:formValue(form,'scholar'),area:formValue(form,'area'),file:formValue(form,'file')};
     if(category==='projects') return {title:getPair(form,'title'),funder:getPair(form,'funder'),role:getPair(form,'role'),note:getPair(form,'note'),files:parseFiles(formValue(form,'files'),true)};
-    if(category==='news') return {year:formValue(form,'year'),title:getPair(form,'title'),detail:getPair(form,'detail'),file:formValue(form,'file')};
+    if(category==='news') return {year:formValue(form,'year'),title:getPair(form,'title'),detail:getPair(form,'detail'),image:formValue(form,'image'),file:formValue(form,'file')};
     if(category==='personalAwards'||category==='studentAwards') return {year:formValue(form,'year'),title:getPair(form,'title'),note:getPair(form,'note'),files:parseFiles(formValue(form,'files'),false)};
     return {name:getPair(form,'name'),file:formValue(form,'file')};
   }

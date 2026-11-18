@@ -8,7 +8,26 @@
 
   const newsList = document.getElementById('news-list');
   const olderNews=[];
-  data.news.forEach((item,index) => { const card=el('article','news-item'); card.append(el('span','news-year',String(item.year))); const body=el('div'); body.append(el('h3','',t(item.title)),el('p','',t(item.detail))); if(item.file)body.append(link(item.file,en?'Download certificate PDF ↓':'下载证书 PDF ↓')); card.append(body); if(index>=5){card.hidden=true;olderNews.push(card);} newsList.append(card); });
+  data.news.forEach((item,index) => {
+    const card=el('article','news-item');
+    card.append(el('span','news-year',String(item.year)));
+    const body=el('div','news-body');
+    body.append(el('h3','',t(item.title)),el('p','',t(item.detail)));
+    if(item.file)body.append(link(item.file,en?'Download certificate PDF ↓':'下载证书 PDF ↓'));
+    card.append(body);
+    if(item.image){
+      card.classList.add('news-item-with-image');
+      const preview=el('a','news-image');
+      preview.href=base+(item.file||item.image);
+      preview.target='_blank';preview.rel='noopener noreferrer';
+      preview.setAttribute('aria-label',`${en?'Open image or certificate: ':'查看配图或证书：'}${t(item.title)}`);
+      const image=el('img');image.src=base+item.image;image.alt=t(item.title);
+      image.loading='lazy';image.decoding='async';image.width=640;image.height=453;
+      preview.append(image);card.append(preview);
+    }
+    if(index>=5){card.hidden=true;olderNews.push(card);}
+    newsList.append(card);
+  });
   if(olderNews.length){
     const toggle=el('button','news-toggle',en?`View all ${data.news.length} news items ↓`:`查看全部 ${data.news.length} 条动态 ↓`);
     toggle.type='button';toggle.setAttribute('aria-expanded','false');

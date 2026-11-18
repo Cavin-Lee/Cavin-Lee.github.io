@@ -12,6 +12,14 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
 .news-section{padding-top:70px;padding-bottom:75px}.news-list{border-top:1px solid var(--line)}.news-item{display:grid;grid-template-columns:80px minmax(0,1fr);gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}.news-year{color:var(--blue);font-size:14px;font-weight:700}.news-item h3{margin:0;font-size:17px;line-height:1.55}.news-item p{max-width:900px;margin:7px 0;color:var(--muted);font-size:13px}.news-item a{display:inline-block;color:var(--blue);font-size:12px;font-weight:700;text-decoration:underline;text-underline-offset:3px}@media(max-width:760px){.news-item{grid-template-columns:55px minmax(0,1fr);gap:12px}}
 .news-item[hidden]{display:none}.news-toggle{display:block;min-height:44px;margin:12px 0 0;padding:4px 0;border:0;background:none;color:var(--blue);font:inherit;font-size:13px;font-weight:700;text-align:left;cursor:pointer}.news-toggle:hover{text-decoration:underline;text-underline-offset:3px}
+.news-item-with-image{grid-template-columns:80px minmax(0,1fr) 200px;align-items:start}
+.news-body{min-width:0}
+.news-item .news-image{display:block;width:200px;height:130px;padding:5px;border:1px solid var(--line);border-radius:4px;background:#fff;transition:border-color .15s}
+.news-image img{display:block;width:100%;height:100%;object-fit:contain}
+.news-item .news-image:hover{border-color:var(--blue)}
+.news-item .news-image:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+@media(max-width:1000px) and (min-width:761px){.news-item-with-image{grid-template-columns:55px minmax(0,1fr) 160px;gap:18px}.news-item .news-image{width:160px;height:110px}}
+@media(max-width:760px){.news-item-with-image{grid-template-columns:55px minmax(0,1fr)}.news-item .news-image{grid-column:2;width:min(200px,100%);height:130px}}
 
 /* Academic CV layout: portrait, concise biography, and compact publication lists. */
 .hero{color:var(--ink);background:#fff;border-bottom:1px solid var(--line);scroll-margin-top:78px}
