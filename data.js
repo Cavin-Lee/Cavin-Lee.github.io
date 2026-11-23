@@ -1099,6 +1099,13 @@ window.SITE_DATA = {
       "items": [
         {
           "name": {
+            "zh": "ICICIC 2026 分会场主席（先进全驱系统方法及控制应用）",
+            "en": "Session Chair, ICICIC 2026: Advanced Fully Actuated System Approach for Control Methods and Applications"
+          },
+          "file": "assets/service/2026-icicic-session-chair.pdf"
+        },
+        {
+          "name": {
             "zh": "CPSI 2027 程序主席",
             "en": "Program Chair, CPSI 2027"
           }

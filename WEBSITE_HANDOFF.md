@@ -1,6 +1,6 @@
 # 个人网站 Agent 接手说明
 
-更新日期：2026-11-18。本文根据当前仓库和已确认需求整理；Google Scholar 的完整 83 条记录于 2026-11-01 核对。后续接手先检查实际文件与 Git 状态。
+更新日期：2026-11-23。本文根据当前仓库和已确认需求整理；Google Scholar 的完整 83 条记录于 2026-11-01 核对。后续接手先检查实际文件与 Git 状态。
 
 ## 从哪里开始
 
@@ -37,7 +37,7 @@
 | 待补全文 | 29 |
 | 科研项目 | 9 |
 | 学术报告 | 3 |
-| 学术服务条目 | 28 |
+| 学术服务条目 | 29 |
 | 个人荣誉 | 8 |
 | 指导学生获奖条目 | 21 |
 | 教育经历 | 3 |
@@ -109,6 +109,8 @@
 发布前执行 `git diff --check`，检查并提交本次相关文件。修改网页资源后更新 HTML 的 `?v=` 参数。推送 `origin/main` 后，等待 `pages-build-deployment` 成功，并核对线上实际内容；不能只把“推送成功”当作“网站已生效”。
 
 ## 最近完成的改动
+
+- `2026-11-23`：新增 ICICIC 2026 分会场主席（先进全驱系统方法及控制应用），位于“会议与论坛”。证书为 2026 年 11 月 20–23 日重庆第 20 届 International Conference on Innovative Computing, Information and Control 的贡献证书；原图旋转 180° 正位后制为横向 A4 PDF，公开路径 `assets/service/2026-icicic-session-chair.pdf`，小于 5 MB。同步中英文主页、两份静态简历及索引，学术服务共 29 项。
 
 - `2026-11-18`：新增获聘《International Journal of Intelligent Control and Systems》编委的中英文新闻，列于首条，使用已有任职聘书及新生成的 `assets/news/ijics-editorial-board.jpg` 缩略图；新闻共 9 条。任职和静态简历此前已收录，无需重复添加。
 

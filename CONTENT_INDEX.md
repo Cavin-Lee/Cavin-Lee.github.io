@@ -2,7 +2,7 @@
 
 此文件由本地管理工具根据 `data.js` 自动生成，供后续智能体检索。请在管理页面修改内容，不要直接改此文件。
 
-生成时间：2026-11-18T17:50:00+08:00
+生成时间：2026-11-23T23:42:17+08:00
 
 ## 主页文案
 
@@ -110,63 +110,65 @@
    - English: Construction and Applications of Multimodal Brain Connectomics
    - 学术报告 · 中国国际数智医疗产业人才高质量发展大会
 
-## 学术服务（28）
+## 学术服务（29）
 
-1. [会议与论坛] CPSI 2027 程序主席
+1. [会议与论坛] ICICIC 2026 分会场主席（先进全驱系统方法及控制应用） · [PDF](assets/service/2026-icicic-session-chair.pdf)
+   - English: Session Chair, ICICIC 2026: Advanced Fully Actuated System Approach for Control Methods and Applications
+2. [会议与论坛] CPSI 2027 程序主席
    - English: Program Chair, CPSI 2027
-2. [会议与论坛] CPSI 2026 联合程序主席
+3. [会议与论坛] CPSI 2026 联合程序主席
    - English: Co-Program Chair, CPSI 2026
-3. [会议与论坛] IEEE SMC 2026 领域主席
+4. [会议与论坛] IEEE SMC 2026 领域主席
    - English: Area Chair, IEEE SMC 2026
-4. [会议与论坛] IFAC CPHS 2020 领域主席
+5. [会议与论坛] IFAC CPHS 2020 领域主席
    - English: Area Chair, IFAC CPHS 2020
-5. [会议与论坛] ICCSI 2022–2025 领域主席
+6. [会议与论坛] ICCSI 2022–2025 领域主席
    - English: Area Chair, ICCSI 2022–2025
-6. [会议与论坛] 具身智能系统及应用大会平行论坛召集人 · [PDF](assets/service/embodied-ai-forum-convener.pdf)
+7. [会议与论坛] 具身智能系统及应用大会平行论坛召集人 · [PDF](assets/service/embodied-ai-forum-convener.pdf)
    - English: Convener, Embodied Intelligence Conference Parallel Forum
-7. [期刊编辑与审稿] 《International Journal of Intelligent Control and Systems》编委 · [PDF](assets/service/ijics-editorial-board.pdf)
+8. [期刊编辑与审稿] 《International Journal of Intelligent Control and Systems》编委 · [PDF](assets/service/ijics-editorial-board.pdf)
    - English: Editorial Board Member, International Journal of Intelligent Control and Systems
-8. [期刊编辑与审稿] 《数据采集与处理》青年编委 · [PDF](assets/service/data-acquisition-processing-editor.pdf)
+9. [期刊编辑与审稿] 《数据采集与处理》青年编委 · [PDF](assets/service/data-acquisition-processing-editor.pdf)
    - English: Youth Editorial Board, Journal of Data Acquisition and Processing
-9. [期刊编辑与审稿] 《Meta-Radiology》青年编委 · [PDF](assets/service/meta-radiology-editor.pdf)
+10. [期刊编辑与审稿] 《Meta-Radiology》青年编委 · [PDF](assets/service/meta-radiology-editor.pdf)
    - English: Youth Editorial Board, Meta-Radiology
-10. [期刊编辑与审稿] 《指挥控制与仿真》青年编委 · [PDF](assets/service/command-control-simulation-editor.pdf)
+11. [期刊编辑与审稿] 《指挥控制与仿真》青年编委 · [PDF](assets/service/command-control-simulation-editor.pdf)
    - English: Youth Editorial Board, Command, Control and Simulation
-11. [期刊编辑与审稿] 《Frontiers in Neuroscience》客座主编
+12. [期刊编辑与审稿] 《Frontiers in Neuroscience》客座主编
    - English: Guest Editor, Frontiers in Neuroscience
-12. [期刊编辑与审稿] 《Frontiers in Aging Neuroscience》客座主编
+13. [期刊编辑与审稿] 《Frontiers in Aging Neuroscience》客座主编
    - English: Guest Editor, Frontiers in Aging Neuroscience
-13. [期刊编辑与审稿] 《Frontiers in Cell and Developmental Biology》客座主编
+14. [期刊编辑与审稿] 《Frontiers in Cell and Developmental Biology》客座主编
    - English: Guest Editor, Frontiers in Cell and Developmental Biology
-14. [期刊编辑与审稿] 《Frontiers in Pharmacology》客座主编
+15. [期刊编辑与审稿] 《Frontiers in Pharmacology》客座主编
    - English: Guest Editor, Frontiers in Pharmacology
-15. [期刊编辑与审稿] 《数据采集与处理》优秀审稿人 · [PDF](assets/service/data-acquisition-outstanding-reviewer.pdf)
+16. [期刊编辑与审稿] 《数据采集与处理》优秀审稿人 · [PDF](assets/service/data-acquisition-outstanding-reviewer.pdf)
    - English: Outstanding Reviewer, Journal of Data Acquisition and Processing
-16. [期刊编辑与审稿] 《Aging & Disease》青年编委
+17. [期刊编辑与审稿] 《Aging & Disease》青年编委
    - English: Youth Editorial Board, Aging & Disease
-17. [期刊编辑与审稿] 《Brain-X》青年编委
+18. [期刊编辑与审稿] 《Brain-X》青年编委
    - English: Youth Editorial Board, Brain-X
-18. [期刊编辑与审稿] 《Cog》青年编委
+19. [期刊编辑与审稿] 《Cog》青年编委
    - English: Youth Editorial Board, Cog
-19. [期刊编辑与审稿] 《Artificial Intelligence Science and Engineering》青年编委
+20. [期刊编辑与审稿] 《Artificial Intelligence Science and Engineering》青年编委
    - English: Youth Editorial Board, Artificial Intelligence Science and Engineering
-20. [学术组织] 山东省人工智能学会理事
+21. [学术组织] 山东省人工智能学会理事
    - English: Council Member, Shandong Association for Artificial Intelligence
-21. [学术组织] 山东省人工智能学会青年科学家专业委员会委员 · [PDF](assets/service/shandong-ai-young-scientists-committee.pdf)
+22. [学术组织] 山东省人工智能学会青年科学家专业委员会委员 · [PDF](assets/service/shandong-ai-young-scientists-committee.pdf)
    - English: Member, Young Scientists Professional Committee, Shandong Association for Artificial Intelligence
-22. [学术组织] 山东省人工智能学会具身智能专业委员会委员 · [PDF](assets/service/shandong-ai-embodied-intelligence-committee.pdf)
+23. [学术组织] 山东省人工智能学会具身智能专业委员会委员 · [PDF](assets/service/shandong-ai-embodied-intelligence-committee.pdf)
    - English: Member, Embodied Intelligence Professional Committee, Shandong Association for Artificial Intelligence
-23. [学术组织] 中国人工智能学会机器学习专委会通讯委员
+24. [学术组织] 中国人工智能学会机器学习专委会通讯委员
    - English: Corresponding Member, CAAI Machine Learning Committee
-24. [学术组织] 中国指挥与控制学会具身智能专委会副秘书长
+25. [学术组织] 中国指挥与控制学会具身智能专委会副秘书长
    - English: Deputy Secretary-General, CICC Embodied Intelligence Committee
-25. [学术组织] 中国自动化学会人机教育专委会委员
+26. [学术组织] 中国自动化学会人机教育专委会委员
    - English: Member, CAA Human–Machine Education Committee
-26. [学术组织] 中国仿真学会虚拟技术及应用专委会委员
+27. [学术组织] 中国仿真学会虚拟技术及应用专委会委员
    - English: Member, CSS Virtual Technology and Applications Committee
-27. [学术组织] 医学图像青年研讨会委员
+28. [学术组织] 医学图像青年研讨会委员
    - English: Committee Member, Youth Workshop on Medical Imaging
-28. [学术组织] 重庆市数学学会理事 · [PDF](assets/service/chongqing-math-society.pdf)
+29. [学术组织] 重庆市数学学会理事 · [PDF](assets/service/chongqing-math-society.pdf)
    - English: Council Member, Chongqing Mathematical Society
 
 ## 个人荣誉（8）

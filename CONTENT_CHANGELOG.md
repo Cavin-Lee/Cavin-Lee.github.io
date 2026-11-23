@@ -2,6 +2,13 @@
 
 使用本地管理页面保存时会在此记录时间、类别和条目；Git 提交历史保留完整差异。
 
+## 2026-11-23
+
+- 操作：新增
+- 类别：学术服务
+- 条目：ICICIC 2026 分会场主席（先进全驱系统方法及控制应用）。
+- 备注：按贡献证书录入，会议为第 20 届 International Conference on Innovative Computing, Information and Control，2026 年 11 月 20–23 日于重庆举行。证书旋转 180° 正位，保留原图文字与签名，制为横向 A4、5 MB 以内 PDF，位于 `assets/service/2026-icicic-session-chair.pdf`。同步中英文任职、两份静态简历、内容索引及缓存版本；学术服务共 29 项。
+
 ## 2026-11-18
 
 - 操作：新增
